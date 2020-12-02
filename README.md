@@ -18,13 +18,9 @@ The content of this site is managed by Contentful. Visit [https://app.contentful
 
 1. Get the projects "stackbit-api-key" from the [Stackbit dashboard](https://app.stackbit.com/dashboard)
 
-1. Run the following command to assign this key to `STACKBIT_API_KEY` environment variable (replace `{stackbit_api_key}` with the actual key):
+1. Run the following command after saved your keys to `.env`
 
-        export STACKBIT_API_KEY={stackbit_api_key}
-
-1. Run the following command to fetch site contents from Contentful:
-
-        npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5fa91752d3c655001c0fdbe9
+        npm run pull
 
 1. Start the Gatsby local development server:
 

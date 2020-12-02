@@ -1,13 +1,14 @@
 {
-  "name": "stackbit-fjord-theme",
-  "description": "Stackbit Fjord Theme",
+  "name": "@jeff-tian/space",
+  "description": "Jeff Tian's space",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh"
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "0.0.4",
