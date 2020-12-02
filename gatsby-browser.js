@@ -4,20 +4,29 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
+import LogRocket from 'logrocket'
+
 exports.onInitialClientRender = () => {
-    if ('onGatsbyInitialClientRender' in window && typeof window.onGatsbyInitialClientRender === 'function') {
-        window.onGatsbyInitialClientRender();
-    }
-};
+  if ('onGatsbyInitialClientRender' in window &&
+      typeof window.onGatsbyInitialClientRender === 'function') {
+    window.onGatsbyInitialClientRender()
+  }
+}
 
 exports.onRouteUpdate = () => {
-    if ('onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate === 'function') {
-        window.onGatsbyRouteUpdate();
-    }
-};
+  if ('onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate ===
+      'function') {
+    window.onGatsbyRouteUpdate()
+  }
+}
 
 exports.onPreRouteUpdate = () => {
-    if ('onGatsbyPreRouteUpdate' in window && typeof window.onGatsbyPreRouteUpdate === 'function') {
-        window.onGatsbyPreRouteUpdate();
-    }
-};
+  if ('onGatsbyPreRouteUpdate' in window &&
+      typeof window.onGatsbyPreRouteUpdate === 'function') {
+    window.onGatsbyPreRouteUpdate()
+  }
+}
+
+exports.onClientEntry = () => {
+  LogRocket.init('ch20tr/uni-orders')
+}
