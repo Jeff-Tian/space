@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import LogRocket from 'logrocket'
+import * as LogRocket from 'logrocket'
 
 exports.onInitialClientRender = () => {
   if ('onGatsbyInitialClientRender' in window &&

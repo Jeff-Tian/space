@@ -28,6 +28,7 @@ module.exports = {
                 sourceUrlPath: `fields.url`,
                 pageContextProperty: `menus`,
             }
-        }
+        },
+        `gatsby-plugin-favicon`
     ]
 };
