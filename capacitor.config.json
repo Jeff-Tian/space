@@ -1,0 +1,13 @@
+{
+  "appId": "com.jeff.tian.app",
+  "appName": "@jeff-tian/space",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "public",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

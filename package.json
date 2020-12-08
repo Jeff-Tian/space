@@ -8,9 +8,15 @@
     "start": "npm run develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh"
+    "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh",
+    "ios": "npx cap add ios",
+    "android": "npx cap add android"
   },
   "dependencies": {
+    "@capacitor/android": "^2.4.4",
+    "@capacitor/cli": "^2.4.4",
+    "@capacitor/core": "^2.4.4",
+    "@capacitor/ios": "^2.4.4",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "chokidar": "^3.4.0",
     "classnames": "^2.2.6",
