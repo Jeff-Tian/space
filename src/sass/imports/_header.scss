@@ -18,9 +18,9 @@
   top: 0;
 
   &:before {
-    background: -moz-linear-gradient(top,rgba(17,17,17,0) 0,rgba(17,17,17,.01) 1%,rgba(17,17,17,.7) 70%,rgba(17,17,17,.9) 100%);
-    background: -webkit-linear-gradient(top,rgba(17,17,17,0) 0,rgba(17,17,17,.01) 1%,rgba(17,17,17,.7) 70%,rgba(17,17,17,.9) 100%);
-    background: linear-gradient(to bottom,rgba(17,17,17,0) 0,rgba(17,17,17,.01) 1%,rgba(17,17,17,.7) 70%,rgba(17,17,17,.9) 100%);
+    background: -moz-linear-gradient(top, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, .01) 1%, rgba(17, 17, 17, .7) 70%, rgba(17, 17, 17, .9) 100%);
+    background: -webkit-linear-gradient(top, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, .01) 1%, rgba(17, 17, 17, .7) 70%, rgba(17, 17, 17, .9) 100%);
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, .01) 1%, rgba(17, 17, 17, .7) 70%, rgba(17, 17, 17, .9) 100%);
     bottom: 0;
     content: "";
     left: 0;
@@ -32,8 +32,12 @@
 
 .site-header-inside {
   box-sizing: border-box;
-  padding: 3.33333em 4vw;
+  padding: 1em 4vw 3.33333em 4vw;
   position: relative;
+}
+
+.site-header-top {
+  margin-bottom: 2em;
 }
 
 .site-branding {
@@ -133,7 +137,7 @@
 #menu-toggle {
   position: absolute;
   right: 4vw;
-  top: 3.33333em;
+  top: 6.66666em;
   z-index: 9999;
 }
 
@@ -180,9 +184,17 @@
     width: 100%;
   }
 
+  .site-header-inside .row {
+    display: table-row;
+  }
+
+  .site-header-top {
+    display: table-cell;
+    vertical-align: top;
+  }
+
   .site-header-vertical {
     display: table-cell;
-    height: 100%;
     vertical-align: bottom;
   }
 
