@@ -12,9 +12,12 @@ Alice ->> Private Page: Can I see you?
 Private Page ->> UAC: Can Alice see me?
 UAC ->> UAC: Alice not in registry
 UAC -x Private Page: No
-Private Page ->> Alice : You need to buy me first, here
+Private Page ->> Alice : You need to buy me first, here is the link for purchase
+Alice ->> Uni Order: Please create an order for me
+Uni Order ->> Uni Order: Order created, waiting for payment
+
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1Mjg5NjQ1LC0xNTM3MjYyMzQxXX0=
+eyJoaXN0b3J5IjpbLTgwMDUyMjQxOCwtMTUzNzI2MjM0MV19
 -->
