@@ -5,7 +5,7 @@
 
 # Uni-Arch
 
-## How does a user view a private page
+## How does a user view a private page in uniheart
 ```mermaid
 sequenceDiagram
 Alice ->> Private Page: Can I see you?
@@ -17,10 +17,15 @@ Alice ->> Uni Order: Please create an order for me
 Uni Order ->> Uni Order: Order created, waiting for payment
 Admin ->> Uni Order: Mark the order paid
 Uni Order ->> UAC: Add Alice to registry
+UAC ->> UAC: Add Alice to registry
 Alice ->> Private Page: Can I see you now?
+Private Page ->> UAC: Can Alice see me?
+UAC ->> UAC: Alice is in registry
+UAC ->> Private Page: Yes
 Private Page ->> Alice: Yes, here you are
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTg1OTUzNywtMTUzNzI2MjM0MV19
+eyJoaXN0b3J5IjpbLTE1MDE2MjcxOTAsLTE1MzcyNjIzNDFdfQ
+==
 -->
