@@ -5,13 +5,13 @@
 
 # Uni-Arch
 
-```plantuml
-Alice -> Bob: Hello
+## How does a user view a private page
+```mermaid
+sequenceDiagram
+User ->> Private Page: Can I view 
 ```
 
-$$
-e=mc^2
-$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzcyNjIzNDFdfQ==
+eyJoaXN0b3J5IjpbLTIxNDYxNDc1OTQsLTE1MzcyNjIzNDFdfQ
+==
 -->
