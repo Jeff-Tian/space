@@ -10,7 +10,9 @@
     "serve": "gatsby serve",
     "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh",
     "ios": "npx cap add ios",
-    "android": "npx cap add android"
+    "android": "npx cap add android",
+    ".env": "SOPS_PGP_FP=9112553DDF6F34E5A986367BD01AF1D5C376C01F sops enc.env",
+    "decode-env": "sops -d --input-type dotenv enc.env > .env"
   },
   "dependencies": {
     "@capacitor/android": "^2.4.4",
