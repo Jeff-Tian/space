@@ -9,6 +9,7 @@
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh",
+    "pull-json": "npx -p @jeff-tian/stackbit-pull@0.4.4 stackbit-pull-json --json-file=/Users/tianjef/Downloads/query_result_2021-03-24T11_55_40.911328+08_00.json",
     "ios": "npx cap add ios",
     "android": "npx cap add android",
     ".env": "SOPS_PGP_FP=9112553DDF6F34E5A986367BD01AF1D5C376C01F sops enc.env",

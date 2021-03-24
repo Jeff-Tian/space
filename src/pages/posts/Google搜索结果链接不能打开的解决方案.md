@@ -1,0 +1,15 @@
+---
+stackbit_url_path: >-
+  posts/Google搜索结果链接不能打开的解决方案
+title: 'Google搜索结果链接不能打开的解决方案'
+date: '2012-02-07 07:19:11.8218269'
+excerpt: >-
+  
+comments_count: 0
+positive_reactions_count: 0
+tags: 
+  - Google
+canonical_url: >-
+template: post
+---
+<h1><font color="#800080">一、问题：</font></h1>  <p>在大陆，经常会碰到这个问题，就是使用Google成功搜索出了一堆结果列表，然而在单击其中一条结果时，打开的页面说无法显示此网页（错误 101 (net::ERR_CONNECTION_RESET)：连接已重置。）。如下图：</p>  <p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_438.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="Google搜索结果链接不能打开的解决方案" border="0" alt="Google搜索结果链接不能打开的解决方案" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_172.png" width="551" height="318" /></a> </p>  <h1><font color="#800080">二、原因：</font></h1>  <p>根本原因众所周知，本文无法解决这个根本原因。本文要解决的问题是，如何打开搜索出来的结果网页。因为虽然Google在大陆不稳定，但是它搜索出来的结果网页，一般还是稳定的。</p>  <p>为什么会打不开结果列表中的网页呢？因为Google可能出于统计数据的原因，在结果列表中，并没有放入目标网页的直接网址，而是放入了以Google自身的网址，而将目标网址作为了查询参数添加在了Google网址的后面。于是，你点击结果列表中的某一条时，首先打开Google，而在这一环，容易出现问题，从而无法显示。</p>  <h1><font color="#800080">三、解决方案：</font></h1>  <p>知道了原因，解决方案就很自然了。绕过Google，直接打开目标网页的网址。</p>  <p>在无法显示此网页的页面上，其实给出了目标网页的网址，只要将它找出来就行了。它就藏在浏览器的地址栏中，也藏在错误提示信息中。如下红色部分：</p>  <div style="border-bottom: black 1px solid; border-left: black 1px solid; padding-bottom: 0px; background-color: silver; padding-left: 10px; padding-right: 10px; border-top: black 1px solid; border-right: black 1px solid; padding-top: 0px">   <h3>无法显示此网页</h3>    <p>网址为 <strong style="word-break: break-all">http://www.google.com.hk/url?sa=t&amp;rct=j&amp;q=%E5%9C%A8%E7%BA%BF%E5%87%BD%E6%95%B0%E7%94%BB%E5%9B%BE&amp;source=web&amp;cd=4&amp;ved=0CEMQFjAD&amp;url=<font color="#ff0000">http%3A%2F%2Fwww.zizhujy.com%2Fzh-cn</font>&amp;ei=GDwxT5ifJYHtrAfyloCIBA&amp;usg=AFQjCNEKfSDp1wJd3CQCKtpBEja0AOI42g&amp;sig2=UaI-trCvcuCRbQRKtUlWTQ&amp;cad=rjt</strong> 的网页可能暂时无法连接，或者它已永久性地移动到了新网址。</p> </div>  <p>从上面的红色部分可以看出，目标网页的网址被作为了一个名为url的查询参数，而且被编码了，看起来有点怪。将它粘贴出来，解码即得原始地址。搞定。</p>  <p><a title="在线解码工具" href="http://www.myfootprints.cn/OldWeb/tools/10_Encode.asp" target="_blank">在线解码工具</a>：<a href="http://www.myfootprints.cn/OldWeb/tools/10_Encode.asp">http://www.myfootprints.cn/OldWeb/tools/10_Encode.asp</a></p>  <p>打开如上<a title="在线解码工具" href="http://www.myfootprints.cn/OldWeb/tools/10_Encode.asp" target="_blank">工具</a>后，粘贴拷贝的网址，点击解码，第一个escape输出栏中，就是成功解码后的目标网址。</p>  <p><a title="在线解码工具" href="http://www.myfootprints.cn/OldWeb/tools/10_Encode.asp"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="在线解码工具" border="0" alt="在线解码工具" src="http://www.zizhujy.com/blog/image.axd?picture=image_439.png" width="511" height="414" /></a></p>

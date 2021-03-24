@@ -1,0 +1,15 @@
+---
+stackbit_url_path: >-
+  posts/在命令行下使用SMTP协议发送邮件
+title: '在命令行下使用SMTP协议发送邮件'
+date: '2009-12-04 14:32:42'
+excerpt: >-
+  
+comments_count: 0
+positive_reactions_count: 0
+tags: 
+  - 
+canonical_url: >-
+template: post
+---
+<div style="text-indent: 2em;"><p>在我的文章《<a target="_blank" title="如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器" href="http://www.myfootprints.cn/blog/post/HowToUseSMTP.html">如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器</a>》中，介绍了如何使用Telnet命令连接本地虚拟邮件服务器来发送邮件。本篇文章基本上没有什么新内容，只是将本地的虚拟邮件服务器换成了实际的常用的邮件服务器，比如说利用新浪的发送邮件服务器（smtp.sina.com）来发送邮件。</p><p>因为本地的邮件服务器可以不验证用户就发送邮件，而实际上一般的邮件服务器都有一个用户验证的过程，所以以下这个截屏示例就只是比文章《<a target="_blank" title="如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器" href="http://www.myfootprints.cn/blog/post/HowToUseSMTP.html">如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器</a>》中多了一个用户验证过程。</p><p>通过在命令行里输入：</p><p>telnet smtp.sina.com 25</p><p>后，即与新浪发送邮件服务器建立了TCP连接，这之后的截屏如下：</p><p><span class="Apple-style-span" style="background-color: rgb(255, 255, 255); "><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_387.png" alt="" title=""></span></p><p>以上就是通过使用新浪发送邮件服务器，以admin@myfootprints.cn的名义向think_again@sina.com发送了一封内容为“This is a test mail.”的邮件。凡是以数字开头的行都是服务器的响应，其他则是我（客户端）输入的SMTP命令。</p><p>如果你看过《<a target="_blank" title="如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器" href="http://www.myfootprints.cn/blog/post/HowToUseSMTP.html">如何使用SMTP将一个报文从发送邮件服务器传送到接收邮件服务器</a>》，则会发现这与那个基本相同，只是多了Auth Login命令，以及一些看似乱七八糟的代码。</p><p>以下详解。</p><p>首先，得到服务器220的回复后，我输入ehlo admin@myfootprints.cn，即是向服务器问好，这里我输入的ehlo，而上次问好输入的是helo。ehlo是extended hello，是原来helo的扩展版。</p><p>服务器回复250，这时我输入auth login，即告诉服务器，来验证我吧。服务器回复334，334就是向你索要用户名，你会注意到334后面的<a target="_blank" title="点击查看解密后的明文" href="http://www.myfootprints.cn/tools/11_OnlineEncryption.asp?s=VXNlcm5hbWU6&amp;do=decrypte">VXNlcm5hbWU6</a>，它是UserName:经过Base64加密算法加密后的密文。于是我输入在新浪的用户名<a target="_blank" href="http://www.myfootprints.cn/tools/11_OnlineEncryption.asp?s=think_again">think_again</a>的经过Base64加密算法加密后的密文<span class="Apple-style-span" style="font-family: monospace; line-height: normal; font-size: 13px; white-space: pre-wrap; ">dGhpbmtfYWdhaW4=（关于如何得到指定字符串的Base64密文，可能有很多工具，这里推荐一个在线工具：<a target="_blank" title="涂鸦在线加密" href="http://www.myfootprints.cn/tools/11_OnlineEncryption.asp">涂鸦在线加密</a>）。</span></p><p>服务器又回复334，这次后面跟着的是<a target="_blank" href="http://www.myfootprints.cn/tools/11_OnlineEncryption.asp?s=UGFzc3dvcmQ6&amp;do=decrypte">UGFzc3dvcmQ6</a>，它是Password:经过Base64加密算法加密后的密文。于是我输入经过Base64加密算法加密后新浪密码的密文。</p><p>服务器回复235，说验证通过。</p><p>以下便和前面的文章中的例子一模一样了。</p><p>我输入Mail From: &lt;admin@myfootprints.cn&gt;，告诉服务器发件人是admin@myfootprints.cn，服务器回复250，说好的。</p><p>于是我又尝试告诉服务器收件人是谁，不小心输入rcpt ot:，这是错误的命令，于是服务器回复501，说语法错误。</p><p>我输入rcpt to: &lt;think_again@sina.com&gt;，更正说收件人是think_again@sina.com。服务器回复250说好的。</p><p>我输入data，告诉服务器我要写邮件了。服务器回复354，说写吧。</p><p>我开始输入邮件内容，只有一行，即"This is a test mail."。</p><p>然后我输入只有一个句点的行，告诉服务器我写好了。服务器回复250，说好的，邮件被接受，即将发送。</p><p>然后我输入quit，告诉服务器我要撤了。服务器回复221，和我拜拜。</p></div><p>&nbsp;</p>
