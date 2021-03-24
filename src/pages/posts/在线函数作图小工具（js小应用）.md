@@ -18,4 +18,4 @@ template: post
 <p>于是自已开发了个，小巧灵活，使用方便。</p>
 <p>地址：<a href="http://www.zizhujy.com/FunGrapher">http://www.zizhujy.com/FunGrapher</a></p>
 <p>使用截图：</p>
-<p><a title="趣涂在线函数画图小工具" href="http://www.zizhujy.com/FunGrapher" target="_blank"><img style="display: inline; border-width: 0px;" title="趣涂在线函数画图小工具" src="http://www.zizhujy.com/blog/image.axd?picture=image_485.png" alt="趣涂在线函数画图小工具" width="599" height="630" border="0" /></a></p>
+<p><a title="趣涂在线函数画图小工具" href="http://www.zizhujy.com/FunGrapher" target="_blank"><img style="display: inline; border-width: 0px;" title="趣涂在线函数画图小工具" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_485.png" alt="趣涂在线函数画图小工具" width="599" height="630" border="0" /></a></p>

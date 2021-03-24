@@ -27,8 +27,8 @@ border-collapse: collapse!important;
 <p>在 Excel 中，虽然有 FDist() 函数，可以用来计算给定的F值，两个自由度的参数后的概率分布值，但却没有提供用来计算给定F值以及两个自由度后的概率密度函数值的系统函数。</p>
 <p>不过，如果了解了F分布的概率密度函数表达式，那么仍然可以使用Excel中的系统函数的组合来完成对F分布的概率密度函数值的计算。</p>
 <p>首先，来看一下F分布的概率密度函数的表达式：</p>
-<p><img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_229.png"><img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_230.png"></p>
-<p>其中，x值是F值，而<img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_231.png">与<img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_232.png">分别为第一个自由度参数与第二个自由度参数，<img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_233.png">是伽马函数。</p>
+<p><img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_229.png"><img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_230.png"></p>
+<p>其中，x值是F值，而<img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_231.png">与<img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_232.png">分别为第一个自由度参数与第二个自由度参数，<img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_233.png">是伽马函数。</p>
 <p>在开始在Excel中构造以上表达式前，还要先了解，在Excel中没有直接的伽马函数，而有对数伽马函数，故伽马函数Gamma(x)要这样写：</p>
 <p>=Exp(GammaLn(x))</p>
 <p>最终的F分布的概率密度函数在Excel中的表达式为：</p>
@@ -302,7 +302,7 @@ border-collapse: collapse!important;
 </table>
 <hr>
 <p>图形：</p>
-<p><a target="_blank" href="http://www.zizhujy.com/blog/image.axd?picture=image_234.png"><img alt="" src="http://www.myfootprints.cn/OldWeb/blog/upload/201003191836385430.gif" width="550"></a></p>
+<p><a target="_blank" href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_234.png"><img alt="" src="http://www.myfootprints.cn/OldWeb/blog/upload/201003191836385430.gif" width="550"></a></p>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

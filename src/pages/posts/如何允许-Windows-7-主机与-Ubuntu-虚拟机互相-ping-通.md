@@ -18,7 +18,7 @@ template: post
 <p>在 Windows 7 主机里的 Virtual Box 中安装了 Ubuntu，然后发现主机能够 Ping 通虚拟机，但反过来不行。</p>
 <h2><span style="color: #9b00d3;">解决方案：</span></h2>
 <p>在 Virtual Box 中的设置里，将网络连接方式改成 Host-only Adapter 之后就可以互相 Ping 通了。</p>
-<p><a href="http://zizhujy.com/blog/image.axd?picture=image_626.png"><img style="max-width: 100%; background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_345.png" alt="image" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_626.png"><img style="max-width: 100%; background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_345.png" alt="image" border="0" /></a></p>
 <p>顺便说一句，在 Windows 的 cmd 里查看 IP 设置，命令为 ipconfig，但在 Ubuntu 中默认没有这个命令，不过可以使用 ifconfig 来查看 Ubuntu 的 IP 设置。</p>
 <pre class="cmd auto-wrap">jeff@Jeff-Ubuntu:~$ ifconfig
 eth0      Link encap:Ethernet  HWaddr 08:00:27:6c:3b:bc  

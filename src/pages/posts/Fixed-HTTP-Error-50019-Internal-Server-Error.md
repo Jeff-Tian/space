@@ -21,7 +21,7 @@ template: post
 
 <h2><font color="#9b00d3">Screen shot:</font></h2>
 
-<pre><a href="http://zizhujy.com/blog/image.axd?picture=image_630.png"><img title="HTTP Error 500.19 - Internal Server Error" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="HTTP Error 500.19 - Internal Server Error" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_318.png" width="652" height="358" /></a></pre>
+<pre><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_630.png"><img title="HTTP Error 500.19 - Internal Server Error" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="HTTP Error 500.19 - Internal Server Error" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_318.png" width="652" height="358" /></a></pre>
 
 <h2><font color="#9b00d3">Solution:</font></h2>
 
@@ -31,6 +31,6 @@ template: post
 
 <p>3. On the “Turn Windows features on or off” panel, expand “Internet Information Services”, “World Wide Web Services”, “Application Development Features” in sequence.</p>
 
-<p>4. Check the “ASP.NET” option, the other 3 options “.NET Extensibility”, “ISAPI Extensions”, “ISAPI Filters” would be automatically checked.<a href="http://zizhujy.com/blog/image.axd?picture=image_631.png"><img title="Fixed: HTTP Error 500.19 - Internal Server Error" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="Fixed: HTTP Error 500.19 - Internal Server Error" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_319.png" width="660" height="409" /></a></p>
+<p>4. Check the “ASP.NET” option, the other 3 options “.NET Extensibility”, “ISAPI Extensions”, “ISAPI Filters” would be automatically checked.<a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_631.png"><img title="Fixed: HTTP Error 500.19 - Internal Server Error" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="Fixed: HTTP Error 500.19 - Internal Server Error" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_319.png" width="660" height="409" /></a></p>
 
 <p>5. Click OK, and then revisit the web page, the error is gone.</p>

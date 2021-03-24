@@ -48,7 +48,7 @@ template: post
 </tbody>
 </table>
 <p>&nbsp;</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_50.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VlookUp()函数的妙用" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_50.png" alt="VlookUp()函数的妙用" width="346" height="209" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_50.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VlookUp()函数的妙用" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_50.png" alt="VlookUp()函数的妙用" width="346" height="209" border="0" /></a></p>
 <p style="text-align: right;">点击下载文件：<a href="/blog/file.axd?file=2011%2f8%2fReport.xls">Report.xls (25.50 kb)</a></p>
 <p>他是这样问的，这个IF()函数该如何写？</p>
 <p>我听完他的不同台数对应的不同单位价格，了解到他是想写这样的IF()函数：</p>
@@ -84,7 +84,7 @@ template: post
 </tbody>
 </table>
 <p>&nbsp;</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_51.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VLookUp()函数的妙用" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_51.png" alt="VLookUp()函数的妙用" width="244" height="213" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_51.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VLookUp()函数的妙用" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_51.png" alt="VLookUp()函数的妙用" width="244" height="213" border="0" /></a></p>
 <p style="text-align: right;">点击下载文件：<a href="/blog/file.axd?file=2011%2f8%2fReport.xls">Report.xls (25.50 kb)</a></p>
 <p><strong>2. 在第一张表（报表）的营业额里输入如下公式：</strong></p>
 <p>=B2*VLOOKUP(B2,单价!$A:$C,3,TRUE)</p>
@@ -123,7 +123,7 @@ template: post
 </tr>
 </tbody>
 </table>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_52.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VLookUp()函数的妙用" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_52.png" alt="VLookUp()函数的妙用" width="324" height="441" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_52.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="VLookUp()函数的妙用" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_52.png" alt="VLookUp()函数的妙用" width="324" height="441" border="0" /></a></p>
 <p style="text-align: right;">点击下载文件：<a href="/blog/file.axd?file=2011%2f8%2fReport.xls">Report.xls (25.50 kb)</a></p>
 <h1><strong><span style="color: #9b00d3;">三、新解决方案的优点</span></strong></h1>
 <p>怎么样？这种方案是不是更具有扩展性呢？</p>

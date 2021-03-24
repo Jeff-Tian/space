@@ -16,11 +16,11 @@ template: post
         <p>今天在Web项目中使用JFreeChart做图表，图表中的中文字符全为方框，如下：</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_202.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_202.png" alt="" title=""></p>
 <p>后来想，可能是由于JFreeChart是外国人开发的，所以对中文支持不太好。于是对每个要显示中文字符的地方都显式指定中文字体，解决了乱码问题。即在页首import java.awt.Font，然后使用chart.getTitle().setFont(new Font("宋体", Font.PLAIN, 12)); chart.getLegend().setFont(new Font("宋体", Font.PLAIN, 12)); 的方式指定字体。</p>
 <p>效果如下：</p>
 <p>&nbsp;</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_203.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_203.png" alt="" title=""></p>
 <p>&nbsp;全部源码为：</p>
 <pre class="brush: java">&lt;%@ page contentType="text/html;charset=GBK"%&gt;
 &lt;%@ page import="org.jfree.chart.*,

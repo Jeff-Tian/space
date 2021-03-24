@@ -16,7 +16,7 @@ template: post
         <p>我在做将GridView导出为Excel的功能时，碰到这个错误：<span class="Apple-style-span" style="font-family: Simsun; line-height: 18px; ">
 </span></p><h2><em>Control 'GridView1' of type 'GridView' must be placed inside a form tag with runat=server.</em></h2>
 <p>我百思不得其解，因为我的GridView是放在一个有runat="server"的form标签中的呀！</p>
-<p>后来找到解决办法，汗！<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_176.png">看来微软做的软件，也会有一些不可思议的小Bug。</p>
+<p>后来找到解决办法，汗！<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_176.png">看来微软做的软件，也会有一些不可思议的小Bug。</p>
 <p>原文地址：<span class="Apple-style-span" style="line-height: 19px; font-family: Arial, Verdana, sans-serif; "><a href="http://m.cnblogs.com/28987/1320155.html">http://m.cnblogs.com/28987/1320155.html</a></span></p>
 <hr>
 <p>Vs2003中我們常用DataGrid導出到Excel的方法如下:

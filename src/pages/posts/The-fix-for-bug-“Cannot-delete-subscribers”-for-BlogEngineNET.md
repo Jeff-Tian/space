@@ -24,14 +24,14 @@ template: post
 <li>Navigate to the Newsletter widget</li>
 <li>Click &ldquo;edit&rdquo; button on the right top of the widget
 <ul>
-<li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_478.png"><img style="display: inline; border-width: 0px;" title="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_208.png" alt="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" width="244" height="167" border="0" /></a></li>
+<li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_478.png"><img style="display: inline; border-width: 0px;" title="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_208.png" alt="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" width="244" height="167" border="0" /></a></li>
 </ul>
 </li>
 <li>Click &ldquo;Delete&rdquo; link on the edit panel</li>
 <li>Click &ldquo;Save&rdquo; button on the edit panel</li>
 <li>Repeat step 4 and observe the email list
 <ul>
-<li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_479.png"><img style="display: inline; border-width: 0px;" title="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_209.png" alt="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" width="584" height="390" border="0" /></a></li>
+<li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_479.png"><img style="display: inline; border-width: 0px;" title="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_209.png" alt="The fix for bug &ldquo;Cannot delete subscribers&rdquo; for BlogEngine.NET" width="584" height="390" border="0" /></a></li>
 </ul>
 </li>
 </ol>

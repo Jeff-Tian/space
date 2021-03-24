@@ -27,7 +27,7 @@ invoker(sayHello);</pre>
 
 <p>在上例中，通过将函数名sayHello传递给invoker()函数，然后在invoker()函数体中直接调用传进去的函数。执行结果如下：</p>
 
-<p><a title="JavaScript 练兵场" href="http://www.myfootprints.cn/OldWeb/javascript/default.asp?s=function%20sayHello()%20%7B%0A%20%20%20%20alert(%22Hello%22)%3B%0A%7D%0A%0Afunction%20invoker(functionName)%20%7B%0A%20%20%20%20functionName()%3B%0A%7D%0A%0Ainvoker(sayHello)%3B" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://www.zizhujy.com/blog/image.axd?picture=image_588.png" width="491" height="384" /></a></p>
+<p><a title="JavaScript 练兵场" href="http://www.myfootprints.cn/OldWeb/javascript/default.asp?s=function%20sayHello()%20%7B%0A%20%20%20%20alert(%22Hello%22)%3B%0A%7D%0A%0Afunction%20invoker(functionName)%20%7B%0A%20%20%20%20functionName()%3B%0A%7D%0A%0Ainvoker(sayHello)%3B" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_588.png" width="491" height="384" /></a></p>
 
 <h2><font color="#800080">二、问题：</font></h2>
 
@@ -53,7 +53,7 @@ invoker(say, &quot;hello&quot;, &quot;world&quot;);</pre>
 
 <p>以上代码执行结果如下：</p>
 
-<p><a title="JavaScript 练兵场" href="http://www.myfootprints.cn/OldWeb/javascript/default.asp?s=function%20say(msgTitle%2C%20msgBody)%20%7B%0A%20%20%20%20alert(msgTitle%20%2B%20%22%5Cr%5Cn%22%20%2B%20msgBody)%3B%0A%7D%0A%0Afunction%20invoker(func)%20%7B%0A%20%20%20%20var%20args%20%3D%20Array.prototype.slice.call(arguments)%3B%0A%20%20%20%20args.splice(0%2C%201)%3B%0A%20%20%20%20func.apply(window%2C%20args)%3B%0A%7D%0A%0Ainvoker(say%2C%20%22hello%22%2C%20%22world%22)%3B" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://www.zizhujy.com/blog/image.axd?picture=image_589.png" width="600" height="427" /></a> </p>
+<p><a title="JavaScript 练兵场" href="http://www.myfootprints.cn/OldWeb/javascript/default.asp?s=function%20say(msgTitle%2C%20msgBody)%20%7B%0A%20%20%20%20alert(msgTitle%20%2B%20%22%5Cr%5Cn%22%20%2B%20msgBody)%3B%0A%7D%0A%0Afunction%20invoker(func)%20%7B%0A%20%20%20%20var%20args%20%3D%20Array.prototype.slice.call(arguments)%3B%0A%20%20%20%20args.splice(0%2C%201)%3B%0A%20%20%20%20func.apply(window%2C%20args)%3B%0A%7D%0A%0Ainvoker(say%2C%20%22hello%22%2C%20%22world%22)%3B" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_589.png" width="600" height="427" /></a> </p>
 
 <p>注意，上述代码中，有 var args = Array.prototype.slice.call(arguments) 语句，是为了将 arguments 对象转换成一个真正的 Array 对象的实例。</p>
 

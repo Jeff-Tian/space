@@ -19,7 +19,7 @@ assembly or Visual Studio. The application cannot continue and will exit.</pre>
 
 <p>Screen shot:</p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_504.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: Assembly was not found." border="0" alt="WCF Test Client Error: Assembly was not found." src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_222.png" width="601" height="385" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_504.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: Assembly was not found." border="0" alt="WCF Test Client Error: Assembly was not found." src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_222.png" width="601" height="385" /></a></p>
 
 <p>After you click “OK”, the program will exit.</p>
 
@@ -31,7 +31,7 @@ assembly or Visual Studio. The application cannot continue and will exit.</pre>
 
 <p>When you run the WCF Test Client, modify the <em><font color="#9b00d3">machine.config</font></em> file (located in <font color="#9b00d3">C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config</font>) </p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_503.png"><img style="margin: 0px 10px 0px 0px" title="machine.config" border="0" alt="machine.config" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_221.png" width="635" height="304" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_503.png"><img style="margin: 0px 10px 0px 0px" title="machine.config" border="0" alt="machine.config" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_221.png" width="635" height="304" /></a></p>
 
 <p>by commenting out all the nodes who contain the word “Oracle”.</p>
 

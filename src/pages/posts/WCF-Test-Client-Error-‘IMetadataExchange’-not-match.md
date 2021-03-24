@@ -21,11 +21,11 @@ Tools -&gt; Options menu, then refresh the service.</pre>
 
 <p>The screen shot:</p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_501.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: ‘IMetadataExchange’ not match" border="0" alt="WCF Test Client Error: ‘IMetadataExchange’ not match" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_219.png" width="669" height="425" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_501.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: ‘IMetadataExchange’ not match" border="0" alt="WCF Test Client Error: ‘IMetadataExchange’ not match" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_219.png" width="669" height="425" /></a></p>
 
 <p>After you click “OK”, the service node will appear in the tree with the redundant “IMetadataExchange (sb)”, “IMetadataExchange (sap)”, … sections.</p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_502.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: ‘IMetadataExchange’ not match" border="0" alt="WCF Test Client Error: ‘IMetadataExchange’ not match" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_220.png" width="682" height="371" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_502.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="WCF Test Client Error: ‘IMetadataExchange’ not match" border="0" alt="WCF Test Client Error: ‘IMetadataExchange’ not match" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_220.png" width="682" height="371" /></a></p>
 
 <h2><font color="#9b00d3"><font style="font-weight: bold">Cause:</font></font></h2>
 
@@ -35,7 +35,7 @@ Tools -&gt; Options menu, then refresh the service.</pre>
 
 <p>When you run the WCF Test Client, modify the <em><font color="#9b00d3">machine.config</font></em> file (located in <font color="#9b00d3">C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config</font>)&#160; </p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_503.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="machine.config" border="0" alt="machine.config" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_221.png" width="635" height="304" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_503.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="machine.config" border="0" alt="machine.config" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_221.png" width="635" height="304" /></a></p>
 
 <p>by commenting out the &lt;client /&gt; section below that is nested in the &lt;system.serviceModel&gt; element.</p>
 

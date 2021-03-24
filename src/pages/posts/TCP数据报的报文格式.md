@@ -13,7 +13,7 @@ canonical_url: >-
 template: post
 ---
 
-        <div style="text-indent: 2em;"><p>下图显示了TCP数据报的报文格式。</p><p><span class="Apple-style-span" style="background-color: rgb(255, 255, 255); "><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_389.png" alt="TCP数据报的报文格式" title="TCP数据报的报文格式"></span></p><p>用 C++ 语言定义它的源代码如下：</p>
+        <div style="text-indent: 2em;"><p>下图显示了TCP数据报的报文格式。</p><p><span class="Apple-style-span" style="background-color: rgb(255, 255, 255); "><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_389.png" alt="TCP数据报的报文格式" title="TCP数据报的报文格式"></span></p><p>用 C++ 语言定义它的源代码如下：</p>
 <pre class="brush: c" style="text-indent: 0;">typedef struct tcp_hdr		// 定义 TCP 首部
 {
 	USHORT	th_sport;		// 16 位源端口

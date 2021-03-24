@@ -13,7 +13,7 @@ canonical_url: >-
 template: post
 ---
 
-        <div style="text-indent: 2em;"><p>下图显示了IPv4的数据报格式。</p><p><span class="Apple-style-span" style="background-color: rgb(255, 255, 255); "><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_390.png" alt="" title=""></span></p><p>用 C++ 语言定义它的源代码如下：</p>
+        <div style="text-indent: 2em;"><p>下图显示了IPv4的数据报格式。</p><p><span class="Apple-style-span" style="background-color: rgb(255, 255, 255); "><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_390.png" alt="" title=""></span></p><p>用 C++ 语言定义它的源代码如下：</p>
 <pre class="brush: c">typedef struct ip_hdr // 定义 IP 首部
 {
 	// 第一个32比特

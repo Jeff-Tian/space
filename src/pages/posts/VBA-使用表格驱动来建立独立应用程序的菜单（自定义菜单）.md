@@ -110,7 +110,7 @@ table.tbLikeGoogle thead tr th .filter
 <p>《Excel 专业开发》提供了很多很好的开发框架，以表格驱动来建立自定义菜单就是其中一个很好的框架。</p>
 <p>使用表格驱动建立菜单，可以很方便很简单地管理自定义菜单，节约开发与维护成本。</p>
 <p>如果要建立如下图所示的菜单项：</p>
-<p><img src="http://www.zizhujy.com/blog/image.axd?picture=image_360.png" alt="菜单"></p>
+<p><img src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_360.png" alt="菜单"></p>
 <p>只需要按如下格式输入自定义菜单信息：</p>
 <div style="width: 100%; overflow: auto;">
 <table x:str="" border="0" cellpadding="0" cellspacing="0" width="2288" style="border-collapse:

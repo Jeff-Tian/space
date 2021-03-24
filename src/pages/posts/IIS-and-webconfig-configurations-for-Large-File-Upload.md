@@ -23,19 +23,19 @@ template: post
 <ol>
 <li>Open IIS Console using INETMGR command (or IIS command) in Run window.
 <ul>
-<li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_425.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_160.png" alt="image" width="302" height="66" border="0" /></a></li>
+<li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_425.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_160.png" alt="image" width="302" height="66" border="0" /></a></li>
 </ul>
 </li>
 <li>In the <strong>Connections</strong> pane, select your web site under <strong>Sites</strong> node.</li>
 <li>In the <strong>Feature View</strong> of <strong>IIS</strong> pane, double-click <strong>Request Filtering</strong>.
 <ul>
-<li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_426.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_161.png" alt="image" width="586" height="400" border="0" /></a></li>
+<li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_426.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_161.png" alt="image" width="586" height="400" border="0" /></a></li>
 </ul>
 </li>
 <li>Click <strong>Edit Feature Settings&hellip;</strong> in the <strong>Actions</strong> pane.</li>
 <li>Under <strong>Request Limits</strong> set <strong>Maximum allowed content length (Bytes)</strong>: to the value you want, and then click <strong>OK</strong>.
 <ul>
-<li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_427.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_162.png" alt="image" width="560" height="481" border="0" /></a></li>
+<li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_427.png"><img style="background-image: none; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_162.png" alt="image" width="560" height="481" border="0" /></a></li>
 </ul>
 </li>
 </ol></li>

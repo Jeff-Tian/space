@@ -123,7 +123,7 @@ alert(serializeObjectWithInitialLevelAndVarName(o, 4, &quot;o&quot;));</pre>
 
 <p>以上测试代码的运行的第一个结果截图如下：</p>
 
-<p><a href="http://www.myfootprints.cn/oldweb/javascript/" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="JavaScript重载机制测试结果" border="0" alt="JavaScript重载机制测试结果" src="http://www.zizhujy.com/blog/image.axd?picture=image_587.png" width="531" height="531" /></a> </p>
+<p><a href="http://www.myfootprints.cn/oldweb/javascript/" target="_blank"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="JavaScript重载机制测试结果" border="0" alt="JavaScript重载机制测试结果" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_587.png" width="531" height="531" /></a> </p>
 
 <p>完整的可运行的测试代码为：</p>
 

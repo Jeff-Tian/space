@@ -17,10 +17,10 @@ template: post
 <p>If you are running BlogEngine.NET 2.5, and you want to add post view count statistics feature to your webblog, then I recommend you apply this update to your blog installation.</p>
 <h1><span style="color: #800080;">New feature: </span><span style="color: #ff0000;">Post view count stats</span></h1>
 <p><strong>Front end screenshot:</strong></p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_463.png"><img style="display: inline; border-width: 0px;" title="Update BlogEngine.NET from 2.5 to 2.6" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_193.png" alt="Update BlogEngine.NET from 2.5 to 2.6" width="529" height="413" border="0" /></a>&nbsp;</p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_463.png"><img style="display: inline; border-width: 0px;" title="Update BlogEngine.NET from 2.5 to 2.6" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_193.png" alt="Update BlogEngine.NET from 2.5 to 2.6" width="529" height="413" border="0" /></a>&nbsp;</p>
 <p><em>Remark</em>: You can set the view count number appear next to the total number of comments.</p>
 <p><strong>Admin screenshot:</strong></p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_464.png"><img style="display: inline; border-width: 0px;" title="Update BlogEngine.NET from 2.5 to 2.6" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_194.png" alt="Update BlogEngine.NET from 2.5 to 2.6" width="536" height="277" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_464.png"><img style="display: inline; border-width: 0px;" title="Update BlogEngine.NET from 2.5 to 2.6" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_194.png" alt="Update BlogEngine.NET from 2.5 to 2.6" width="536" height="277" border="0" /></a></p>
 <p><em>Remark</em>: Via the extension manager, you can exclude the authenticated users as well as the specified IPs from accumulating the view count for a post.</p>
 <h1><span style="color: #800080;">Changed file list:</span></h1>
 <pre>~\DotNetSlave.BusinessLogic\Post.cs

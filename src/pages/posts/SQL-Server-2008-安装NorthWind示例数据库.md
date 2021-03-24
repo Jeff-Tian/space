@@ -21,7 +21,7 @@ template: post
     </li>
     <li>安装。默认位置在C:\SQL Server 2000 Sample Databases。</li>
     <li>查看安装目录，找到 instnwnd.sql 文件。</li>
-    <li>在sql server 2008 的 Management Studio 中运行一下这个sql文件，刷新数据库，就可以看到成功地创建了 NorthWind 数据库。<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_185.png"></li>
+    <li>在sql server 2008 的 Management Studio 中运行一下这个sql文件，刷新数据库，就可以看到成功地创建了 NorthWind 数据库。<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_185.png"></li>
 </ol>
 <p>&nbsp;</p>
       

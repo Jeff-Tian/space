@@ -19,7 +19,7 @@ template: post
 <p>结果编译器报错：命名空间“System.Web”中不存在类型或命名空间名称“Extensions”(是否缺少程序集引用?)</p>
 <p>解决方法：</p>
 <p>项目菜单--&gt;添加引用，在.NET选项卡里，选择System.Web.Extensions，点击确定。OK。</p>
-<p><img alt="" title="" src="http://www.zizhujy.com/blog/image.axd?picture=image_195.png"></p>
-<p><img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_196.png"></p>
+<p><img alt="" title="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_195.png"></p>
+<p><img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_196.png"></p>
 <p>&nbsp;</p>
       

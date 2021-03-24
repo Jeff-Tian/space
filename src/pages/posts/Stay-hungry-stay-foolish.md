@@ -13,7 +13,7 @@ canonical_url: >-
 template: post
 ---
 
-        <p>摘录乔布斯的一个演讲，非常喜欢。<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_207.png"></p>
+        <p>摘录乔布斯的一个演讲，非常喜欢。<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_207.png"></p>
 <hr>
 <p>You've got to find what you love,' Jobs says</p>
 <p>This is the text of the Commencement address by Steve Jobs, CEO of Apple Computer and of Pixar Animation Studios, delivered on June 12, 2005.</p>

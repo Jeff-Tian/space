@@ -113,8 +113,8 @@ table.tbLikeGoogle thead tr th .filter
 <hr>
 <p>&nbsp;</p>
 FTEST    <!--cstransform awsenduser.xsl date 2006-12-10 --><!--csautotext date 2007-03-23 number --><!--csglossary date 2007-03-23 number --><!--csglobalstrings date 2007-05-31 number --><!-- defs in --><!-- META NAME="lcid" CONTENT="2052" -->
-<div style="DISPLAY: none" id="divShowAll" align="right"><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="picHeader" border="0" alt="全部显示" src="http://www.zizhujy.com/blog/image.axd?picture=image_235.png">全部显示</a></div>
-<div style="DISPLAY: block" id="divHideAll" align="right"><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="hide" border="0" alt="全部隐藏" src="http://www.zizhujy.com/blog/image.axd?picture=image_236.png">全部隐藏</a></div>
+<div style="DISPLAY: none" id="divShowAll" align="right"><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="picHeader" border="0" alt="全部显示" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_235.png">全部显示</a></div>
+<div style="DISPLAY: block" id="divHideAll" align="right"><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="hide" border="0" alt="全部隐藏" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_236.png">全部隐藏</a></div>
 <p>返回 F 检验的结果。F 检验返回的是当数组 1 和数组 2  的方差无明显差异时的单尾概率。可以使用此函数来判断两个样本的方差是否不同。例如，给定公立和私立学校的测试成绩，可以检验各学校间测试成绩的差别程度。</p>
 <p><b class="bterm">语法</b></p>
 <p><b class="bterm">FTEST</b>(<b class="bterm">array1</b>,<b class="bterm">array2</b>)</p>
@@ -129,12 +129,12 @@ FTEST    <!--cstransform awsenduser.xsl date 2006-12-10 --><!--csautotext date 2
 <p><b class="bterm">示例</b></p>
 <p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
 <div class="alert">
-<p><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="divExpCollAsst_1_img" border="0" alt="隐藏" src="http://www.zizhujy.com/blog/image.axd?picture=image_237.png">操作方法</a></p>
+<p><a class="DropDown" href="http://office.microsoft.com/assistance/hfws.aspx?AssetID=HP052090982052&amp;CTT=1&amp;Origin=EC010229842052&amp;QueryID=c_8Hzemxc&amp;respos=1&amp;rt=2"><img id="divExpCollAsst_1_img" border="0" alt="隐藏" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_237.png">操作方法</a></p>
 <span style="DISPLAY: block" id="divExpCollAsst_1" class="ACECollapsed" border="0">
 <ol>
     <li>创建空白工作簿或工作表。</li>
     <li>请在“帮助”主题中选取示例。不要选取行或列标题。
-    <p><img border="0" alt="从“帮助”中选取示例" src="http://www.zizhujy.com/blog/image.axd?picture=image_238.png"></p>
+    <p><img border="0" alt="从“帮助”中选取示例" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_238.png"></p>
     <div class="ac">从“帮助”中选取示例</div>
     </li>
     <li>按 Ctrl+C。</li>

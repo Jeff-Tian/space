@@ -17,5 +17,5 @@ template: post
 <p>不知道如何让它不跳出这个对话框，但是，我们的目的是测试，那么就输入用户名和密码登录进去好了，只要登录成功，后面的一切就都没有影响了。</p>
 <p>用户名是“计算机名\Windows系统用户名”的格式，如果只输入Windows系统用户名，是不能登录成功的。密码就是Windows系统用户名对应的密码。</p>
 <p>如我的计算机名是&nbsp;PC2010030215wso，又我当前登录进入Windows系统是用的“涂鸦”这个用户名，于是我在用户名中输入：PC2010030215wso\涂鸦，然后输入我登录Windows系统的密码，就成功进入了“欢迎使用Windows XP Server Internet服务”的页面。</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_217.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_217.png" alt="" title=""></p>
       

@@ -90,14 +90,14 @@ namespace MsBin1Plugin
   <li><span style="font-size: small"><strong>Create the web test, and configure the plain text message payload via String Body node of the request.</strong></span> 
 
     <ul>
-      <li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_432.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="A base request plugin for soap+msbin1 encoded service" border="0" alt="A base request plugin for soap+msbin1 encoded service" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_167.png" width="622" height="351" /></a> </li>
+      <li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_432.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="A base request plugin for soap+msbin1 encoded service" border="0" alt="A base request plugin for soap+msbin1 encoded service" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_167.png" width="622" height="351" /></a> </li>
     </ul>
   </li>
 
   <li><span style="font-size: small"><strong>Add the plugin into the original request created at step 2.</strong></span> 
 
     <ul>
-      <li><a href="http://www.zizhujy.com/blog/image.axd?picture=image_433.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="A base request plugin for soap+msbin1 encoded service" border="0" alt="A base request plugin for soap+msbin1 encoded service" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_168.png" width="381" height="188" /></a> </li>
+      <li><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_433.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="A base request plugin for soap+msbin1 encoded service" border="0" alt="A base request plugin for soap+msbin1 encoded service" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_168.png" width="381" height="188" /></a> </li>
     </ul>
   </li>
 

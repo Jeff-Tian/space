@@ -74,9 +74,9 @@ run;
 <p style="margin-right: 0px" dir="ltr">计算自相关函数的的自定义函数是acf()，偏自关函数是pacf()，它们的参数都是一组数据，而这组数据来自excel中的单元格范围，故它们都调用了一个函数，用来将excel的单元格范围转化成一个数组，这个函数就是range2array()。</p>
 <p style="margin-right: 0px" dir="ltr">range2array()的算法很简单，用for each循环将range中的每一个数字逐个填充到预先定义好的array()中。而这个array()的大小，与range中的单元格数相同。</p>
 <p style="margin-right: 0px" dir="ltr">acf()的算法，即是根据样本自相关函数的定义而实现的。即</p>
-<p style="margin-right: 0px" dir="ltr"><img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_420.png"></p>
+<p style="margin-right: 0px" dir="ltr"><img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_420.png"></p>
 <p style="margin-right: 0px" dir="ltr">而pacf()的算法，也是根据偏自相关函数的定义来的。即</p>
-<p style="margin-right: 0px" dir="ltr"><img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_421.png"></p>
+<p style="margin-right: 0px" dir="ltr"><img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_421.png"></p>
 <p style="margin-right: 0px" dir="ltr">在pacf()中，先根据输入的参数数组，分别得到分母矩阵和分子矩阵，然后分别对分母矩阵和分子矩阵求行列式值。最后相除即可。</p>
 <p style="margin-right: 0px" dir="ltr">分母矩阵实际上是一个对称矩阵，而且观察后可以发现有这样的规律，即，<strong>每个元素的下标，都是其行列号的差的绝对值</strong>。</p>
 <p style="margin-right: 0px" dir="ltr">而分子矩阵，除了最后一列，其他的元素都与分母矩阵相同。</p>

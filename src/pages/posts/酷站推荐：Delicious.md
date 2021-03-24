@@ -18,5 +18,5 @@ template: post
 <p>截图如下：</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_209.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_209.png" alt="" title=""></p>
       

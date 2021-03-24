@@ -67,7 +67,7 @@ template: post
 
 <h2><font color="#9b00d3">Effectiveness &amp; Screen shot:</font></h2>
 
-<p><a href="http://zizhujy.com/blog/image.axd?picture=image_641.png"><img title="How to make tracing log local system date time in tracing (C#)" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="How to make tracing log local system date time in tracing (C#)" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_329.png" width="643" height="379" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_641.png"><img title="How to make tracing log local system date time in tracing (C#)" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="How to make tracing log local system date time in tracing (C#)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_329.png" width="643" height="379" /></a></p>
 
 <h2><font color="#9b00d3">Appendix:</font></h2>
 

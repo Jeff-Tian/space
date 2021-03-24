@@ -80,4 +80,4 @@ public static class RandomExtension
 }
 #endregion</pre>
 
-<p><a href="http://zizhujy.com/blog/image.axd?picture=image_600.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="Random string" border="0" alt="Random String" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_291.png" width="224" height="223" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_600.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="Random string" border="0" alt="Random String" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_291.png" width="224" height="223" /></a></p>

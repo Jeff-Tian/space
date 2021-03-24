@@ -41,5 +41,5 @@ template: post
     <li>wam51.dll</li>
 </ul>
 <p>这些dll文件中，某些并不是IIS专用的，故在其他应用场合，也可能需要。所以如果缺少上述dll文件中的某一个或者几个，这个压缩包就派上了用场。</p>
-<p><img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_226.png"></p>
+<p><img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_226.png"></p>
       

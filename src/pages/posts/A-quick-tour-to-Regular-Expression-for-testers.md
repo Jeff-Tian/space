@@ -39,10 +39,10 @@ template: post
 </tr>
 <tr>
 <td valign="top" width="319">
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image002_1.jpg"><img style="display: inline; border: 0px;" title="clip_image002" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image002_thumb_1.jpg" alt="clip_image002" width="312" height="307" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image002_1.jpg"><img style="display: inline; border: 0px;" title="clip_image002" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image002_thumb_1.jpg" alt="clip_image002" width="312" height="307" border="0" /></a></p>
 </td>
 <td valign="top" width="319">
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image004_1.jpg"><img style="display: inline; border: 0px;" title="clip_image004" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image004_thumb_1.jpg" alt="clip_image004" width="303" height="307" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image004_1.jpg"><img style="display: inline; border: 0px;" title="clip_image004" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image004_thumb_1.jpg" alt="clip_image004" width="303" height="307" border="0" /></a></p>
 </td>
 </tr>
 </tbody>
@@ -69,10 +69,10 @@ template: post
 </tr>
 <tr>
 <td valign="top" width="319">
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image006_1.jpg"><img style="display: inline; border: 0px;" title="clip_image006" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image006_thumb_1.jpg" alt="clip_image006" width="315" height="334" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image006_1.jpg"><img style="display: inline; border: 0px;" title="clip_image006" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image006_thumb_1.jpg" alt="clip_image006" width="315" height="334" border="0" /></a></p>
 </td>
 <td valign="top" width="319">
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image008_1.jpg"><img style="display: inline; border: 0px;" title="clip_image008" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image008_thumb_1.jpg" alt="clip_image008" width="337" height="334" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image008_1.jpg"><img style="display: inline; border: 0px;" title="clip_image008" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image008_thumb_1.jpg" alt="clip_image008" width="337" height="334" border="0" /></a></p>
 </td>
 </tr>
 </tbody>
@@ -912,25 +912,25 @@ template: post
 <h5><a name="_Toc318302108"></a>Response validation in Web test</h5>
 <p>Almost every project will have web and load testing, during the web test, we&rsquo;ll verify that if a handler respond correctly. In this place we may use the regular expression pattern to test if the response text is expected or not.</p>
 <p>For example:</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image010_1.jpg"><img style="display: inline; border: 0px;" title="clip_image010" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image010_thumb_1.jpg" alt="clip_image010" width="575" height="175" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image010_1.jpg"><img style="display: inline; border: 0px;" title="clip_image010" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image010_thumb_1.jpg" alt="clip_image010" width="575" height="175" border="0" /></a></p>
 <p>In the above screenshot, the web test is call a create submission handler, and the handler will respond the submission id (a number), so we can use pattern \d+ in the Validation Rules, once it fails, then it indicates the submission creating meet some errors. Also the Reusable Patterns can used here if applicable.</p>
 <h5><a name="_Toc318302109"></a>Daily find/replace in Visual Studio</h5>
 <p>In case there is a csv file like below, and you want to replace the &ldquo;description xx&rdquo; to &ldquo;a xx description&rdquo;, how would you do (there are 1000 rows!)?</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image012_1.jpg"><img style="display: inline; border: 0px;" title="clip_image012" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image012_thumb_1.jpg" alt="clip_image012" width="416" height="205" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image012_1.jpg"><img style="display: inline; border: 0px;" title="clip_image012" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image012_thumb_1.jpg" alt="clip_image012" width="416" height="205" border="0" /></a></p>
 <p><strong>Solution:</strong></p>
 <p>Use this pattern: description {:d+}</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image014_1.jpg"><img style="display: inline; border: 0px;" title="clip_image014" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image014_thumb_1.jpg" alt="clip_image014" width="459" height="290" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image014_1.jpg"><img style="display: inline; border: 0px;" title="clip_image014" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image014_thumb_1.jpg" alt="clip_image014" width="459" height="290" border="0" /></a></p>
 <p><strong>Note:</strong></p>
 <p>Visual Studio Find and Replace feature uses another Regular Expression grammar, which means that it uses some other characters to express the same meaning. For example, it uses :d to represent digital numbers, which is represented by \d in other systems, uses {} as () for grouping, uses \1 as $1 for back reference. For the other differences, you can refer to <a href="http://msdn.microsoft.com/en-us/library/2k3te2cs.aspx">http://msdn.microsoft.com/en-us/library/2k3te2cs.aspx</a>.</p>
 <p>Take the above example again, if now you want to replace all the original ThumbUrl <a href="http://image.jpg">http://image.jpg</a> with <a href="http://thumb.jpg">http://thumb.jpg</a>, how would you do?</p>
 <p><strong>Solution:</strong></p>
 <p>Use pattern http\://image.jpg$</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image016_1.jpg"><img style="display: inline; border: 0px;" title="clip_image016" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image016_thumb_1.jpg" alt="clip_image016" width="450" height="403" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image016_1.jpg"><img style="display: inline; border: 0px;" title="clip_image016" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image016_thumb_1.jpg" alt="clip_image016" width="450" height="403" border="0" /></a></p>
 <p>You should add a dollar sign $ behind the url to only replace the ThumbUrl which is positioned in the end of each line. If you miss the $, then the ImageUrl will also be replaced unexpectedly.</p>
 <p>Regular Expression makes these daily work very efficient.</p>
 <h5><a name="_Toc318302110"></a>Match rule in Fiddler Autoresponder</h5>
 <p>Sometimes you need to emulate some files are down with Fiddler. For example, by set the regular expression &ldquo;.+\.gif$&rdquo; you can block all the gif images:</p>
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=clip_image018_1.jpg"><img style="display: inline; border: 0px;" title="clip_image018" src="http://www.zizhujy.com/blog/image.axd?picture=clip_image018_thumb_1.jpg" alt="clip_image018" width="535" height="216" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image018_1.jpg"><img style="display: inline; border: 0px;" title="clip_image018" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/clip_image018_thumb_1.jpg" alt="clip_image018" width="535" height="216" border="0" /></a></p>
 <p>.+\.gif$ includes all the uris that start with any character(s) and end with .gif.</p>
 <h5><a name="_Toc318302111"></a>Configurations in Web.config and WebContent.config (Some of discourses in this section are only applicable for Microsoft tester who test the web application developed based on Starter Kit 3/4)</h5>
 <p>If you download the project source code and read the Web.Config and WebContent.Config files, you will also find many regular expressions usage.</p>

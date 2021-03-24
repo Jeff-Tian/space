@@ -66,4 +66,4 @@ template: post
 
 <p>在线应用描点器，就使用了上述方法，对给出的数据点求出了相关的统计量。</p>
 
-<p><a href="http://www.zizhujy.com/zh-cn/Ploter" target="_blank"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="描点器" border="0" alt="描点器" src="http://www.zizhujy.com/blog/image.axd?picture=image_166.png" width="470" height="667" /></a></p>
+<p><a href="http://www.zizhujy.com/zh-cn/Ploter" target="_blank"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="描点器" border="0" alt="描点器" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_166.png" width="470" height="667" /></a></p>

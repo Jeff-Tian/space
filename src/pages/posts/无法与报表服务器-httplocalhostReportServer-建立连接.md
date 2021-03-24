@@ -19,10 +19,10 @@ template: post
 <p>然而，我平时已经使用IIS，其默认的80端口已经用作我的网站了。所以以上默认的设置不再适用。</p>
 <p>这时，我使用Reporting Services配置工具（开始--&gt;Microsoft SQL Server 2008--&gt;配置工具--&gt;Reporting Service配置工具），来查看实际服务所在的URL地址及端口。如下图：</p>
 <p>&nbsp;</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_189.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_189.png" alt="" title=""></p>
 <p>可以看到，实际上的报表服务器Web服务URL为：<a href="http://pc2010030215wso:8080/ReportServer">http://pc2010030215wso:8080/ReportServer</a>。</p>
-<p>于是关掉它，来到SQL Server Business Intelligence Development Studio，在解决方案面板中，右击解决方案，选择属性，将其TargetServerURL属性值改为：<a href="http://pc2010030215wso:8080/ReportServer">http://pc2010030215wso:8080/ReportServer</a>。确定，然后就可以正常部署了。<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_190.png"></p>
+<p>于是关掉它，来到SQL Server Business Intelligence Development Studio，在解决方案面板中，右击解决方案，选择属性，将其TargetServerURL属性值改为：<a href="http://pc2010030215wso:8080/ReportServer">http://pc2010030215wso:8080/ReportServer</a>。确定，然后就可以正常部署了。<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_190.png"></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img onload="ResizeImage(this,520)" src="http://www.zizhujy.com/blog/image.axd?picture=image_191.png" alt="" title=""></p>
+<p><img onload="ResizeImage(this,520)" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_191.png" alt="" title=""></p>
       

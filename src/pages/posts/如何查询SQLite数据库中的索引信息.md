@@ -21,4 +21,4 @@ WHERE (name = 'idx_be_Posts_BlogID_PostID')</pre>
 
 <p>执行上述SQL命令即可（需要安装SQLite引擎）。</p>
 
-<p><a href="http://www.zizhujy.com/blog/image.axd?picture=image_462.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="如何查询SQLite数据库中的索引信息" border="0" alt="如何查询SQLite数据库中的索引信息" src="http://www.zizhujy.com/blog/image.axd?picture=image_thumb_192.png" width="661" height="144" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_462.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="如何查询SQLite数据库中的索引信息" border="0" alt="如何查询SQLite数据库中的索引信息" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_192.png" width="661" height="144" /></a></p>

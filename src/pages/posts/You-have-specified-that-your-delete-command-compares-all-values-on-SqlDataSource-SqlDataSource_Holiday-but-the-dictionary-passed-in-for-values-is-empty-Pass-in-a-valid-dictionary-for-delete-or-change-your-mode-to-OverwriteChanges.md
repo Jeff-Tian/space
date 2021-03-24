@@ -61,6 +61,6 @@ template: post
                 &lt;/AlternatingItemTemplate&gt;
 ……
 </pre>
-<p>可以见到在&lt;asp:Label /&gt;中的数据绑定全是使用的Eval()方式，网上说Eval()是单向的数据绑定方式。于是猜是不是这个问题，便<strong>将Eval全替换成了Bind</strong>，结果真就可以删除了！<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_179.png"></p>
-<p>原来以为&lt;asp:Label /&gt;只能使用Eval()绑定，而&lt;asp:TextBox /&gt;才能使用Bind()绑定呢。<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_180.png"></p>
+<p>可以见到在&lt;asp:Label /&gt;中的数据绑定全是使用的Eval()方式，网上说Eval()是单向的数据绑定方式。于是猜是不是这个问题，便<strong>将Eval全替换成了Bind</strong>，结果真就可以删除了！<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_179.png"></p>
+<p>原来以为&lt;asp:Label /&gt;只能使用Eval()绑定，而&lt;asp:TextBox /&gt;才能使用Bind()绑定呢。<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_180.png"></p>
       

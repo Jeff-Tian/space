@@ -18,7 +18,7 @@ template: post
 <h2><span style="color: #9b00d3;">Problem:</span></h2>
 <p>When you want to send a code review using CodeFlow 2010 after you changed some code in a changelist, you met an error like this:</p>
 <p>Compound change types like &lsquo;add+branch from&rsquo; are not supported.</p>
-<p><a href="http://zizhujy.com/blog/image.axd?picture=image_617.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://zizhujy.com/blog/image.axd?picture=image_thumb_306.png" alt="image" width="655" height="289" border="0" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_617.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_306.png" alt="image" width="655" height="289" border="0" /></a></p>
 <h2><span style="color: #9b00d3;">Cause:</span></h2>
 <p>You renamed a file in Visual Studio with the Janus source control plugin.</p>
 <h2><span style="color: #9b00d3;">Resolution:</span></h2>

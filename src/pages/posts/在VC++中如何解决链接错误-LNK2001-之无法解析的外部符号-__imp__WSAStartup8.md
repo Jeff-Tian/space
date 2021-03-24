@@ -30,7 +30,7 @@ Debug/TCPScan.exe : fatal error LNK1120: 1 unresolved externals<br></p>
 <p>把这个 ws2_32.lib 加载到项目中去，有两种方法。</p>
 <ol>
 <li>在菜单“工程”-&gt;“设置”-&gt;“链接”-&gt;“对象/库模块”下面输入ws2_32.lib，然后确定即可。如下图：
-<img src="http://www.zizhujy.com/blog/image.axd?picture=image_388.png" alt="在菜单“工程”-&gt;“设置”-&gt;“链接”-&gt;“对象/库模块”下面输入ws2_32.lib" style="width: 100%;">
+<img src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_388.png" alt="在菜单“工程”-&gt;“设置”-&gt;“链接”-&gt;“对象/库模块”下面输入ws2_32.lib" style="width: 100%;">
 </li>
 <li>在头文件中加入语句#pragma comment( lib, "ws2_32.lib" )   来显式加载。 即：
 <pre class="brush: c" style="text-indent: 0;">#include &lt;winsock2.h&gt;

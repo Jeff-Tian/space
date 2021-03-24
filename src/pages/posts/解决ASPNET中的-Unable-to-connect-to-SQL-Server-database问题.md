@@ -29,7 +29,7 @@ template: post
 &lt;/connectionStrings&gt;
 </pre>
     </li>
-    <li>重新运行网站，就发现，问题已经成功解决！<img alt="" src="http://www.zizhujy.com/blog/image.axd?picture=image_184.png"></li>
+    <li>重新运行网站，就发现，问题已经成功解决！<img alt="" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_184.png"></li>
 </ol>
 <p>&nbsp;</p>
       
