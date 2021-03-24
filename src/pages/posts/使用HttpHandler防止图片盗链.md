@@ -16,7 +16,7 @@ tags:
 canonical_url: >-
 template: post
 ---
-<p><img style="margin: 0px 10px 0px 0px" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_44.png" width="178" height="163" /><img style="margin: 0px 10px 0px 0px" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRdcevMw9vFg3-r-BS2GOsICeGeA5e1FX2SjyLbigqNi3Xj597s" width="164" height="164" /><img style="margin: 0px 10px 0px 0px" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb.jpg" width="213" height="161" /></p>  <h1><font style="font-weight: bold" color="#9b00d3">一、摘要</font></h1>  <p>对于你自己网站上的图片，你可能会希望它们只显示在自己网站的页面上，而当别人的网站引用它们时，不给予显示<img style="margin: 0px 10px 0px 0px" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_44.png" width="73" height="67" />，或者显示一张自定义的警告图片<img style="margin: 0px 10px 0px 0px" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRdcevMw9vFg3-r-BS2GOsICeGeA5e1FX2SjyLbigqNi3Xj597s" width="69" height="69" />，或者在图片上加上一个水印信息<img style="margin: 0px 10px 0px 0px" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb.jpg" width="90" height="68" />，告诉浏览者此图片是来自你的网站的。</p>  <p>使用ASP.NET的HttpHandler可以很方便地达到这样的效果。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">二、实现步骤</font></font></h1>  <h2>1. 在网站项目中添加一个类文件，实现IHttpHandler接口</h2>  <h2>2. 配置Web.Config，将图片文件的请求映射到第1步中的类处理程序</h2>  <p>下面先讲第1步配置Web.Config，再讲第1步。因为配置非常简单，而类文件则需要一些代码，将会分三种情况给出这个类文件的三个版本。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">三、配置Web.Config详解</font></font></h1>  <p>假设第1步的类文件命名为ImageGuardHandler.cs，该文件定义了一个位于命名空间 zizhujy.HttpHandlers 下的类 ImageGuardHandler。现在配置Web.Config，使得图片文件请求被转交到ImageGuardHandler来处理。</p>  <p>如果网站服务器是使用的IIS 7.5或以上，则只需按如下格式配置：</p>  <pre class="brush: xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+<p><img style="margin: 0px 10px 0px 0px" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_44.png" width="178" height="163" /><img style="margin: 0px 10px 0px 0px" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRdcevMw9vFg3-r-BS2GOsICeGeA5e1FX2SjyLbigqNi3Xj597s" width="164" height="164" /><img style="margin: 0px 10px 0px 0px" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb.jpg" width="213" height="161" /></p>  <h1><font style="font-weight: bold" color="#9b00d3">一、摘要</font></h1>  <p>对于你自己网站上的图片，你可能会希望它们只显示在自己网站的页面上，而当别人的网站引用它们时，不给予显示<img style="margin: 0px 10px 0px 0px" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_44.png" width="73" height="67" />，或者显示一张自定义的警告图片<img style="margin: 0px 10px 0px 0px" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRdcevMw9vFg3-r-BS2GOsICeGeA5e1FX2SjyLbigqNi3Xj597s" width="69" height="69" />，或者在图片上加上一个水印信息<img style="margin: 0px 10px 0px 0px" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb.jpg" width="90" height="68" />，告诉浏览者此图片是来自你的网站的。</p>  <p>使用ASP.NET的HttpHandler可以很方便地达到这样的效果。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">二、实现步骤</font></font></h1>  <h2>1. 在网站项目中添加一个类文件，实现IHttpHandler接口</h2>  <h2>2. 配置Web.Config，将图片文件的请求映射到第1步中的类处理程序</h2>  <p>下面先讲第1步配置Web.Config，再讲第1步。因为配置非常简单，而类文件则需要一些代码，将会分三种情况给出这个类文件的三个版本。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">三、配置Web.Config详解</font></font></h1>  <p>假设第1步的类文件命名为ImageGuardHandler.cs，该文件定义了一个位于命名空间 zizhujy.HttpHandlers 下的类 ImageGuardHandler。现在配置Web.Config，使得图片文件请求被转交到ImageGuardHandler来处理。</p>  <p>如果网站服务器是使用的IIS 7.5或以上，则只需按如下格式配置：</p>  <pre class="brush: xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;!--
   有关如何配置 ASP.NET 应用程序的详细信息，请访问
   http://go.microsoft.com/fwlink/?LinkId=152368
@@ -62,7 +62,7 @@ template: post
 
 <h2>1. 对于来自非本网站的图片请求给予拒绝服务的响应：</h2>
 
-<p><img style="margin: 0px 10px 0px 0px" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_44.png" width="146" height="134" /></p>
+<p><img style="margin: 0px 10px 0px 0px" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_44.png" width="146" height="134" /></p>
 
 <pre class="brush: csharp">using System;
 using System.Collections.Generic;
@@ -222,7 +222,7 @@ namespace zizhujy.HttpHandlers
 
 <h2>3. 对于来自非本网站的图片请求，在图片上加上一行水印文本，将自己网站的Url信息写在图片上。</h2>
 
-<p><img style="margin: 0px; display: inline" alt="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb.jpg" width="184" height="139" /></p>
+<p><img style="margin: 0px; display: inline" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb.jpg" width="184" height="139" /></p>
 
 <p>这里涉及到给图片添加水印的程序，由于之前介绍过<a href="http://www.zizhujy.com/blog/post/2011/07/13/the-csharp-class-library-for-adding-watermark-image.aspx" target="_blank">给图片添加水印的类库</a>，这里就直接引用了它来完成添加水印的过程。在图片上添加水印的原理请见： </p>
 

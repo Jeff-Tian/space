@@ -32,16 +32,16 @@ template: post
 <p>举个例子，首先创建一个标准的ASP.NET MVC应用。我们可以看到，在视图页面与控制器类中，所有内容都是硬编码的。</p>
 <p>现在我需要做的就是将所有的内容拿到页面与控制器的外头去。ASP.NET给了我们一个特殊的文件夹名叫App_GlobalResources，它里面放着各种不同文化内容的资源文件。在解决方案窗口中鼠标右击工程然后在添加ASP.NET文件夹菜单下点击创建相应的文件夹。</p>
 <p>我创建了两个全局的资源文件，分别对应两种文化：英文和中文。因为准备将英文设置为该应用的默认文化，所以我首先创建了Application.resx文件，然后再创建了Application.zh-CN.resx。中间名&ldquo;zh-CN&rdquo;是中文（中华人民共和国）的文化名称。如果以后我需要这个应用的法国版本，那么我只需要简单地创建一个Application.fr-FR.resx文件即可。Visual Studio将帮助我们生成它们的访问类。</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_4.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_4.png" border="0" alt="image" width="267" height="405" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_4.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_4.png" border="0" alt="image" width="267" height="405" /></a></p>
 <p>然后让我们添加一些应用级别的文本信息到资源文件里。这里仅仅只需要一个应用名称。</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_5.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_5.png" border="0" alt="image" width="651" height="139" /></a></p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_6.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_6.png" border="0" alt="image" width="650" height="147" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_5.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_5.png" border="0" alt="image" width="651" height="139" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_6.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_6.png" border="0" alt="image" width="650" height="147" /></a></p>
 <p>然后我为所有的视图创建了一些本地资源文件，每个视图有2个本地资源文件（英文版和中文版）。截图如下：</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_7.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_7.png" border="0" alt="image" width="347" height="453" /></a></p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_8.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_8.png" border="0" alt="image" width="639" height="126" /></a></p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_9.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_9.png" border="0" alt="image" width="640" height="129" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_7.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_7.png" border="0" alt="image" width="347" height="453" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_8.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_8.png" border="0" alt="image" width="639" height="126" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_9.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_9.png" border="0" alt="image" width="640" height="129" /></a></p>
 <p>然后修改每个视图页面，这只需要将硬编码的文本信息替换相关资源文件中的内容即可。截图如下，注意标题与信息分别是从全局资源文件和本地资源文件中获取的（从不同资源文件中获取资源的代码有所不同）。</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_10.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_10.png" border="0" alt="image" width="642" height="150" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_10.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_10.png" border="0" alt="image" width="642" height="150" /></a></p>
 <p>如果你要复制上图中的代码，可以从下面复制。</p>
 <pre class="brush: csharp">@{
     ViewBag.Title = HttpContext.GetLocalResourceObject("~/Views/Home/Index.cshtml", "Title").ToString();
@@ -54,7 +54,7 @@ template: post
 &lt;/p&gt;</pre>
 <p>&nbsp;</p>
 <p>你也可以在控制器类中定义ViewBag的变量然后传递到视图页面中。比如，可以移除上图中的第三行代码，再在HomeController控制器类中定义ViewBag.Message变量，截图如下：</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_11.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_11.png" border="0" alt="image" width="495" height="493" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_11.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_11.png" border="0" alt="image" width="495" height="493" /></a></p>
 <p>上图中的代码你可以从下面复制：</p>
 <pre class="brush: csharp">using System;
 using System.Collections.Generic;
@@ -170,8 +170,8 @@ namespace zizhujy.Controllers
     }
 }</pre>
 <p>这时如果我们运行应用，并且在URL中加入文化设定，我们就会看到如下结果。</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_12.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_12.png" border="0" alt="image" width="564" height="212" /></a></p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_13.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_13.png" border="0" alt="image" width="566" height="213" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_12.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_12.png" border="0" alt="image" width="564" height="212" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_13.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_13.png" border="0" alt="image" width="566" height="213" /></a></p>
 <p>&nbsp;</p>
 <h1><span style="color: #800080;">文化选择链接</span></h1>
 <p>让用户通过URL修改文化不是个好方案。我们需要在页面顶部给他们一些链接来让他们能够随时改变文化。在ASP.NET MVC中最简便的方式就是创建一个HtmlHelper类，来为每种文化呈现出相应的链接。你可以将所有的Helper类放入工程根目录的Utility文件夹中。</p>
@@ -265,7 +265,7 @@ namespace zizhujy.Utility
                 @Html.Partial("_LogOnPartial") 
                 @Html.Partial("_CultureSelectionPartial")
             </div></pre>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_14.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_14.png" border="0" alt="image" width="641" height="264" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_14.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_14.png" border="0" alt="image" width="641" height="264" /></a></p>
 <h1><span style="color: #800080;">总结</span></h1>
 <p>在这篇文章中，我解释了如何在ASP.NET MVC网页应用中实现本地化。我用资源文件作为本地化信息的容器，它由ASP.NET运行时提供。</p>
 <p>本地化信息能够存储在任何地方。在这篇文章中我只是用到了资源文件，这样就能使用ASP.NET本地化支持类。但是我们也能够将它们存储在外部的XML文件中、数据库中或者Web Service中。最最关键的是，将内容与用法分离开来。我们能够隔离提供程序并且创建相关的接口，以使它可灵活多变和方便测试。</p>

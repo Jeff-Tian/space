@@ -18,7 +18,7 @@ template: post
 <p>And I will move the old site here gradually. If you want to host your web site too, I recommand you use this hosting provider.</p>
 <p>Enjoy!</p>
 <p>&nbsp;</p>
-<p style="font-family: Simsun; font-size: medium;"><a href="http://www.discountasp.net/index.aspx?refcode=JEFFTIAN"><img style="border: 0;" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=2011%2f5%2fdasp_468x60_3mo_nonbranded.gif" alt="" /></a></p>
+<p style="font-family: Simsun; font-size: medium;"><a href="http://www.discountasp.net/index.aspx?refcode=JEFFTIAN"><img style="border: 0;" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/2011%2f5%2fdasp_468x60_3mo_nonbranded.gif" alt="" /></a></p>
 <p>&nbsp;</p>
 <div style="float: none; clear: both;">&nbsp;</div>
 <hr />
@@ -27,4 +27,4 @@ template: post
 <p>后来我发现了一个很好的虚拟主机提供商&nbsp;<a href="http://www.discountasp.net/index.aspx?refcode=JEFFTIAN">http://www.discountasp.net/index.aspx?refcode=JEFFTIAN</a>，所以我使用它建立了这个新的站点。<img title="Laughing" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/editors/tiny_mce_3_4_3_1/plugins/emotions/img/smiley-laughing.gif" alt="Laughing" border="0" /></p>
 <p>我将把原来的站点逐渐迁移过来。如果你正想选择一个虚拟主机提供商来存放你的网站，我建议你就选这个。</p>
 <p>使用愉快！</p>
-<p><a href="http://www.discountasp.net/index.aspx?refcode=JEFFTIAN  "><img src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=2011%2f5%2fdasp_468x60_3mo_nonbranded.gif" alt="" width="468" height="60" /></a></p>
+<p><a href="http://www.discountasp.net/index.aspx?refcode=JEFFTIAN  "><img src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/2011%2f5%2fdasp_468x60_3mo_nonbranded.gif" alt="" width="468" height="60" /></a></p>

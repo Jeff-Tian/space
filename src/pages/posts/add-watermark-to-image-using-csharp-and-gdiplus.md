@@ -16,7 +16,7 @@ canonical_url: >-
 template: post
 ---
 <p>下载源文件：<a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/file.axd?file=2011%2f7%2fAddWatermark.zip">AddWatermark.zip (370.41 kb)</a></p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=watermark_final.jpg"><img style="display: inline; border-width: 0px;" title="watermark_final" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=watermark_final_thumb.jpg" border="0" alt="Add watermark to image 给图片添加水印" width="492" height="370" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/watermark_final.jpg"><img style="display: inline; border-width: 0px;" title="watermark_final" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/watermark_final_thumb.jpg" border="0" alt="Add watermark to image 给图片添加水印" width="492" height="370" /></a></p>
 <p>注：原文在此：<a href="http://www.codeproject.com/KB/GDI-plus/watermark.aspx">http://www.codeproject.com/KB/GDI-plus/watermark.aspx</a>。</p>
 <p>本文翻译和修改了原文。</p>
 <hr />
@@ -34,7 +34,7 @@ template: post
 <li>通过一个5x5颜色矩阵来改变图片的透明度 </li>
 </ul>
 <h2><span style="color: #800080; font-size: x-large;"><strong>确定图片</strong></span></h2>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=1305211066-1784_600-0_6-0.jpg"><img style="margin: 0px 20px 10px 0px; display: inline; float: left; border-width: 0px;" title="1305211066-1784_600-0_6-0" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=1305211066-1784_600-0_6-0_thumb.jpg" border="0" alt="Add watermark to image 给图片添加水印" width="244" height="184" align="left" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/1305211066-1784_600-0_6-0.jpg"><img style="margin: 0px 20px 10px 0px; display: inline; float: left; border-width: 0px;" title="1305211066-1784_600-0_6-0" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/1305211066-1784_600-0_6-0_thumb.jpg" border="0" alt="Add watermark to image 给图片添加水印" width="244" height="184" align="left" /></a></p>
 <p>这个过程中的第一步就是加载一张你想要添加水印于其上的源图片。这张图片可以是任意尺寸。在这个例子中我将使用一张宽640像素高480像素的照片。</p>
 <p>紧接着主函数(static void Main(string[] args))的声明，定义两个string变量。第一个定义了寻找源图片、水印图片、以及输出结果新图片的位置。第二个变量将定义那个我们要用作水印的一部分的版权文本。</p>
 <pre class="brush: csharp">            string workingDirectory = @"C:\";
@@ -46,7 +46,7 @@ template: post
 
             Bitmap bitmap = new Bitmap(width, height, PixelFormat.Format24bppRgb);
             Graphics g = Graphics.FromImage(bitmap);</pre>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=logo.png"><img style="margin: 0px 20px 10px 0px; display: inline; float: left; border-width: 0px;" title="logo" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=logo_thumb.png" border="0" alt="Add watermark to image 给图片添加水印" width="95" height="95" align="left" /></a> 下面的代码装入了水印图片。并且又一次分别定义了变量来存储它的宽度和高度值。</p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/logo.png"><img style="margin: 0px 20px 10px 0px; display: inline; float: left; border-width: 0px;" title="logo" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/logo_thumb.png" border="0" alt="Add watermark to image 给图片添加水印" width="95" height="95" align="left" /></a> 下面的代码装入了水印图片。并且又一次分别定义了变量来存储它的宽度和高度值。</p>
 <pre class="brush: csharp">Image imgWatermark = new Bitmap(workingDirectory + "\\logo.png"); 
 int widthWatermark = imgWatermark.Width; 
 int heightWatermark = imgWatermark.Height;</pre>
@@ -82,7 +82,7 @@ int heightWatermark = imgWatermark.Height;</pre>
             SolidBrush semiTransBrush = new SolidBrush(Color.FromArgb(153, 255, 255, 255));
 
             g.DrawString(copyright, font, semiTransBrush, new PointF(xCenterOfImg, yPosFromBottom), strFormat);</pre>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_26.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_26.png" border="0" alt="Add watermark to image 给图片添加水印" width="630" height="51" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_26.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_26.png" border="0" alt="Add watermark to image 给图片添加水印" width="630" height="51" /></a></p>
 <h2><span style="color: #800080; font-size: x-large;"><strong>第2步 - 添加图片水印</strong></span></h2>
 <p>基于之前已经修改的源图片创建一个Bitmap。将它装入到一个新的Graphics对象。</p>
 <pre class="brush: csharp">            Bitmap bitmapWatermark = new Bitmap(bitmap);
@@ -115,7 +115,7 @@ int heightWatermark = imgWatermark.Height;</pre>
 
             gWatermark.DrawImage(imgWatermark, new Rectangle(xPosOfWatermark, yPosOfWatermark, widthWatermark, heightWatermark), 0, 0, widthWatermark, heightWatermark, GraphicsUnit.Pixel, imageAttributes);
         </pre>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_27.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_27.png" border="0" alt="Add watermark to image 给图片添加水印" width="224" height="244" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_27.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_27.png" border="0" alt="Add watermark to image 给图片添加水印" width="224" height="244" /></a></p>
 <p>我们最后一步就是要把源图片用新的加了水印的图片替换掉，并销毁两个Graphics对象，再将Image保存到文件系统。</p>
 <pre class="brush: csharp">            photo = bitmapWatermark;
             g.Dispose();

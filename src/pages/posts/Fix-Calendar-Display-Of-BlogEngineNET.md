@@ -16,11 +16,11 @@ template: post
 ---
 <h1><span style="color: #800080;">一、症状：</span></h1>
 <p>BlogEngine.NET 的日历部件，在中文状态下，星期部分显示不全，如下图所示：</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_39.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_39.png" border="0" alt="image" width="240" height="222" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_39.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_39.png" border="0" alt="image" width="240" height="222" /></a></p>
 <h1><span style="color: #800080;">二、原因：</span></h1>
 <p>在此部件的源代码中，对其显示格式作了 DayNameFormat="FirstTwoLetters" 设置，这个设置没有考虑到中文的显示效果。</p>
 <p>当在英文文化环境下时，取前两位字母，显示效果如下：</p>
-<p><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_40.png"><img style="display: inline; border-width: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_40.png" border="0" alt="image" width="240" height="214" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_40.png"><img style="display: inline; border-width: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_40.png" border="0" alt="image" width="240" height="214" /></a></p>
 <p>源代码路径：~\BlogEngine.NET\widgets\Calendar\widget.ascx</p>
 <pre class="brush: html">...
 &lt;blog:PostCalendar ID="PostCalendar1" runat="Server" NextMonthText="&gt;&gt;" DayNameFormat="FirstTwoLetters"
@@ -46,8 +46,8 @@ template: post
 <td width="200" valign="top">英文环境</td>
 </tr>
 <tr>
-<td width="200" valign="top"><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_41.png"><img style="display: inline; border: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_41.png" border="0" alt="image" width="240" height="231" /></a></td>
-<td width="200" valign="top"><a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_42.png"><img style="display: inline; border: 0px;" title="image" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/image.axd?picture=image_thumb_42.png" border="0" alt="image" width="240" height="215" /></a></td>
+<td width="200" valign="top"><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_41.png"><img style="display: inline; border: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_41.png" border="0" alt="image" width="240" height="231" /></a></td>
+<td width="200" valign="top"><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_42.png"><img style="display: inline; border: 0px;" title="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_42.png" border="0" alt="image" width="240" height="215" /></a></td>
 </tr>
 </tbody>
 </table>
