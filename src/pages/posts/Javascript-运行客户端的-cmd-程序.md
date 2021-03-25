@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/05/14/Javascript-运行客户端的-cmd-程序
 template: post
 ---
 

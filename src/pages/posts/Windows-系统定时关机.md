@@ -11,7 +11,7 @@ tags:
   - shutdown
   - 定时关机
   - 自动关机
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/08/13/Windows-系统定时关机
 template: post
 ---
 <style type="text/css">

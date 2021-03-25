@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/09/EXCEL-VBA-开发框架之工作环境模块
 template: post
 ---
 

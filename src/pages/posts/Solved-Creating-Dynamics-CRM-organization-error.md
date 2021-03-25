@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - CRM
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/08/07/Solved-Creating-Dynamics-CRM-organization-error
 template: post
 ---
 <h2><font color="#9b00d3">Problem:</font></h2>  <p>On a Microsoft Dynamics CRM 2011 Server, creating an organization met the following error:</p>  <p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_647.png"><img title="Solved: Creating Dynamics CRM organization error" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" border="0" alt="Solved: Creating Dynamics CRM organization error" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_335.png" width="605" height="445" /></a></p>  <p>The log:</p>  <pre style="border-top: black 1px solid; border-right: black 1px solid; border-bottom: black 1px solid; color: red; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: black 1px solid; padding-right: 10px">16:52:20|   Info| Grant access for ServiceAccount: NT AUTHORITY\NetworkService, WebAppAccount: NT AUTHORITY\NETWORK SERVICE.

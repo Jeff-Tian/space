@@ -11,7 +11,7 @@ tags:
   - 样式
   - 表格
   - 谷歌
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/09/09/仿Google样式的表格
 template: post
 ---
 <div style="text-indent: 2em"><style type="text/css">

@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/04/04/JSP-中，不要同时用page指令和HTML标签来指定contentType
 template: post
 ---
 

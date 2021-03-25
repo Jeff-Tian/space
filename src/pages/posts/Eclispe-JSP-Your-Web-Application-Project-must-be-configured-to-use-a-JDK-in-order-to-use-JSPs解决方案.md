@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/04/03/Eclispe-JSP-Your-Web-Application-Project-must-be-configured-to-use-a-JDK-in-order-to-use-JSPs解决方案
 template: post
 ---
 

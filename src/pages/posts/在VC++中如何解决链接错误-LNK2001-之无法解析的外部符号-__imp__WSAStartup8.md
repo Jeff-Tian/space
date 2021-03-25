@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/02/在VC++中如何解决链接错误-LNK2001-之无法解析的外部符号-__imp__WSAStartup8
 template: post
 ---
 

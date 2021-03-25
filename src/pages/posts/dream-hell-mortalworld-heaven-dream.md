@@ -14,7 +14,7 @@ tags:
   - 天堂
   - 梦
   - 魔鬼
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/10/dream-hell-mortalworld-heaven-dream
 template: post
 ---
 <p>每天做着同一系列的梦，将我从人间拉回地狱。每天醒来我总是忽略这种拉回，继续沉溺于这虚幻的人间。这种醒来，其实是睡去。每天就这么重复，夜晚梦来唤醒我，白天我对梦不加理睬，睡去；唤醒，睡去；唤醒，睡去；唤醒，睡去&hellip;&hellip;直到某个凌晨，我睁开眼，继续回到虚幻的人间。可是我觉得总有一丝不对劲，或者觉得内心充满着对梦的一种歉意。我这样不是一直在逃避吗？你准备逃避多久呢？你逃避得了吗？我开始仔细地回忆这一系列的梦。</p>

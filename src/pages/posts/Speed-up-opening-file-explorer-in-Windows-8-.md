@@ -12,7 +12,7 @@ tags:
   - Windows 8
   - file explorer
   - service
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/02/07/Speed-up-opening-file-explorer-in-Windows-8-
 template: post
 ---
 <h2><span style="color: #800080;">Problem:</span></h2>

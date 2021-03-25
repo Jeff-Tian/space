@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/04/22/SQL-Server-2008-编程入门经典-第13章练习
 template: post
 ---
 

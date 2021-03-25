@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/26/如何以正确的编码格式来读取文本文件？-使用_autodetect_all
 template: post
 ---
 

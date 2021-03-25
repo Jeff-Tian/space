@@ -11,7 +11,7 @@ tags:
   - deserialize
   - javascript
   - jquery
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/04/07/The-inverse-function-of-$param()-in-jQuery
 template: post
 ---
 <p>jQuery has a useful function to serialize an object into url query string, which called $.param().</p>  <p>For example: </p>  <pre class="brush: javascript">$.param({ a: 2, b: 3, c: 4 }) 	// &quot;a=2&amp;b=3&amp;c=4&quot;

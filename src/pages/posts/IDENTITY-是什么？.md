@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/04/15/IDENTITY-是什么？
 template: post
 ---
 <p>@@IDENTITY 是一个系统函数。它总是可用的，并提供在当前连接中分配的最近标识值。</p>

@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/11/20/利用Ajax技术读取RSS新闻源，并构建一个在线的阅读器
 template: post
 ---
 

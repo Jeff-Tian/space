@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/11/16/ASP-操作数据库的一个数据库类文件-CDatabaseasp
 template: post
 ---
 

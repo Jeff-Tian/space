@@ -12,7 +12,7 @@ tags:
   - datetime
   - listener
   - trace
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/07/23/How-to-make-tracing-log-local-system-date-time-in-tracing-(C)
 template: post
 ---
 <h2><font color="#9b00d3">Background:</font></h2>  <p>You have a C# application, and you have enabled the tracing feature. Now you want to the tracing log to contain the local system date time along with the log entries.</p>  <h2><font color="#9b00d3">Analysis:</font></h2>  <p>Enable date time in the tracing is easy by simply add a <strong>DateTime</strong> option for the <strong>traceOutputOptions</strong> in your tracing config. But the tricky part is the tracing system always output UTC date time. Because by the implementation of the abstract class TraceListener, it hard coded the way of outputing the datetime value when detected the switch TraceOutputOptions.DateTime is open in its private method WriteFooter(eventCache), which looks like as below:</p>  <pre class="brush: csharp">if (IsEnabled(TraceOptions.DateTime))

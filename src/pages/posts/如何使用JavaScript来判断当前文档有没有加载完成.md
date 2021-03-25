@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/17/如何使用JavaScript来判断当前文档有没有加载完成
 template: post
 ---
 

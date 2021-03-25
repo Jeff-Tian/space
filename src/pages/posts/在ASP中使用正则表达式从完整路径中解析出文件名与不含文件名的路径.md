@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/29/在ASP中使用正则表达式从完整路径中解析出文件名与不含文件名的路径
 template: post
 ---
 

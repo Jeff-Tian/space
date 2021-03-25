@@ -15,7 +15,7 @@ tags:
   - 批处理文件
   - 网页安全
   - 跨域攻击
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/11/01/以禁用网页安全模式启动Google-Chrome
 template: post
 ---
 <h1><span style="color: #9b00d3;">一、问题</span></h1>

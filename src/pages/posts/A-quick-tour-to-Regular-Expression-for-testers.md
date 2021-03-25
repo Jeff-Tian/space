@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - Regular Expression
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/03/04/A-quick-tour-to-Regular-Expression-for-testers
 template: post
 ---
 <h3><a name="_Toc318302098"></a></h3>

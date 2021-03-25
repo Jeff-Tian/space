@@ -13,7 +13,7 @@ tags:
   - min
   - 最大值
   - 最小值
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/12/18/Array-对象的最大最小值方法之修订版
 template: post
 ---
 <h1><font color="#9b00d3"><font style="font-weight: bold">一、背景：</font></font></h1>  <p>十月27号，我写过《<a href="http://www.zizhujy.com/blog/post/2011/10/27/%E7%BB%99JavaScript%E7%9A%84Array%E5%AF%B9%E8%B1%A1%E6%B7%BB%E5%8A%A0%E4%B8%A4%E4%B8%AA%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E6%96%B9%E6%B3%95.aspx">给JavaScript的Array对象添加两个最大最小值方法</a>》，非常简洁。今天我发现，这个简洁的实现给我惹了点麻烦。如果有一个数组，里面并不全为数字，那么，简洁版实现的最大最小值方法，将返回NaN对象，即Not a Number。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">二、目标：</font></font></h1>  <p>我希望达到的效果是，如果数组里面不全为<strong>有限</strong>数字，最大最小值方法仍然能够返回其中的<strong>有限</strong>数字部分的最大最小值。如果全不为数字，则最大值方法返回-Infinity，最小值方法返回Infinity，让调用者知道程序返回了无意义的结果。</p>  <h1><font color="#9b00d3"><font style="font-weight: bold">三、解决方案：</font></font></h1>  <p>显然，需要对Array对象再添加一个筛选有限数字的方法。怎样筛选呢？又需要添加一个判断一个对象是否为有限数字的方法，我把这个判断一个对象是否是有限数字的方法添加到了Math对象中。如下：</p>  <pre class="brush: javascript">    //

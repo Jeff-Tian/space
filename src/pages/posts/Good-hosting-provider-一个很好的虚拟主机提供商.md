@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - hosting
   - 虚拟主机
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/05/25/Good-hosting-provider-一个很好的虚拟主机提供商
 template: post
 ---
 <p>My old web site is <a href="http://www.myfootprints.cn">http://www.myfootprints.cn</a>, which hosts on a bad hosting provider.&nbsp;&nbsp;<img title="Frown" src="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/editors/tiny_mce_3_4_3_1/plugins/emotions/img/smiley-frown.gif" alt="Frown" border="0" /></p>

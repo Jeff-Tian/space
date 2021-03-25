@@ -11,7 +11,7 @@ tags:
   - CRM
   - Fetch XML
   - SQL Business Intelligence
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/08/06/Solved-Cant-select-Microsoft-Dynamic-CRM-Fetch-as-the-new-data-source-type
 template: post
 ---
 <h2><span style="color: #9b00d3;">Problem:</span></h2>

@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/05/13/使用-JavaScript-将网页中的数据下载为Excel文件
 template: post
 ---
 

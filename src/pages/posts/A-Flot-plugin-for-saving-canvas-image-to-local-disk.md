@@ -11,7 +11,7 @@ tags:
   - flot
   - javascript
   - plugin
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/07/02/A-Flot-plugin-for-saving-canvas-image-to-local-disk
 template: post
 ---
 <h2><font color="#9b00d3">Background:</font></h2>  <p><a href="http://flotcharts.org" target="_blank">Flot</a> is an open source javascript library to draw attractive charts. I’ve made a plug in for it to allow user save the beautiful chart as an image to local disk as png/bmp/jpeg files by mouse right clicking on the chart.</p>  <h2><font color="#9b00d3">Screen shot:</font></h2>  <p><a href="http://zizhujy.com/FunctionGrapher" target="_blank"><img title="A Flot plugin for saving canvas image to local disk" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" border="0" alt="A Flot plugin for saving canvas image to local disk" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_629.png" width="663" height="357" /></a></p>  <h2><font color="#9b00d3">Usage:</font></h2>  <p>Inside the &lt;head&gt;&lt;/head&gt; area of your html page, add the following lines:</p>  <pre class="brush: html">    &lt;script type=&quot;text/javascript&quot; src=&quot;http://zizhujy.com/Scripts/base64.js&quot;&gt;&lt;/script&gt;

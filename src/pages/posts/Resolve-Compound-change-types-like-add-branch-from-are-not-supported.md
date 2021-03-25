@@ -12,7 +12,7 @@ tags:
   - janus
   - source control
   - source depot
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/02/28/Resolve-Compound-change-types-like-add-branch-from-are-not-supported
 template: post
 ---
 <h2><span style="color: #9b00d3;">Problem:</span></h2>

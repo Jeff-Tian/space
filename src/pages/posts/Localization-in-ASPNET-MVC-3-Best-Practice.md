@@ -15,7 +15,7 @@ tags:
   - MVC
   - Razor
   - Resource
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/06/13/Localization-in-ASPNET-MVC-3-Best-Practice
 template: post
 ---
 <p>[<a title="ASP.NET MVC 3 本地化最佳实践" href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/post/2011/06/12/Localization-in-ASPNET-MVC-3-Best-Practice.aspx">中文版</a>]</p>

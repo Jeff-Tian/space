@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/15/如何在发布JavaScript代码时，在代码下方添加一个“点击这里运行”的快捷链接？
 template: post
 ---
 

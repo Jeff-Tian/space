@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/11/ASPNET-错误：ASP-does-not-contain-a-definition-for-
 template: post
 ---
 

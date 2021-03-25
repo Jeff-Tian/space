@@ -13,7 +13,7 @@ tags:
   - breaker
   - 密码
   - 破解
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/05/25/How-to-remove-the-password-of-a-VBA-project-如何移除VBA工程密码
 template: post
 ---
 <p>Years ago I found an excellent article about how to remove the password of a VBA project, which taught me built an Excel add-in. After the add-in run, you can open the password protected Excel file in it, and break all the passwords that the Excel file has, worksheet password, workbook password, VBA project password, and whatever, by just one click on the menu.</p>

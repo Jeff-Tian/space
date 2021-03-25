@@ -11,7 +11,7 @@ tags:
   - BlogEngine.NET
   - 样式
   - 表格
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/09/10/在BlogEngineNET-中嵌入自定义表格样式
 template: post
 ---
 <h1><span style="color: #9b00d3;">一、嵌入后日志中的表格示例</span></h1>

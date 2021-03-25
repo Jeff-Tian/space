@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/01/21/仿Google样式的表格课程名称地点开课时间课时门市价格会员价培训机构
 template: post
 ---
 

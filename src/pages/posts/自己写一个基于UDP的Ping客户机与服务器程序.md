@@ -13,7 +13,7 @@ tags:
   - UDP
   - ping
   - 网络编程
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/06/18/自己写一个基于UDP的Ping客户机与服务器程序
 template: post
 ---
 <p>这是一个《计算机网络 自顶向下方法》中的编程实验。在本实验中，你将实现一个简单的基于UDP的Ping客户机和服务器。由这些程序提供的功能类似于现代操作系统中使用的标准Ping程序。标准的Ping工作时发送因特网控制报文协议（ICMP）ECHO报文，远程机器对发送方返回响应。该发送方则能够决定它自己和被探测的计算机之间的往返时延。</p>  <p>Java不提供发送和接收ICMP报文的任何功能，所以本实验需要在应用层用标准的UDP套接字和报文实现Ping。</p>  <p>在编译并部署后，客户机的一个运行结果如下：</p>  <pre style="background-color: black; color: #00cc00">F:\EclipseWorkspace\UDPPinger\bin&gt;java PingClient 192.168.173.240 7890

@@ -11,7 +11,7 @@ tags:
   - Ubuntu
   - Virtual Box
   - Windows 7
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/05/26/如何允许-Windows-7-主机与-Ubuntu-虚拟机互相-ping-通
 template: post
 ---
 <h2><span style="color: #9b00d3;">问题：</span></h2>

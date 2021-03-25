@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/11/用ASP写一个支持自定义模板的数据记录输出函数
 template: post
 ---
 

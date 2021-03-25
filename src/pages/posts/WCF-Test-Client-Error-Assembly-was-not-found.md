@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - Biztalk
   - WCF
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/04/01/WCF-Test-Client-Error-Assembly-was-not-found
 template: post
 ---
 <h2><font style="font-weight: bold" color="#9b00d3">Problem:</font></h2>  <p>When invoke a service method via WCF Test Client, you get an error message like this:</p>  <pre>Assembly Oracle.DataAccess, Version=2.111.7.0, Culture=neutral, 

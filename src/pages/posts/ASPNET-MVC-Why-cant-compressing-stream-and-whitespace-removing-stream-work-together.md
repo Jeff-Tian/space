@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - Compress
   - Stream
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/09/02/ASPNET-MVC-Why-cant-compressing-stream-and-whitespace-removing-stream-work-together
 template: post
 ---
 <h2><span style="color: #9b00d3;">Problem:</span></h2>

@@ -13,7 +13,7 @@ tags:
   - javascript
   - jquery
   - telerik
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/02/28/Replace-Telerik-window-with-jquery-ui-dialog
 template: post
 ---
 <p>When you need to display some information via pop up window, it's better to use jquery-ui dialog than Telerik window. Not only because the Telerik is not supported any more, but also because the jquery-ui dialog can behaves much better, pure client side and with even less and simpler code!</p>  <h4>Step-by-step guide</h4>  <ol>   <li>     <p>Reference jquery-ui script in your html:</p>      <pre class="brush: html">&lt;script type=&quot;text/javascript&quot; src=&quot;@Url.Content(&quot;~/Scripts/libs/jquery-ui.min.js&quot;)&quot;&gt;&lt;/script&gt;</pre>

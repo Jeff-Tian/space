@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - BlogEngine.NET
   - Razor
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/02/14/Fixed-unable-to-cast-object-of-type-asp_page_admin_default_cshtml-to-type-systemwebihttphandler-error
 template: post
 ---
 <h2><font color="#9b00d3">1. Background:</font></h2>  <p>I host my BlogEngine.NET (this blog) as a sub application under a main ASP.NET MVC 3 web application (zizhujy.com), it runs well until one day I tried to enter the administrator control panel – the following error showed on page:</p>  <h4><em>unable to cast object of type 'asp._page_admin_default_cshtml' to type 'system.web.ihttphandler'.</em></h4> <strong>Description: </strong>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.   <br /><strong>Exception Details: </strong>System.InvalidCastException: Unable to cast object of type 'ASP._Page_admin_default_cshtml' to type 'System.Web.IHttpHandler'.   <br /><strong>Source Error:</strong>   <p><code>An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.</code></p>  <p><strong>Stack Trace:</strong></p>  <pre>[InvalidCastException: Unable to cast object of type 'ASP._Page_admin_default_cshtml' to type 'System.Web.IHttpHandler'.]

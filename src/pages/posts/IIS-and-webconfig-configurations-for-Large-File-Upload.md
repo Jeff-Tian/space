@@ -11,7 +11,7 @@ tags:
   - File Size
   - Request Size
   - Upload
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/12/13/IIS-and-webconfig-configurations-for-Large-File-Upload
 template: post
 ---
 <h1><span style="color: #9b00d3;"><span style="font-weight: bold;">1. Background:</span></span></h1>

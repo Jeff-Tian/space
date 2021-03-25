@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - git
   - subtree
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/03/02/Git-subtree-cheatsheet
 template: post
 ---
 <h2><span style="color: #9b00d3">1. List all the existing subtrees under current Git repository</span></h2>  <p><strong>Usage: </strong><span style="border-top: #d9d9d9 1px solid; border-right: #d9d9d9 1px solid; border-bottom: #d9d9d9 1px solid; color: #de1144; padding-bottom: 5px; padding-top: 5px; padding-left: 5px; border-left: #d9d9d9 1px solid; padding-right: 5px; background-color: #ececec">git log | grep git-subtree-dir | tr -d ' ' | cut -d &quot;:&quot; -f2 | sort |uniq</span></p>  <p><strong>Example:</strong></p>  <pre class="cmd">$ git log | grep git-subtree-dir | tr -d ' ' | cut -d &quot;:&quot; -f2 | sort |uniq

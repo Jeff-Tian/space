@@ -13,7 +13,7 @@ tags:
   - min
   - 最大值
   - 最小值
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/10/27/给JavaScript的Array对象添加两个最大最小值方法
 template: post
 ---
 <h1><font color="#9b00d3"><font style="font-weight: bold">一、问题</font></font></h1>  <p>有时候，对于一个装满数字的数组，希望快速地得到其最大值、最小值分别是多少。真希望通过如下方式来取得：</p>  <pre class="brush: javascript">var a = [1, 2, 3, 4];

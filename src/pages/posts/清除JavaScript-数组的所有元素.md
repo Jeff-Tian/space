@@ -14,7 +14,7 @@ tags:
   - splice
   - 数组
   - 清除
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/08/23/清除JavaScript-数组的所有元素
 template: post
 ---
 <p>如何清除JavaScript数组中的所有元素呢？</p>  <p>使用Array类的splice()方法：</p>  <p>代码示例：</p>  <pre class="brush: javascript">var a = [1, 3, 3, 4, 5, 6];

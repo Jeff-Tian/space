@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - git
   - subtree
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/02/13/Git-subtree-命令的几条常用场景
 template: post
 ---
 <h2><span style="color: #800080">1. 查看当前 Git 仓库有哪些已建立的 Subtree</span></h2>  <p><strong>语法</strong>：<span style="border-top: #d9d9d9 1px solid; border-right: #d9d9d9 1px solid; border-bottom: #d9d9d9 1px solid; color: #de1144; padding-bottom: 5px; padding-top: 5px; padding-left: 5px; border-left: #d9d9d9 1px solid; padding-right: 5px; background-color: #ececec">git log | grep git-subtree-dir | tr -d ' ' | cut -d &quot;:&quot; -f2 | sort |uniq</span></p>  <p><strong>示例</strong>：</p>  <pre class="cmd auto-wrap">$ git log | grep git-subtree-dir | tr -d ' ' | cut -d &quot;:&quot; -f2 | sort |uniq

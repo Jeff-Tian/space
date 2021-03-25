@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/02/04/VBA-使用表格驱动来建立独立应用程序的菜单（自定义菜单）
 template: post
 ---
 

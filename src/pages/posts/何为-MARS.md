@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/07/01/何为-MARS
 template: post
 ---
 <p>MARS：Multiple Active Result Set，多个活动的结果集。</p>

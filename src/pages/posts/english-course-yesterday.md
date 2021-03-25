@@ -15,7 +15,7 @@ tags:
   - 快递
   - 燃油附加费
   - 英语
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/12/english-course-yesterday
 template: post
 ---
 <p>想当年在快递公司上了2年多的班，因为是外企，用到英语的地方蛮多的。我记得当时天天面对着Courier这样的单词，又每个月定期收到Fuel Surcharge报告，自己还需要不定期地做四个国际快递公司巨头的Fuel Surcharge预测。自认为对这几个英文是耳熟能详的了。</p>

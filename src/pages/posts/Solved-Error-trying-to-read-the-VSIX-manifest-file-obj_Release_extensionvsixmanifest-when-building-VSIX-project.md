@@ -15,7 +15,7 @@ tags:
   - offline
   - sync center
   - windows 8
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/02/13/Solved-Error-trying-to-read-the-VSIX-manifest-file-obj_Release_extensionvsixmanifest-when-building-VSIX-project
 template: post
 ---
 <h2><span style="color: #800080;">Problem:&nbsp;</span></h2>

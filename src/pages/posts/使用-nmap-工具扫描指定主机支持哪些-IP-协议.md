@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/01/30/使用-nmap-工具扫描指定主机支持哪些-IP-协议
 template: post
 ---
 

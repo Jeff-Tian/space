@@ -15,7 +15,7 @@ tags:
   - 最佳实践
   - 本地化
   - 资源
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/06/12/ASPNET-MVC-3-本地化最佳实践
 template: post
 ---
 <p>[<a title="Localization in ASP.NET MVC 3 Best Practice" href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/post/2011/06/13/Localization-in-ASPNET-MVC-3-Best-Practice.aspx">English version</a>]</p>

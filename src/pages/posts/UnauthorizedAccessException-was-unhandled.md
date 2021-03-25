@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - TFS
   - Team Foundation Server
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/03/22/UnauthorizedAccessException-was-unhandled
 template: post
 ---
 <p>Today when I coded a snippet to download file from a team foundation server, I met this error:</p>  <p>UnauthorizedAccessException was unhandled.</p>  <p>Access to the path is denied.</p>  <p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_495.png"><img style="background-image: none; border-right-width: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="UnauthorizedAccessException was unhandled" border="0" alt="UnauthorizedAccessException was unhandled" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_216.png" width="665" height="365" /></a></p>  <p>The relative code is:</p>  <pre style="overflow-y: visible" class="brush: csharp">private static void DownloadFile()

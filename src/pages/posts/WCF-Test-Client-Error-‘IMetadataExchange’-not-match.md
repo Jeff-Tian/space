@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - Biztalk
   - WCF
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/04/01/WCF-Test-Client-Error-‘IMetadataExchange’-not-match
 template: post
 ---
 <h2><font style="font-weight: bold" color="#9b00d3">Problem:</font></h2>  <p>When adding a service in your WCF Test Client, you meet this issue says:</p>  <pre>The contract ‘IMetadataExchange’ in client configuration does not match the name in service contract, or there is no valid method in this contract.

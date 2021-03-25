@@ -13,7 +13,7 @@ tags:
   - javascript
   - js
   - 压缩
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/10/05/使用-HttpHandler-对-jscss-文件进行压缩
 template: post
 ---
 <h1><span style="color: #9b00d3;"><span style="font-weight: bold;">一、简介</span></span></h1>

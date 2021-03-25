@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - array
   - linq
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/08/01/Batch-operates-all-the-elements-in-an-array
 template: post
 ---
 <h2><font color="#9b00d3">Problem:</font></h2>  <p>You have an array consists of a series of numbers, and you want to have all the numbers subtract 1 by themselves.</p>  <h2><font color="#9b00d3">Solution:</font></h2>  <p>Use &lt;object&gt;.Select() extension method provided by System.Linq.</p>  <pre class="brush: csharp">using System;

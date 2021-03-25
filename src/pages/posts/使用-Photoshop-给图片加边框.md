@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/12/30/使用-Photoshop-给图片加边框
 template: post
 ---
 <div style="text-indent: 2em;"><ol style="text-indent: 0;">    <li>全选；</li>    <li>编辑；</li>    <li>描边。</li></ol></div>

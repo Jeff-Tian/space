@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/17/在ASP中创建一个以指定HTML模板显示字典对象内容的方法
 template: post
 ---
 

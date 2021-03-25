@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/18/【转】由于启动用户实例的进程时出错，导致无法生成-SQL-Server-的用户实例。该连接将关闭
 template: post
 ---
 

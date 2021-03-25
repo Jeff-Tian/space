@@ -11,7 +11,7 @@ tags:
   - Excel
   - VLookUp
   - 模糊匹配
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/08/30/VLookup-Example
 template: post
 ---
 <h1><span style="color: #9b00d3;"><span style="font-weight: bold;">一、问题</span></span></h1>

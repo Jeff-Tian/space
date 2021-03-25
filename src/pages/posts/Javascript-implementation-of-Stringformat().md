@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - format
   - javascript
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/07/31/Javascript-implementation-of-Stringformat()
 template: post
 ---
 <h2><font color="#9b00d3">Background:</font></h2>  <p>The String class has a format() method in C# which is very handy to build dynamic messages from a template.</p>  <p>For example, </p>  <pre class="brush: csharp">Console.WriteLine(String.Format(&quot;Current Page Index: {0}, Total Pages: {1}&quot;, 10, 150));</pre>

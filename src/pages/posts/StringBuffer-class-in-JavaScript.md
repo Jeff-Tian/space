@@ -12,7 +12,7 @@ tags:
   - javascript
   - 动态原型
   - 字符串拼接
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/08/02/StringBuffer-class-in-JavaScript
 template: post
 ---
 <h1><span style="color: #9b00d3;">一、背景（字符串连接）</span></h1>

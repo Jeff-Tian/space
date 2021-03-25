@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2009/11/11/用EXCEL-VBA-计算一组数据的自相关函数和偏自相关函数
 template: post
 ---
 

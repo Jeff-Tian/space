@@ -11,7 +11,7 @@ tags:
   - flot
   - javascript
   - plugin
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/07/23/A-navigation-control-plugin-for-Flot
 template: post
 ---
 <h2><font color="#9b00d3">Background:</font></h2>  <p>Flot is an open source javascript library for drawing attractive charts, and there is a plugin named jquery.flot.navigation.js to allow user to pan or zoom the charts. However, it is hard for touch screen (iPad, iPhone, Windows Phone, etc.) users to do that. So I made another plugin named jquery.flot.navigationControl.js working together with jquery.flot.navigation.js to ease that problem. It adds several control buttons on top of the charts to let user to click on them, and hooks these buttons to do the panning and zooming work.</p>  <h2><font color="#9b00d3">Screen shot:</font></h2>  <p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/Screenshot.png"><img title="A navigation control plugin for Flot" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" border="0" alt="A navigation control plugin for Flot" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/Screenshot_thumb.png" width="647" height="369" /></a></p>  <h2><font color="#9b00d3">Usage:</font></h2>  <p>Inside the &lt;head&gt;&lt;/head&gt; area of your html page, add the following line:</p>  <pre class="brush: html">&lt;script type=&quot;text/javascript&quot; src=&quot;http://zizhujy.com/Scripts/flot/jquery.flot.navigationControl.js&quot;&gt;&lt;/script&gt;</pre>

@@ -11,7 +11,7 @@ tags:
   - ASP.NET
   - C#
   - 获取客户端源码
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/01/10/ASPNET-e88eb7e58f96e69c8de58aa1e599a8e4b88ae9a1b5e99da2e79a84e5aea2e688b7e7abafHTMLe6ba90e7a081
 template: post
 ---
 <h1><font color="#9b00d3"><font style="font-weight: bold">首先介绍一下通过发送Http请求来获取某个网页的HTML响应的方法，代码如下：</font></font></h1>  <pre class="brush: csharp">public string GetWebPageSource(string url) {

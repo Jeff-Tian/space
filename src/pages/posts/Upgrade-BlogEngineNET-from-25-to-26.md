@@ -11,7 +11,7 @@ tags:
   - BlogEngine.NET
   - upgrade
   - view count
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/02/15/Upgrade-BlogEngineNET-from-25-to-26
 template: post
 ---
 <p>If you are running BlogEngine.NET 2.5, and you want to add post view count statistics feature to your webblog, then I recommend you apply this update to your blog installation.</p>

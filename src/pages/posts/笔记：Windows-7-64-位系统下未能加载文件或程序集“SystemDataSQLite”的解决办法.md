@@ -11,7 +11,7 @@ tags:
   - 64 位
   - SQLite
   - Windows 7
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/09/01/笔记：Windows-7-64-位系统下未能加载文件或程序集“SystemDataSQLite”的解决办法
 template: post
 ---
 <h1><strong><span style="color: #800080;">一、问题</span></strong></h1>

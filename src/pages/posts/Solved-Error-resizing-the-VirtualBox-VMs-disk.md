@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - VM
   - VirutalBox
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/11/20/Solved-Error-resizing-the-VirtualBox-VMs-disk
 template: post
 ---
 <h2><font color="#9b00d3">Problem:</font></h2>  <p>When executing the following command to resize the disk for a VirtualBox VM’s disk:</p>  <pre style="color: white; padding-bottom: 5px; padding-top: 5px; padding-left: 5px; padding-right: 5px; background-color: black">VBoxManage modifyhd JeffTian-Linux.vdi --resize 80000</pre>

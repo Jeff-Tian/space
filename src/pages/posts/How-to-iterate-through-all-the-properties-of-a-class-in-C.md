@@ -11,7 +11,7 @@ tags:
   - Reflection
   - iterate through
   - properties
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/09/12/How-to-iterate-through-all-the-properties-of-a-class-in-C
 template: post
 ---
 <p>How to iterate through all the properties of a class in C#? Use Reflection. And there are some differences between iterating through a instance of a class and iterating through a static class.</p>  <h2><font color="#9b00d3">Here are the examples:</font></h2>  <pre class="brush: csharp">using System;

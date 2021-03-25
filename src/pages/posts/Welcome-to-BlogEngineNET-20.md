@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - blog
   - welcome
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/11/13/Welcome-to-BlogEngineNET-20
 template: post
 ---
 <p>If you see this post it means that BlogEngine.NET 2.0 is running and the hard part of creating your own blog is done. There is only a few things left to do.</p>

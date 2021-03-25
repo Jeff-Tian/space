@@ -11,7 +11,7 @@ tags:
   - 任务分派
   - 强制分布
   - 算法
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2014/01/12/SalesLeadsForceDistributiveDispatchingAlgorithm
 template: post
 ---
 <h2><span style="color: #9b00d3;">问题：</span></h2>

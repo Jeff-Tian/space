@@ -11,7 +11,7 @@ tags:
   - configSource
   - debug
   - tracing
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2013/07/11/Resolved-Unable-to-open-configSource-file-when-debugging-a-program
 template: post
 ---
 <h2><span style="color: #9b00d3;">Problem:</span></h2>

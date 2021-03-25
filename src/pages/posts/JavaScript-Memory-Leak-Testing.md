@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - javascript
   - memory leak
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/03/22/JavaScript-Memory-Leak-Testing
 template: post
 ---
 <h2><span style="color: #ff00ff;">Download word version:</span></h2>

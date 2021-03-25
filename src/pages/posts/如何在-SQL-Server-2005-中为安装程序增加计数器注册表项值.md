@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/17/如何在-SQL-Server-2005-中为安装程序增加计数器注册表项值
 template: post
 ---
 

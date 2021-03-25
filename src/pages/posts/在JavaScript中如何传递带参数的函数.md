@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - 传递函数
   - 动态调用
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/06/30/在JavaScript中如何传递带参数的函数
 template: post
 ---
 <h2><font color="#800080">一、背景：</font></h2>  <p>在JavaScript中，将一个函数作为参数传递给另外一个函数，然后在那个函数中调用传递过来的函数，是非常简单和直接的。如：</p>  <pre class="brush: javascript">function sayHello() {

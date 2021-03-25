@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - javascript
   - 序列化
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/06/16/序列化JavaScript对象
 template: post
 ---
 <h2><font color="#800080">一、问题：</font></h2>  <p>欲将一个JavaScript对象，按如下格式<strong>序列化</strong>（序列化成字符串）：</p>  <ul>   <li>变量名&lt;类型&gt;: [值]      <ul>       <li>变量名&lt;类型&gt;: [值] </li>        <li>变量名&lt;类型&gt;: [值] </li>        <li>变量名&lt;类型&gt;: [值]          <ul>           <li>变量名&lt;类型&gt;: [值] </li>            <li>变量名&lt;类型&gt;: [值] </li>            <li>prototype&lt;类型&gt;: [值] </li>         </ul>       </li>        <li>prototype&lt;类型&gt;: [值] </li>     </ul>   </li> </ul>  <h2><font color="#800080">二、解决方案：</font></h2>  <h3>首先，定义几个辅助方法：</h3>  <p>1. duplicate(): 该方法将给定的字符串复制指定的次数后，与原来的字符串相拼接。</p>  <pre class="brush: javascript">/// <summary>

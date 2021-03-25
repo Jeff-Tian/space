@@ -14,7 +14,7 @@ tags:
   - MVC
   - Razor
   - SEO
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/27/best-practice-of-adding-meta-data-to-page-in-ASPNET-MVC-3-Razor-Engine
 template: post
 ---
 <h1><span style="color: #800080;">一、摘要：</span></h1>

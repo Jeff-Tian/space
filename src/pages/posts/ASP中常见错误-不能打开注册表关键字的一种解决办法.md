@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/28/ASP中常见错误-不能打开注册表关键字的一种解决办法
 template: post
 ---
 

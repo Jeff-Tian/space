@@ -12,7 +12,7 @@ tags:
   - javascript
   - trim
   - 自定义
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/09/10/给JavaScript的String对象添加一个trim()方法
 template: post
 ---
 <div style="text-indent: 2em">   <h1><font color="#9b00d3"><font style="font-weight: bold">一、问题</font></font></h1>    <p>在对字符串的处理中，去掉有效字符两边的空白字符是一个经常性的需求。于是很多语言中都有专门做这件事的字符串处理函数trim()，如在VB中，你可以使用 Trim(“&#160;&#160;&#160;&#160;&#160; 叽歪&#160;&#160;&#160;&#160;&#160; &quot;) 得到 “叽歪&quot;。</p>    <p>在 JavaScript 中，String 对象有着非常丰富方法用于对字符串进行处理，但偏偏没有这个经常需要使用的 trim()。比如，下面这段代码，在某些浏览器（如 IE）中就不能运行，虽然在有些浏览器（如 Google Chrome）中它是可以使用的。</p>    <pre style="text-indent: 0px" class="brush: javascript">var s = &quot;    紫竹     &quot;;

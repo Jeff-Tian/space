@@ -11,7 +11,7 @@ tags:
   - BlogEngine.NET
   - Calendar
   - 日历
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/26/Fix-Calendar-Display-Of-BlogEngineNET
 template: post
 ---
 <h1><span style="color: #800080;">一、症状：</span></h1>

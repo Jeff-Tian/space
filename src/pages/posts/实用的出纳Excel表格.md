@@ -11,7 +11,7 @@ tags:
   - Excel
   - 会计
   - 出纳
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/01/15/实用的出纳Excel表格
 template: post
 ---
 <h1><span style="color: #800080;">一、背景</span></h1>

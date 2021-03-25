@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/03/27/请先将SQL-Server升级到SP1再安装SQL-Server-2008
 template: post
 ---
 

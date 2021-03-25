@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - Random
   - string
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/12/24/C-Get-a-random-string
 template: post
 ---
 <p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_611.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px; padding-top: 0px" title="Random String methods for C#" border="0" alt="Random String methods for C#" align="right" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_300.png" width="192" height="192" /></a></p>  <h2><font color="#9b00d3">Background:</font></h2>  <p>Sometimes, we need to generate some random strings for testing purpose. When I met this situation, I was surprised that C# has no such built-in methods inside its Random Class. So I had to implemented them as extension methods.</p>  <h2><font color="#9b00d3">Solution:</font></h2>  <pre class="brush: csharp">    #region Random's Extension

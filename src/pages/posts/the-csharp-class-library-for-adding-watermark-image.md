@@ -12,7 +12,7 @@ tags:
   - 扩展
   - 模板设计模式
   - 水印
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/12/the-csharp-class-library-for-adding-watermark-image
 template: post
 ---
 <h1><span style="color: #800080;">相关文件下载：</span></h1>

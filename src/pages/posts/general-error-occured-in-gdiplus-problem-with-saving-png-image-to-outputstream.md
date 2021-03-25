@@ -12,7 +12,7 @@ tags:
   - OutputStream
   - PNG
   - 图像
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/25/general-error-occured-in-gdiplus-problem-with-saving-png-image-to-outputstream
 template: post
 ---
 <h1><span style="color: #800080;">一、症状：</span></h1>

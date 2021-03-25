@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - BUG
   - BlogEngine.NET
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/02/20/The-fix-for-bug-“Cannot-delete-subscribers”-for-BlogEngineNET
 template: post
 ---
 <h2><span style="color: #800080;">[Background]</span></h2>

@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/05/31/You-have-specified-that-your-delete-command-compares-all-values-on-SqlDataSource-SqlDataSource_Holiday-but-the-dictionary-passed-in-for-values-is-empty-Pass-in-a-valid-dictionary-for-delete-or-change-your-mode-to-OverwriteChanges
 template: post
 ---
 

@@ -12,7 +12,7 @@ tags:
   - GDI+
   - Watermark
   - 水印
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/07/12/add-watermark-to-image-using-csharp-and-gdiplus
 template: post
 ---
 <p>下载源文件：<a href="http://www.zizhujy.com/BlogEngine/BlogEngine/BlogEngine.NET/file.axd?file=2011%2f7%2fAddWatermark.zip">AddWatermark.zip (370.41 kb)</a></p>

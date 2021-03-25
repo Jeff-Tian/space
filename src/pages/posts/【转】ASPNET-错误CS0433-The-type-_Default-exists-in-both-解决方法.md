@@ -9,7 +9,7 @@ comments_count: 0
 positive_reactions_count: 0
 tags: 
   - 
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/07/23/【转】ASPNET-错误CS0433-The-type-_Default-exists-in-both-解决方法
 template: post
 ---
 

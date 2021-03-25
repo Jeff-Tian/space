@@ -13,7 +13,7 @@ tags:
   - format
   - overload
   - string
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2011/08/02/add-format-method-to-string-object-in-javascript
 template: post
 ---
 <h1><span style="color: #9b00d3;">一、背景</span></h1>

@@ -10,7 +10,7 @@ positive_reactions_count: 0
 tags: 
   - Extension
   - Random
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2012/07/29/An-extension-for-C-built-in-Random-class
 template: post
 ---
 <p>For testing purpose, I need to generate some random string (contains only letters without any other special characters) with customized length. So I extends the C# built-in Random class like this:</p>  <pre class="brush: csharp">#region Random's Extension

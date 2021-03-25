@@ -12,7 +12,7 @@ tags:
   - C#
   - GridView
   - 序号
-canonical_url: >-
+canonical_url: https://be-net.azurewebsites.net/post/2010/11/15/e7bb99GridViewe6b7bbe58aa0e5ba8fe58fb7e58897
 template: post
 ---
 <p>在使用GridView显示数据时，在最左边显示一个序号列，可以增加可读性。基本上可以给所有的GridView都添加一个这样的序号列。</p>  <p>如图： </p>  <p><a href="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_63.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 10px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/image_thumb_63.png" width="680" height="153" /></a></p>  <p><strong>添加方法一：</strong></p>  <p>1. 在&lt;Columns&gt;&lt;/Columns&gt;中添加一个模板列，代码如下：</p>  <pre class="brush: html">                    &lt;asp:TemplateField HeaderText=&quot;序号&quot;&gt;
