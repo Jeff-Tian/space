@@ -126,7 +126,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                     name: node.fields.name,
                     frontmatter: node.frontmatter,
                     html: graphQLNode.html,
-                    pages: pages,
+                    pages: [pages[0], pages[1]],
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),
                         pathPrefix: siteNode.pathPrefix,
