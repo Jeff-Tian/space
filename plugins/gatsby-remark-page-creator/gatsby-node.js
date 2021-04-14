@@ -41,7 +41,7 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
     let fileNode = findFileNode({ node, getNode })
     if (!fileNode) {
       throw new Error(
-          'could not find parent File node for MarkdownRemark node: ' + util.inspect(node))
+        'could not find parent File node for MarkdownRemark node: ' + util.inspect(node))
     }
 
     let url
@@ -55,12 +55,12 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
 
     createNodeField({ node, name: 'url', value: url })
     createNodeField(
-        { node, name: 'absolutePath', value: fileNode.absolutePath })
+      { node, name: 'absolutePath', value: fileNode.absolutePath })
     createNodeField(
-        { node, name: 'relativePath', value: fileNode.relativePath })
+      { node, name: 'relativePath', value: fileNode.relativePath })
     createNodeField({ node, name: 'absoluteDir', value: fileNode.dir })
     createNodeField(
-        { node, name: 'relativeDir', value: fileNode.relativeDirectory })
+      { node, name: 'relativeDir', value: fileNode.relativeDirectory })
     createNodeField({ node, name: 'base', value: fileNode.base })
     createNodeField({ node, name: 'ext', value: fileNode.ext })
     createNodeField({ node, name: 'name', value: fileNode.name })
@@ -113,11 +113,11 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
 
         loggedNoFields = true
         return {
-          url: '/test',
-          relativePath: 'test.md',
-          relativeDir: '',
-          base: 'test.md',
-          name: 'test',
+          url: `/posts/${node.frontmatter.slug}/`,
+          relativePath: `posts/${node.frontmatter.slug}.md`,
+          relativeDir: 'posts',
+          base: `${node.frontmatter.slug}.md`,
+          name: node.frontmatter.slug,
           frontmatter: node.frontmatter,
           html: graphQLNode.html,
         }

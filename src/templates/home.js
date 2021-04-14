@@ -21,6 +21,9 @@ export const query = graphql`
 export default class Home extends React.Component {
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
+
+      console.log("display posts = ", this.props);
+
         return (
             <Layout {...this.props}>
               <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)} />
