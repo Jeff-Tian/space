@@ -1,6 +1,8 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const _ = require('lodash')
+const util = require('util')
+
 let logged = false
 let loggedNoFields = false
 
@@ -39,7 +41,7 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
     let fileNode = findFileNode({ node, getNode })
     if (!fileNode) {
       throw new Error(
-          'could not find parent File node for MarkdownRemark node: ' + node)
+          'could not find parent File node for MarkdownRemark node: ' + util.inspect(node))
     }
 
     let url
@@ -157,10 +159,8 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
           base: node.fields ? node.fields.base : 'test.md',
           name: node.fields ? node.fields.name : 'test',
           frontmatter: node.frontmatter,
-          // html: graphQLNode.html,
-          html: "<p>Hello</p>",
-          // pages: pages,
-          pages: [],
+          html: graphQLNode.html,
+          pages: pages,
           site: {
             siteMetadata: _.get(siteData, 'site-metadata', {}),
             pathPrefix: siteNode.pathPrefix,
