@@ -31,7 +31,7 @@ module.exports = {
     },
     `gatsby-plugin-favicon`,
     {
-      resolve: 'gatsby-source-yuque',
+      resolve: '@jeff-tian/gatsby-source-yuque',
       options: {
         login: 'tian-jie',
         repo: 'blog',
