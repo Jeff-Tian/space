@@ -1,7 +1,6 @@
 ---
-title: [Solved]docker start error  copying bootstrap data to pipe caused write init-p broken pipe
-slug: nal6rz
-date: 2020-02-27T13:27:23
+title: '[Solved]docker start error  copying bootstrap data to pipe caused write init-p broken pipe'
+date: '2020-02-27T13:27:23'
 tags: []
 categories: []
 ---
