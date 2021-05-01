@@ -29,14 +29,14 @@ module.exports = {
         pageContextProperty: `menus`,
       },
     },
-    `gatsby-plugin-favicon`,
-    {
-      resolve: '@jeff-tian/gatsby-source-yuque',
-      options: {
-        login: 'tian-jie',
-        repo: 'blog',
-        mdNameFormat: 'slug',
-      },
-    },
+    // `gatsby-plugin-favicon`,
+    // {
+    //   resolve: '@jeff-tian/gatsby-source-yuque',
+    //   options: {
+    //     login: 'tian-jie',
+    //     repo: 'blog',
+    //     mdNameFormat: 'slug',
+    //   },
+    // },
   ],
 }

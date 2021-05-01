@@ -3,6 +3,7 @@ title: '[Solved]docker start error  copying bootstrap data to pipe caused write 
 date: '2020-02-27T13:27:23'
 tags: []
 categories: []
+template: post
 ---
 
 <a name=QXbgh></a>
