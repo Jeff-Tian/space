@@ -7,6 +7,7 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "start": "npm run develop",
+    "test": "mocha --recursive \"plugins/**/*.test.js\"",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh",
@@ -30,7 +31,7 @@
     "gatsby-plugin-react-helmet": "^3.3.3",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-source-filesystem": "2.3.10",
-    "@jeff-tian/gatsby-source-yuque": "1.4.9",
+    "@jeff-tian/gatsby-source-yuque": "1.4.16",
     "gatsby-transformer-remark": "2.8.14",
     "js-yaml": "^3.12.2",
     "lodash": "^4.17.11",
@@ -47,5 +48,8 @@
     "react-script-tag": "^1.1.2",
     "rehype-react": "^3.0.2",
     "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2"
   }
 }
