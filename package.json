@@ -50,6 +50,7 @@
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
+    "gatsby-source-github": "0.0.2",
     "mocha": "^8.3.2"
   }
 }
