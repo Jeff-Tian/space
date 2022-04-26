@@ -6287,6 +6287,13 @@ gatsby-plugin-utils@^3.6.1:
     joi "^17.4.2"
     mime "^3.0.0"
 
+gatsby-plugin-workerize-loader@^2.0.0-alpha.0:
+  version "2.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-workerize-loader/-/gatsby-plugin-workerize-loader-2.0.0-alpha.0.tgz#180c2659244072304bbd1d66f680fd174c7be1db"
+  integrity sha512-Efa0JZS6lKemtyyNv98qvGImdI9UIkxS0RFxL8I2/Df51zg81X1/Y1Z5rTYviUqB48+45U8Xogl03ftOeTBQ5Q==
+  dependencies:
+    workerize-loader-wp5 "^2.0.2"
+
 gatsby-react-router-scroll@^5.12.1:
   version "5.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.12.1.tgz#10fdf43c1179ae53e7726c6c8d894139e7862e8f"
@@ -13246,6 +13253,13 @@ worker-rpc@^0.1.0:
   integrity sha512-P1WjMrUB3qgJNI9jfmpZ/htmBEjFh//6l/5y8SD9hg1Ef5zTTVVoRjTrTEzPrNBQvmhMxkoTsjOXN10GWU7aCg==
   dependencies:
     microevent.ts "~0.1.1"
+
+workerize-loader-wp5@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/workerize-loader-wp5/-/workerize-loader-wp5-2.0.2.tgz#d8d2c2504ecb7e183097b56b407d2e391071949a"
+  integrity sha512-AZyAKn3UHhFbQz44BP+7uWFFJBQWg2yJyDQoSAyToRYFkKCiiAcc3a9/TzL3xfBKlHXvFAWDb6FMTkXkUqV0BQ==
+  dependencies:
+    loader-utils "2.0.0"
 
 workerpool@6.2.0:
   version "6.2.0"
