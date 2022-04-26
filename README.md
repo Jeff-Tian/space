@@ -10,22 +10,20 @@ The content of this site is managed by Contentful. Visit [https://app.contentful
 
 ## Running Your Site Locally
 
-**Can only use `npm` instead of `yarn` with untouched `package.json` and `package-lock.json`!**
-
 1. Install [Node.js and npm](https://nodejs.org/en/)
 
 1. Install npm dependencies:
 
-        npm install
+        yarn
 
 1. Get the projects "stackbit-api-key" from the [Stackbit dashboard](https://app.stackbit.com/dashboard)
 
 1. Run the following command after saved your keys to `.env`
 
-        npm run pull
+        yarn pull
 
 1. Start the Gatsby local development server:
 
-        npm run develop
+        yarn develop
 
 1. Browse to [http://localhost:8000/](http://localhost:8000/)
