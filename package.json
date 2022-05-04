@@ -22,7 +22,7 @@
     "@capacitor/cli": "^3.5.0",
     "@capacitor/core": "^3.5.0",
     "@capacitor/ios": "^3.5.0",
-    "@jeff-tian/gatsby-source-yuque": "1.6.0",
+    "@jeff-tian/gatsby-source-yuque": "1.7.0",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "babel-runtime": "^6.26.0",
     "chokidar": "^3.4.0",
@@ -52,6 +52,8 @@
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
+    "gatsby-plugin-perf-budgets": "^0.0.18",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
     "gatsby-source-github": "0.0.2",
     "mocha": "^9.2.2",
     "webpack": "^5.72.0"
