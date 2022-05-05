@@ -1386,10 +1386,10 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@jeff-tian/gatsby-source-yuque@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-source-yuque/-/gatsby-source-yuque-1.7.0.tgz#211000705d24c24219bc5c5ae035d33bb1b0be26"
-  integrity sha512-zwm0Iiz+PvMp4b/5DIU2cn6oUc5dv2xCDKACcJUR6a232sE8xZWuKIl5cQBNh0le2X+L/cY66LqWlow+HVW7Iw==
+"@jeff-tian/gatsby-source-yuque@1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-source-yuque/-/gatsby-source-yuque-1.7.2.tgz#08570e172e5e0e32c1e829325e9a1b8b6eea73c7"
+  integrity sha512-DeTUZc/QH1iVFddGuwtwW6oJusub83oK2urKXIPARCh3oZ3TXaPEFXO9JWSMeJUC8RIl17Te42Yx76TGN8GK0w==
   dependencies:
     "@babel/runtime" "^7.8.7"
     axios "^0.19.2"

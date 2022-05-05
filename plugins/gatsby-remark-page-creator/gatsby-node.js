@@ -101,10 +101,11 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
             const node = getNode(graphQLNode.id);
             if (!node.fields) {
                 const { stackbit_url_path } = node.frontmatter;
-                const url = '/' + stackbit_url_path;
-                const slug = getSlug(stackbit_url_path);
 
                 if (stackbit_url_path) {
+                    const slug = getSlug(stackbit_url_path);
+                    const url = '/' + stackbit_url_path;
+
                     node.fields = {
                         url,
                         absolutePath: 'src' + url + '.md',
