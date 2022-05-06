@@ -2,7 +2,7 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const _ = require('lodash');
 const util = require('util');
-const { getSlug, getFolder } = require('./helpers');
+const { getSlug } = require('./helpers');
 
 function findFileNode({ node, getNode }) {
     let fileNode = node;
@@ -24,7 +24,7 @@ function findFileNode({ node, getNode }) {
     }
 
     if (!fileNode || fileNode.internal.type !== `File`) {
-        console.log('did not find ancestor File node');
+        console.log('did not find ancestor File node', fileNode?.title);
         return null;
     }
 
@@ -77,7 +77,6 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
         edges {
           node {
             id
-            html
           }
         }
       }
@@ -87,12 +86,16 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
             return Promise.reject(result.errors);
         }
 
+        console.log('result = ', result);
+
         const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
+
+        console.log('nodes length = ', nodes.length);
 
         const pages = nodes.map(graphQLNode => {
             // Use the node id to get the underlying node. It is not exactly the
@@ -128,9 +131,11 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                 base: node.fields.base,
                 name: node.fields.name,
                 frontmatter: node.frontmatter,
-                html: graphQLNode.html
+                html:  'todo', // graphQLNode.html
             };
         });
+
+        console.log('nodes = ', nodes.length);
 
         nodes.forEach(graphQLNode => {
             const node = getNode(graphQLNode.id);
@@ -149,7 +154,7 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                     base: node.fields.base,
                     name: node.fields.name,
                     frontmatter: node.frontmatter,
-                    html: graphQLNode.html,
+                    html: 'todo', //graphQLNode.html,
                     pages: pages,
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),
