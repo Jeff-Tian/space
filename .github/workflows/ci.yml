@@ -14,9 +14,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm i -g yarn
-      - run: yarn
-      - run: yarn build
+
+      - name: Build
+        run: npm i -g yarn && yarn && yarn build
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          ALGOLIA_BASE_URL: $${{ secrets.ALGOLIA_BASE_URL}}
+          GITHUB_TOKEN: $${{ secrets.GITHUB_TOKEN}}
+          STACKBIT_API_KEY: $${{ secrets.STACKBIT_API_KEY }}
+          UNI_HEART_STACKBIT_API_KEY: $${{ secrets.UNI_HEART_STACKBIT_API_KEY }}
+          YUQUE_TOKEN: $${{ secrets.YUQUE_TOKEN}}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
