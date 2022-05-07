@@ -91,6 +91,14 @@
                 "icon_class": "fa-dev",
                 "new_window": true,
                 "type": "action"
+            },
+            {
+                "label": "知乎",
+                "url": "https://www.zhihu.com/people/jefftian",
+                "style": "icon",
+                "icon_class": "fa-zhihu",
+                "new_window": true,
+                "type": "action"
             }
         ],
         "type": "header"

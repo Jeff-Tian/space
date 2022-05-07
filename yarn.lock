@@ -1014,15 +1014,15 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@capacitor/android@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-3.5.0.tgz#fc80297512cd66690a000edf22e8cd9177f05459"
-  integrity sha512-1SiTMMdd+urvDRrSLDmrFUU9Ldm8B2mUzVNvx8u1zgagZVPNQLoMY4WX8EkpPjt4+D6YIoBjdqb72LID9Iip6A==
+"@capacitor/android@latest":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-3.5.1.tgz#d81ec82f84ab7f0abeadb4cc100e6a3820197d65"
+  integrity sha512-rjehS0+BQBlwoN8hUyrMuzexn/9QJsONb1kmN5uXcL8JuTEbv35fa7z0tSD4x1LKwUFd+3Zeuwt60QRuwijlmw==
 
-"@capacitor/cli@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-3.5.0.tgz#69e0334b45822feff7888c64ad493a01ee87f5a9"
-  integrity sha512-URRAfCbrXufaxRCsDR68m0H3PPndyd4UyfhF4Y+DM5GI1i+0a1SlDYx2s/Ik0ttUFuKc+StwtlmR9Bt5sYNPtQ==
+"@capacitor/cli@latest":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-3.5.1.tgz#7184554f3460a6fa0988ed7db2617fd53e7eade5"
+  integrity sha512-zIA5BqT8ZnfUFEJwHlSdQ8Q5iWqmT7S6Mgsjbk55Pkv3BKQIP2VIFYpM4E7lGLEKd4kBnKStD0lTw5/P3E03KA==
   dependencies:
     "@ionic/cli-framework-output" "^2.2.1"
     "@ionic/utils-fs" "^3.1.5"
@@ -1041,14 +1041,14 @@
     tslib "^2.1.0"
     xml2js "^0.4.23"
 
-"@capacitor/core@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-3.5.0.tgz#1b508e42b263816603e986557d6b9c5d64876164"
-  integrity sha512-+CFSG+CztpFIir9gGqNEtAYuf6OWryQ8dojXoeozAkoz3mKvyFfcEfvLVPo/pw/B4zHIlNnJLHne6vbjAFbDKQ==
+"@capacitor/core@latest":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-3.5.1.tgz#49d48c0261d811a4d8c43d89d8a10bd519675bd2"
+  integrity sha512-UTROxB7q/hZBnhDLcCN7mVsAX3SxXNMhVuPbtddsDOUCm4hExLXN62gPD7rjgmumhfHMjeXmkw/EfRzSjttL1g==
   dependencies:
     tslib "^2.1.0"
 
-"@capacitor/ios@^3.5.1":
+"@capacitor/ios@latest":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.5.1.tgz#976de8909487c0ca35b8f1616ce8837bb19ff8c6"
   integrity sha512-295L9dHe/QaejUpGI8Pxwb1i2yVgick1ExIDK26xk+tk1km3B1HVjsIS8qkf2SOp7tuwP9+W5T5p7rLMNN4v5g==
