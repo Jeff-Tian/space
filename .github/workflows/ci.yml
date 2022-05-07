@@ -16,7 +16,7 @@ jobs:
           node-version: '14'
 
       - name: Build
-        run: npm i -g yarn && yarn && yarn build
+        run: npm i -g yarn && yarn && yarn build-all
         env:
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
           ALGOLIA_BASE_URL: $${{ secrets.ALGOLIA_BASE_URL}}
