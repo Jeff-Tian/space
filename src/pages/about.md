@@ -1,17 +1,18 @@
 ---
-title: About Me
-subtitle: This is a short page about me and my work
+title: About Jeff Tian
+subtitle: Jeff Tian is a wild developer.
 img_path: >-
-  https://images.ctfassets.net/qixg1o8tujmf/610P0awi7eHk9zJzOOSH7v/5df640b534bcf0484f22d54ee1d3e01e/about.jpg
+  https://images.ctfassets.net/qixg1o8tujmf/4ZmGeX014KTg9Z3SSDD234/424a14c6ffe98f60407b640f70cf957b/WechatIMG320.jpeg
 template: page
+stackbit_url_path: /about
 ---
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+**Jeff Tian** is a wild Full Stack Developer from [Shanghai](https://en.wikipedia.org/wiki/Shanghai), China. After graduating from the Software School of Fudan University with a master's degree in Software Engineering, he worked for both top 500 companies and startups where touched all different kinds of technologies.
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
+His work spaned from frontend to backend, coding to devops and to architecturing.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+>What I cannot create, I do not understand. <cite>Richard Feynman</cite>
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+As a hobby, Jeff Tian authors the most influential technology blog with over 100,000 page views a month. He lives in Shanghai with his beautiful wife and one lovely boy.
 
 *Thank You for reading!*
