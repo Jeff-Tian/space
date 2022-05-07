@@ -31,7 +31,6 @@
     "dotenv": "^16.0.0",
     "fs-extra": "^10.1.0",
     "gatsby": "^4.13.1",
-    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sass": "5.12.1",
     "gatsby-plugin-workerize-loader": "^2.0.0-alpha.0",
@@ -57,12 +56,10 @@
     "gatsby-plugin-perf-budgets": "^0.0.18",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
     "gatsby-source-github": "0.0.2",
-    "mocha": "^9.2.2",
-    "webpack": "^5.72.0"
+    "mocha": "^9.2.2"
   },
   "resolutions": {
     "graphql": "^15.4.0",
-    "graphql-compose": "^7.25.0",
-    "webpack": "^5.24.2"
+    "graphql-compose": "^7.25.0"
   }
 }
