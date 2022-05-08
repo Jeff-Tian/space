@@ -6,6 +6,7 @@
 
 const path = require("path");
 const _ = require("lodash");
+const getPages = require("./src/utils/getPages");
 /**
  * Create homepage that collects all the posts
  * @param actions
@@ -38,7 +39,7 @@ query {
   }
 }
   `).then(({data}) => {
-        const pages = data.allSitePage.edges.map(({node}) => node.pageContext);
+        const pages = _.orderBy(getPages(data.allSitePage.edges.map(({node}) => node.pageContext), '/posts'), 'frontmatter.date', 'desc');
         console.log('pages = ', pages);
 
         const siteNode = getNode('Site');

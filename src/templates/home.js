@@ -2,10 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import {graphql} from 'gatsby';
-
-import {Layout} from '../components/index';
 import Header from '../components/Header';
-import {getPages, Link, withPrefix} from '../utils';
+import {Link, withPrefix} from '../utils';
 import Footer from '../components/Footer';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
@@ -20,12 +18,7 @@ export const query = graphql`
 
 export default class Home extends React.Component {
     render() {
-        let allPages = this.props.pageContext.pages;
-        console.log('allpAGES = ', allPages)
-
-        let display_posts = _.orderBy(getPages(allPages, '/posts'), 'frontmatter.date', 'desc');
-
-        console.log('display_posts = ', display_posts);
+        const pages = this.props.pageContext.pages;
 
         return (
             <div>
@@ -34,7 +27,7 @@ export default class Home extends React.Component {
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
                         <div className="post-feed">
-                            {_.map(display_posts, (post, post_idx) => (
+                            {_.map(pages, (post, post_idx) => (
                                 <article key={post_idx} className="post">
                                     <header className="post-header">
                                         <h2 className="post-title"><Link to={withPrefix(_.get(post, 'url', null))}
