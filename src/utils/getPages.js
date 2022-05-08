@@ -1,4 +1,4 @@
-import _ from 'lodash';
+const _ = require('lodash');
 
 /**
  * Get all the pages located under the provided `urlPath`, not including the
@@ -25,7 +25,7 @@ import _ from 'lodash';
  * @param {string} urlPath The url path to filter pages by
  * @return {Array}
  */
-export default function getPages(pages, urlPath) {
+module.exports = function getPages(pages, urlPath) {
     urlPath = _.trim(urlPath, '/');
     const urlPathParts = _.split(urlPath, '/');
     return _.filter(pages, page => {

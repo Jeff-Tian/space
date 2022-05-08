@@ -30,7 +30,8 @@ describe('getPages', () => {
             path: "/posts/20年之后的我/",
             pluginCreator: {
                 resolve: "/Users/cnjeftia/jeff-tian/unicms-copy-01/plu"
-            }
+            },
+            url: "/posts/20年之后的我/",
         }];
 
         assert.strictEqual(getPages(pages, "/posts").length, 1);
