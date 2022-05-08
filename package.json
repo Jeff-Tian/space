@@ -34,6 +34,7 @@
     "gatsby-plugin-react-helmet": "^5.13.0",
     "gatsby-plugin-sass": "^5.13.0",
     "gatsby-plugin-workerize-loader": "^2.0.0-alpha.0",
+    "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "4.13.0",
     "gatsby-transformer-remark": "5.13.0",
     "js-yaml": "^4.1.0",

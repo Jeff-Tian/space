@@ -41,14 +41,13 @@ module.exports = {
         pageContextProperty: `menus`,
       },
     },
-    // {
-    //   resolve: '@jeff-tian/gatsby-source-yuque',
-    //   options: {
-    //     login: 'tian-jie',
-    //     repo: 'blog',
-    //     mdNameFormat: 'slug',
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-dev",
+      options: {
+        // This is your username on Dev.to
+        username: 'jefftian'
+      }
+    }
     // {
     //   resolve: 'gatsby-source-graphql',
     //   options: {
