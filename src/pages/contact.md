@@ -39,6 +39,7 @@ form_fields:
     type: form_field
 submit_label: Send Message
 template: contact
+stackbit_url_path: /contact
 ---
 
 To get in touch fill the form below.

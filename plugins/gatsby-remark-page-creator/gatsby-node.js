@@ -141,6 +141,12 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
             const template = node.frontmatter.template;
+
+            if(template === 'home') {
+                // Will create home page in the root gatsby-node.js
+                return;
+            }
+
             const component = path.resolve(`./src/templates/${template}.js`);
             const existingPageNode = _.get(sitePageNodesByPath, url);
 
