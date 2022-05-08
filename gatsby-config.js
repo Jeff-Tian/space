@@ -7,8 +7,6 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: siteMetadata,
   plugins: [
-    // `gatsby-plugin-perf-budgets`,
-    // `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-react-helmet`,
     `gatsby-source-data`,
     `gatsby-transformer-remark`,
@@ -32,6 +30,10 @@ module.exports = {
     },
     {
       resolve: `gatsby-remark-page-creator`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-dev-page-creator`,
       options: {},
     },
     {

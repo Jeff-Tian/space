@@ -7,8 +7,8 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "start": "npm run develop",
-    "test": "mocha --recursive \"plugins/**/*.test.js\"",
-    "build": "gatsby build --prefix-paths",
+    "test": "mocha --require @babel/register --recursive \"src/**/*.test.js\"",
+    "build": "gatsby build --prefix-paths --verbose",
     "build-all": "./stackbit-build.sh",
     "serve": "gatsby serve",
     "pull": "source .env && sh stackbit-build.sh && sh uniheart-stackbit-build.sh",
@@ -25,6 +25,11 @@
     "@capacitor/cli": "latest",
     "@capacitor/core": "latest",
     "@capacitor/ios": "latest",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7",
     "@jeff-tian/gatsby-source-yuque": "1.7.2",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "babel-runtime": "^6.26.0",
@@ -59,7 +64,7 @@
     "gatsby-plugin-perf-budgets": "^0.0.18",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
     "gatsby-source-github": "0.0.2",
-    "mocha": "^9.2.2"
+    "mocha": "10.0.0"
   },
   "resolutions": {
     "graphql": "^15.4.0",
