@@ -49,6 +49,13 @@ module.exports = {
         mdNameFormat: 'slug',
       },
     },
+    {
+      resolve: "gatsby-source-dev",
+      options: {
+        // This is your username on Dev.to
+        username: 'jefftian'
+      }
+    }
     // {
     //   resolve: 'gatsby-source-graphql',
     //   options: {
