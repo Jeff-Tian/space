@@ -120,14 +120,6 @@
                 "icon_class": "http://zizhujy.apphb.com/Content/Images/logo.png",
                 "new_window": true,
                 "type": "action"
-            },
-            {
-                "label": "紫竹叽歪博客",
-                "url": "http://insight-1.apphb.com/",
-                "style": "link",
-                "icon_class": "http://insight-1.apphb.com/Content/images/blog/blogengine.ico",
-                "new_window": true,
-                "type": "action"
             }
         ],
         "type": "footer"

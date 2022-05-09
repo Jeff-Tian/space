@@ -21,19 +21,6 @@ query {
     edges {
       node {
         pageContext
-        component
-        internal {
-          type
-          content
-          description
-          mediaType
-          contentDigest
-        }
-        path
-        matchPath
-        pluginCreator {
-          resolve
-        }
       }
     }
   }
@@ -60,7 +47,13 @@ query homePageQuery {
   }
 }
       `).then(({data: {markdownRemark: {frontmatter}}}) => {
-            const pages = _.orderBy(getPages(data.allSitePage.edges.map(({node}) => node.pageContext), '/posts'), 'frontmatter.date', 'desc');
+            console.log('data = ', data);
+            process.exit();
+            const allPages = data.allSitePage.edges.map(({node}) => node.pageContext);
+
+            const posts = _.orderBy(getPages(allPages, '/posts'), 'frontmatter.date', 'desc');
+            
+            console.log('posts len ', posts.length);
 
             const siteNode = getNode('Site');
             const siteDataNode = getNode('SiteData');
@@ -74,7 +67,7 @@ query homePageQuery {
                     url: '/',
                     relativePath: '/',
                     base: '',
-                    pages: pages,
+                    pages: posts,
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),
                         pathPrefix: siteNode.pathPrefix,
