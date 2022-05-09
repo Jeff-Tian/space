@@ -77,6 +77,7 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
         edges {
           node {
             id
+            html
           }
         }
       }
@@ -131,7 +132,7 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                 base: node.fields.base,
                 name: node.fields.name,
                 frontmatter: node.frontmatter,
-                html:  'todo', // graphQLNode.html
+                html:  graphQLNode.html
             };
         });
 

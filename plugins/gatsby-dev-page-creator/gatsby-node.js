@@ -2,6 +2,7 @@ const path = require("path");
 const {createFilePath} = require("gatsby-source-filesystem");
 const _ = require('lodash');
 const util = require('util');
+const {convertGraphQLNodeToPage} = require("../common/helpers");
 
 function findFileNode({node, getNode}) {
     let fileNode = node;
@@ -74,18 +75,36 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
     {
       allDevArticles {
         edges {
-          node {
+          node 
+          {
             id
+            internal {
+              content
+              mediaType
+              type
+            }
             article {
-                canonical_url
-                cover_image
-                created_at
-                description
-                path
-                published_at
-                slug
-                social_image
-                url
+              url
+              user {
+                name
+                username
+                twitter_username
+                github_username
+                website_url
+                profile_image
+                profile_image_90
+              }
+              title
+              tag_list
+              tags
+              positive_reactions_count
+              comments_count
+              canonical_url
+              body_html
+              published_at
+              published_timestamp
+              slug
+              description
             }
           }
         }
@@ -96,8 +115,6 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             return Promise.reject(result.errors);
         }
 
-        console.log('result = ', result);
-
         const nodes = result.data.allDevArticles.edges.map(({node}) => node);
         const siteNode = getNode('Site');
         console.log('siteNode = ', siteNode)
@@ -107,29 +124,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        console.log('nodes length = ', nodes.length);
-
-        const pages = nodes.map(graphQLNode => {
-            // Use the node id to get the underlying node. It is not exactly the
-            // same node returned by GraphQL, because GraphQL resolvers might
-            // transform node fields.
-            const node = getNode(graphQLNode.id);
-            console.log('node = ', node);
-
-            // throw new Error('has node fields! ' + util.inspect(node))
-            return {
-                path: '/posts/' + graphQLNode.article.slug + '/',
-                url: '/posts/' + graphQLNode.article.slug + '/',
-                relativePath: '/posts/' + graphQLNode.article.slug,
-                relativeDir: '/posts',
-                base: '',
-                name: graphQLNode.article.slug,
-                frontmatter: {
-                    title: graphQLNode.article.title
-                },
-                html: graphQLNode.article.body_html
-            };
-        });
+        const pages = nodes.map(convertGraphQLNodeToPage);
 
         nodes.forEach(graphQLNode => {
             const url = '/posts/' + graphQLNode.article.slug + '/';
@@ -140,15 +135,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 path: '/posts/' + graphQLNode.article.slug + '/',
                 component: component,
                 context: {
-                    url: url,
-                    relativePath: '/posts/' + graphQLNode.article.slug,
-                    relativeDir: '/posts',
-                    base: '',
-                    name: graphQLNode.article.slug,
-                    html: graphQLNode.article.body_html,
-                    frontmatter: {
-                        title: graphQLNode.article.title
-                    },
+                    ...convertGraphQLNodeToPage(graphQLNode),
                     pages: pages,
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),

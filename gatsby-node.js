@@ -39,27 +39,49 @@ query {
   }
 }
   `).then(({data}) => {
-        const pages = _.orderBy(getPages(data.allSitePage.edges.map(({node}) => node.pageContext), '/posts'), 'frontmatter.date', 'desc');
-        console.log('pages = ', pages);
+        return graphql(`
+query homePageQuery {
+  markdownRemark(fields: {url: {eq: "/"}}) {
+    frontmatter {
+      canonical_url
+      comments_count
+      title
+      template
+      more_link_text
+      date(difference: "")
+      excerpt
+      has_more_link
+    }
+    id
+    fileAbsolutePath
+    fields {
+      url
+    }
+  }
+}
+      `).then(({data: {markdownRemark: {frontmatter}}}) => {
+            const pages = _.orderBy(getPages(data.allSitePage.edges.map(({node}) => node.pageContext), '/posts'), 'frontmatter.date', 'desc');
 
-        const siteNode = getNode('Site');
-        const siteDataNode = getNode('SiteData');
-        const siteData = _.get(siteDataNode, 'data', {});
+            const siteNode = getNode('Site');
+            const siteDataNode = getNode('SiteData');
+            const siteData = _.get(siteDataNode, 'data', {});
 
-        actions.createPage({
-            path: '/',
-            component: path.resolve('./src/templates/home.js'),
-            context: {
-                url: '/',
-                relativePath: '/',
-                base: '',
-                pages: pages,
-                site: {
-                    siteMetadata: _.get(siteData, 'site-metadata', {}),
-                    pathPrefix: siteNode.pathPrefix,
-                    data: _.omit(siteData, 'site-metadata')
+            actions.createPage({
+                path: '/',
+                component: path.resolve('./src/templates/home.js'),
+                context: {
+                    frontmatter,
+                    url: '/',
+                    relativePath: '/',
+                    base: '',
+                    pages: pages,
+                    site: {
+                        siteMetadata: _.get(siteData, 'site-metadata', {}),
+                        pathPrefix: siteNode.pathPrefix,
+                        data: _.omit(siteData, 'site-metadata')
+                    }
                 }
-            }
+            });
         });
     });
 }
