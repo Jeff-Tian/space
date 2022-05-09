@@ -5,6 +5,7 @@ import {graphql} from 'gatsby';
 import Header from '../components/Header';
 import {Link, withPrefix} from '../utils';
 import Footer from '../components/Footer';
+import {Layout} from "../components";
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -18,10 +19,11 @@ export const query = graphql`
 
 export default class Home extends React.Component {
     render() {
+        console.log('home props = ', this.props);
         const pages = this.props.pageContext.pages;
 
         return (
-            <div>
+            <Layout {...this.props}>
                 <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
                         image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
                 <div id="content" className="site-content">
@@ -62,7 +64,7 @@ export default class Home extends React.Component {
                     <Footer {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
                             image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
                 </div>
-            </div>
+            </Layout>
         );
     }
 }

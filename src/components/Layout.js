@@ -6,6 +6,7 @@ import '../sass/main.scss';
 
 export default class Body extends React.Component {
     render() {
+        console.log('props = ', this.props);
         return (
             <React.Fragment>
                 <Helmet>

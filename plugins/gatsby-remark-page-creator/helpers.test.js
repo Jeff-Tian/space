@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { getSlug, getFolder } = require('./helpers');
 
-describe("helpers", () => {
+describe("helpers.js", () => {
     it("gets the slug", () => {
         const stackbitUrl = 'posts/1234'
         assert.strictEqual(getSlug(stackbitUrl), '1234');
