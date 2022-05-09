@@ -117,9 +117,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
 
         const nodes = result.data.allDevArticles.edges.map(({node}) => node);
         const siteNode = getNode('Site');
-        console.log('siteNode = ', siteNode)
         const siteDataNode = getNode('SiteData');
-        console.log('siteDataNode = ', siteDataNode);
         const sitePageNodes = getNodesByType('SitePage');
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});

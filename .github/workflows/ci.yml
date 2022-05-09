@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    environment: Production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Build
+        run: npm i -g yarn && yarn && yarn build-all
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          ALGOLIA_BASE_URL: ${{ secrets.ALGOLIA_BASE_URL}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          STACKBIT_API_KEY: ${{ secrets.STACKBIT_API_KEY }}
+          UNI_HEART_STACKBIT_API_KEY: ${{ secrets.UNI_HEART_STACKBIT_API_KEY }}
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN}}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          cname: jeff-tian.inversify.cn
