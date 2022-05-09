@@ -47,8 +47,6 @@ query homePageQuery {
   }
 }
       `).then(({data: {markdownRemark: {frontmatter}}}) => {
-            console.log('data = ', data);
-            process.exit();
             const allPages = data.allSitePage.edges.map(({node}) => node.pageContext);
 
             const posts = _.orderBy(getPages(allPages, '/posts'), 'frontmatter.date', 'desc');
