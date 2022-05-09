@@ -127,11 +127,14 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             const component = path.resolve(`./src/templates/post.js`);
             const existingPageNode = _.get(sitePageNodesByPath, url);
 
+            const pageObject = convertGraphQLNodeToPage(graphQLNode);
+
             const page = {
                 path: '/posts/' + graphQLNode.article.slug + '/',
                 component: component,
+                frontmatter: pageObject.frontmatter,
                 context: {
-                    ...convertGraphQLNodeToPage(graphQLNode),
+                    ...pageObject,
                     pages: [],
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),

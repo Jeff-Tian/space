@@ -2,7 +2,6 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const _ = require('lodash');
 const util = require('util');
-const { getSlug } = require('./helpers');
 
 function findFileNode({ node, getNode }) {
     let fileNode = node;
@@ -111,6 +110,7 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
 
             const page = {
                 path: url,
+                frontmatter: node.frontmatter,
                 component: component,
                 context: {
                     url: url,
