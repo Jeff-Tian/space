@@ -17,7 +17,7 @@ const getPages = require("./src/utils/getPages");
 exports.createPages = function ({actions, graphql, getNode}) {
     return graphql(`
 query {
-  allSitePage {
+  allSitePage(limit: 10, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
     edges {
       node {
         pageContext
@@ -49,7 +49,7 @@ query homePageQuery {
       `).then(({data: {markdownRemark: {frontmatter}}}) => {
             const allPages = data.allSitePage.edges.map(({node}) => node.pageContext);
 
-            const posts = _.orderBy(getPages(allPages, '/posts'), 'frontmatter.date', 'desc');
+            const posts = _.orderBy(allPages, 'frontmatter.date', 'desc');
             
             console.log('posts len ', posts.length);
 
