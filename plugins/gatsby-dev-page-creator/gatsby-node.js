@@ -122,8 +122,6 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        const pages = nodes.map(convertGraphQLNodeToPage);
-
         nodes.forEach(graphQLNode => {
             const url = '/posts/' + graphQLNode.article.slug + '/';
             const component = path.resolve(`./src/templates/post.js`);
@@ -134,7 +132,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 component: component,
                 context: {
                     ...convertGraphQLNodeToPage(graphQLNode),
-                    pages: pages,
+                    pages: [],
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),
                         pathPrefix: siteNode.pathPrefix,
