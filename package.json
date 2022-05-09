@@ -10,7 +10,7 @@
     "test": "mocha --require @babel/register --recursive \"src/**/*.test.js\"",
     "build": "gatsby build --prefix-paths --verbose",
     "serve": "gatsby serve",
-    "pull": "./stackbit-build.sh",
+    "build-all": "./stackbit-build.sh",
     "pull-json": "npx -p @jeff-tian/stackbit-pull@0.4.4 stackbit-pull-json --json-file=/Users/tianjef/Downloads/query_result_2021-03-25T18_46_59.417122+08_00.json",
     "ios": "npx cap add ios",
     "ios-run": "npx cap run ios",
