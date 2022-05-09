@@ -1,8 +1,7 @@
 const axios = require("axios");
-const crypto = require("crypto");
 const queryString = require("query-string");
 
-exports.sourceNodes = async ({ actions }, { username }) => {
+exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }, { username }) => {
     if (!username) {
         throw new Error("You must provide a `username` to `gatsby-source-dev`.");
     }
@@ -43,19 +42,18 @@ exports.sourceNodes = async ({ actions }, { username }) => {
     }
 
     articles.forEach(article => {
-        const jsonString = JSON.stringify(article);
-
         const gatsbyNode = {
             article: Object.assign({}, article),
-            id: `${article.id}`,
+            ...article,
+            id: createNodeId(`dev-article-${article.id}`),
             parent: "__SOURCE__",
             children: [],
             internal: {
                 type: "DevArticles",
-                contentDigest: crypto
-                    .createHash("md5")
-                    .update(jsonString)
-                    .digest("hex")
+                mediaType: `text/markdown`,
+                content: article.body,
+                description: article.description,
+                contentDigest: createContentDigest(article)
             }
         };
 
