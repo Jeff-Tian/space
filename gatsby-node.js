@@ -6,7 +6,6 @@
 
 const path = require("path");
 const _ = require("lodash");
-const getPages = require("./src/utils/getPages");
 /**
  * Create homepage that collects all the posts
  * @param actions
@@ -15,18 +14,19 @@ const getPages = require("./src/utils/getPages");
  * @returns {Promise<void>}
  */
 exports.createPages = function ({actions, graphql, getNode}) {
-    return graphql(`
+    const queryPosts = graphql(`
 query {
-  allSitePage {
+  allSitePage(limit: 3, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
     edges {
       node {
-        pageContext
+        id
       }
     }
   }
 }
-  `).then(({data}) => {
-        return graphql(`
+  `);
+
+    const queryHomepage = graphql(`
 query homePageQuery {
   markdownRemark(fields: {url: {eq: "/"}}) {
     frontmatter {
@@ -46,33 +46,34 @@ query homePageQuery {
     }
   }
 }
-      `).then(({data: {markdownRemark: {frontmatter}}}) => {
-            const allPages = data.allSitePage.edges.map(({node}) => node.pageContext);
+      `);
 
-            const posts = _.orderBy(getPages(allPages, '/posts'), 'frontmatter.date', 'desc');
-            
-            console.log('posts len ', posts.length);
+    return Promise.all([queryPosts, queryHomepage]).then(([{data}, {data: {markdownRemark: {frontmatter}}}]) => {
+        const posts = data.allSitePage.edges.map(({node}) => node.pageContext)
 
-            const siteNode = getNode('Site');
-            const siteDataNode = getNode('SiteData');
-            const siteData = _.get(siteDataNode, 'data', {});
+        console.log('posts len =', posts.length);
 
-            actions.createPage({
-                path: '/',
-                component: path.resolve('./src/templates/home.js'),
-                context: {
-                    frontmatter,
-                    url: '/',
-                    relativePath: '/',
-                    base: '',
-                    pages: posts,
-                    site: {
-                        siteMetadata: _.get(siteData, 'site-metadata', {}),
-                        pathPrefix: siteNode.pathPrefix,
-                        data: _.omit(siteData, 'site-metadata')
-                    }
+        const siteNode = getNode('Site');
+        const siteDataNode = getNode('SiteData');
+        const siteData = _.get(siteDataNode, 'data', {});
+
+        actions.createPage({
+            path: '/',
+            component: path.resolve('./src/templates/home.js'),
+            context: {
+                frontmatter,
+                url: '/',
+                relativePath: '/',
+                base: '',
+                pages: posts,
+                site: {
+                    siteMetadata: _.get(siteData, 'site-metadata', {}),
+                    pathPrefix: siteNode.pathPrefix,
+                    data: _.omit(siteData, 'site-metadata')
                 }
-            });
+            }
         });
+
     });
+
 }
