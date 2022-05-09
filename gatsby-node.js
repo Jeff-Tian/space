@@ -19,7 +19,7 @@ query {
   allSitePage(limit: 3, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
     edges {
       node {
-        pageContext
+        id
       }
     }
   }
