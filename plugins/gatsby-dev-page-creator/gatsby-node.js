@@ -128,7 +128,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
 
         nodes.forEach(graphQLNode => {
             const url = '/posts/' + graphQLNode.article.slug + '/';
-            const component = path.resolve(`./src/templates/DevArticle.js`);
+            const component = path.resolve(`./src/templates/post.js`);
             const existingPageNode = _.get(sitePageNodesByPath, url);
 
             const page = {
