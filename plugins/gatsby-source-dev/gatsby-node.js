@@ -42,16 +42,30 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }, { u
     }
 
     articles.forEach(article => {
+        const template = `---
+stackbit_url_path: posts/${article.slug}
+title: '${article.title.replace(/^@/, ``)}'
+date: '${article.published_at}'
+excerpt: >-
+	${article.excerpt}
+tags: ${article.tag_list}
+categories: ${article.tag_list}
+template: post
+---
+
+dev blog
+`;
+
         const gatsbyNode = {
             article: Object.assign({}, article),
             ...article,
             id: createNodeId(`dev-article-${article.id}`),
-            parent: "__SOURCE__",
+            parent: null,
             children: [],
             internal: {
                 type: "DevArticles",
                 mediaType: `text/markdown`,
-                content: article.body,
+                content: template,
                 description: article.description,
                 contentDigest: createContentDigest(article)
             }

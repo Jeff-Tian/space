@@ -32,10 +32,10 @@ module.exports = {
       resolve: `gatsby-remark-page-creator`,
       options: {},
     },
-    {
-      resolve: `gatsby-dev-page-creator`,
-      options: {},
-    },
+    // {
+    //   resolve: `gatsby-dev-page-creator`,
+    //   options: {},
+    // },
     {
       resolve: `@stackbit/gatsby-plugin-menus`,
       options: {
@@ -49,7 +49,15 @@ module.exports = {
         // This is your username on Dev.to
         username: 'jefftian'
       }
-    }
+    },
+    {
+      resolve: '@jeff-tian/gatsby-source-yuque',
+      options: {
+        login: 'tian-jie',
+        repo: 'kb',
+        mdNameFormat: 'slug',
+      },
+    },
     // {
     //   resolve: 'gatsby-source-graphql',
     //   options: {
