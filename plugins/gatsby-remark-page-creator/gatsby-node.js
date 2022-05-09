@@ -96,48 +96,6 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        console.log('nodes length = ', nodes.length);
-
-        const pages = nodes.map(graphQLNode => {
-            // Use the node id to get the underlying node. It is not exactly the
-            // same node returned by GraphQL, because GraphQL resolvers might
-            // transform node fields.
-            const node = getNode(graphQLNode.id);
-            if (!node.fields) {
-                const { stackbit_url_path } = node.frontmatter;
-
-                if (stackbit_url_path) {
-                    const slug = getSlug(stackbit_url_path);
-                    const url = '/' + stackbit_url_path;
-
-                    node.fields = {
-                        url,
-                        absolutePath: 'src' + url + '.md',
-                        relativePath: slug + '.md',
-                        relativeDir: '',
-                        base: slug + '.md',
-                        ext: '.md',
-                        name: slug
-                    }
-                } else {
-                    throw new Error('no node fields! ' + util.inspect(node))
-                }
-            }
-
-            // throw new Error('has node fields! ' + util.inspect(node))
-            return {
-                url: node.fields.url,
-                relativePath: node.fields.relativePath,
-                relativeDir: node.fields.relativeDir,
-                base: node.fields.base,
-                name: node.fields.name,
-                frontmatter: node.frontmatter,
-                html:  graphQLNode.html
-            };
-        });
-
-        console.log('nodes = ', nodes.length);
-
         nodes.forEach(graphQLNode => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
@@ -161,8 +119,8 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                     base: node.fields.base,
                     name: node.fields.name,
                     frontmatter: node.frontmatter,
-                    html: 'todo', //graphQLNode.html,
-                    pages: pages,
+                    html: graphQLNode.html,
+                    pages: [],
                     site: {
                         siteMetadata: _.get(siteData, 'site-metadata', {}),
                         pathPrefix: siteNode.pathPrefix,

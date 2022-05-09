@@ -20,6 +20,7 @@ query {
     edges {
       node {
         id
+        pageContext
       }
     }
   }
@@ -49,6 +50,7 @@ query homePageQuery {
       `);
 
     return Promise.all([queryPosts, queryHomepage]).then(([{data}, {data: {markdownRemark: {frontmatter}}}]) => {
+        console.log('data = ', JSON.stringify(data));
         const posts = data.allSitePage.edges.map(({node}) => node.pageContext)
 
         console.log('posts len =', posts.length);
