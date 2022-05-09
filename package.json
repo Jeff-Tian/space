@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "develop": "UV_THREADPOOL_SIZE=50 GATSBY_CPU_COUNT=6 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=4 gatsby develop",
+    "develop": "UV_THREADPOOL_SIZE=50 GATSBY_CPU_COUNT=6 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=4 gatsby develop --verbose",
     "clean": "gatsby clean",
     "start": "npm run develop",
     "test": "mocha --require @babel/register --recursive \"src/**/*.test.js\"",

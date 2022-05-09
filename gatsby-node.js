@@ -16,7 +16,7 @@ const _ = require("lodash");
 exports.createPages = function ({actions, graphql, getNode}) {
     const queryPosts = graphql(`
 query {
-  allSitePage(limit: 1000, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
+  allSitePage(limit: 3, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
     edges {
       node {
         id
