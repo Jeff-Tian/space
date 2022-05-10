@@ -54,14 +54,6 @@ module.exports = {
         username: 'jefftian'
       }
     },
-    {
-      resolve: '@jeff-tian/gatsby-source-yuque',
-      options: {
-        login: 'tian-jie',
-        repo: 'kb',
-        mdNameFormat: 'slug',
-      },
-    },
     // {
     //   resolve: 'gatsby-source-graphql',
     //   options: {

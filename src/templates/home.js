@@ -20,8 +20,6 @@ export const query = graphql`
 export default class Home extends React.Component {
     render() {
         const pages = this.props.pageContext.pages;
-        console.log('pages = ', pages);
-
         return (
             <Layout {...this.props}>
                 <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}

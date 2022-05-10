@@ -16,7 +16,11 @@ const _ = require("lodash");
 exports.createPages = function ({actions, graphql, getNode}) {
     const queryPosts = graphql(`
 query {
-  allMarkdownRemark(limit: 110, filter: {frontmatter: {template: {eq: "post"}}}) {
+  allMarkdownRemark(
+    limit: 10
+    filter: {frontmatter: {template: {eq: "post"}}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
     edges {
       node {
         excerpt
