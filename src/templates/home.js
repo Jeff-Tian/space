@@ -95,7 +95,8 @@ export default class Home extends React.Component {
                                     currentPage={this.props.pageContext.currentPage}/>
                     </main>
                     <Footer {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
-                            image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
+                            image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}>
+                    </Footer>
                 </div>
             </Layout>
         );
