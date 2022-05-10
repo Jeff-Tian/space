@@ -32,10 +32,6 @@ module.exports = {
       resolve: `gatsby-remark-page-creator`,
       options: {},
     },
-    // {
-    //   resolve: `gatsby-dev-page-creator`,
-    //   options: {},
-    // },
     {
       resolve: `@stackbit/gatsby-plugin-menus`,
       options: {

@@ -1,5 +1,6 @@
 const axios = require("axios");
 const queryString = require("query-string");
+const {escapeSpecialCharacters} = require("../common/escape-special-characters");
 
 exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }, { username }) => {
     if (!username) {
@@ -44,21 +45,20 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId }, { u
     articles.forEach(article => {
         const template = `---
 stackbit_url_path: posts/${article.slug}
-title: '${article.title.replace(/^@/, ``)}'
+title: '${escapeSpecialCharacters(article.title.replace(/^@/, ``))}'
 date: '${article.published_at}'
 excerpt: >-
-	${article.excerpt}
-tags: ${article.tag_list}
-categories: ${article.tag_list}
+	${escapeSpecialCharacters(article.excerpt)}
+tags: ''
+categories: ''
 template: post
 ---
 
-dev blog
+${article.body_html}
 `;
 
-        const gatsbyNode = {
-            article: Object.assign({}, article),
-            ...article,
+        const metaNode = {
+            article: article,
             id: createNodeId(`dev-article-${article.id}`),
             parent: null,
             children: [],
@@ -66,11 +66,10 @@ dev blog
                 type: "DevArticles",
                 mediaType: `text/markdown`,
                 content: template,
-                description: article.description,
                 contentDigest: createContentDigest(article)
             }
         };
 
-        createNode(gatsbyNode);
+        createNode(Object.assign({}, article, metaNode));
     });
 };

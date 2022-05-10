@@ -16,11 +16,23 @@ const _ = require("lodash");
 exports.createPages = function ({actions, graphql, getNode}) {
     const queryPosts = graphql(`
 query {
-  allSitePage(limit: 3, filter: {path: {regex: "/\\/posts\\/.+/"}}) {
+  allMarkdownRemark(limit: 110, filter: {frontmatter: {template: {eq: "post"}}}) {
     edges {
       node {
+        excerpt
         id
-        pageContext
+        frontmatter {
+          title
+          template
+          has_more_link
+          more_link_text
+          excerpt
+          canonical_url
+          date
+          img_path
+          positive_reactions_count
+          stackbit_url_path
+        }
       }
     }
   }
@@ -50,10 +62,10 @@ query homePageQuery {
       `);
 
     return Promise.all([queryPosts, queryHomepage]).then(([{data}, {data: {markdownRemark: {frontmatter}}}]) => {
-        console.log('data = ', JSON.stringify(data));
-        const posts = data.allSitePage.edges.map(({node}) => node.pageContext)
-
-        console.log('posts len =', posts.length);
+        const posts = data.allMarkdownRemark.edges.map(({node}) => ({
+            ...node,
+            url: node.frontmatter.stackbit_url_path
+        }))
 
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
@@ -77,5 +89,4 @@ query homePageQuery {
         });
 
     });
-
 }
