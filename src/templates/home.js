@@ -10,16 +10,39 @@ import {Layout} from "../components";
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
-  query($url: String) {
-    sitePage(path: {eq: $url}) {
-      id
+    query blogListQuery($skip: Int!, $limit: Int!) {
+        allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+            limit: $limit
+            skip: $skip
+            filter: {frontmatter: {template: {eq: "post"}}}
+        ) {
+            edges {
+              node {
+                excerpt
+                id
+                frontmatter {
+                  title
+                  template
+                  has_more_link
+                  more_link_text
+                  excerpt
+                  canonical_url
+                  date
+                  img_path
+                  positive_reactions_count
+                  stackbit_url_path
+                }
+              }
+            }
+        }
     }
-  }
 `;
 
 export default class Home extends React.Component {
     render() {
-        const pages = this.props.pageContext.pages;
+        const posts = this.props.data.allMarkdownRemark.edges
+
         return (
             <Layout {...this.props}>
                 <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
@@ -27,7 +50,7 @@ export default class Home extends React.Component {
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
                         <div className="post-feed">
-                            {_.map(pages, (post, post_idx) => (
+                            {_.map(posts, (post, post_idx) => (
                                 <article key={post_idx} className="post">
                                     <header className="post-header">
                                         <h2 className="post-title"><Link to={withPrefix(_.get(post, 'url', null))}
