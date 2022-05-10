@@ -78,19 +78,17 @@ query homePageQuery {
         const siteDataNode = getNode('SiteData');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        Array.from({length: totalPages}).forEach((_, i) => {
+        Array.from({length: totalPages}).forEach((__, i) => {
             console.log('creating homepage page', i);
 
             actions.createPage({
                 path: i === 0 ? '/' : `/${i + 1}`,
                 component: path.resolve('./src/templates/home.js'),
                 context: {
-                    pageInfo: {
-                        limit: pageSize,
-                        skip: i * pageSize,
-                        totalPages,
-                        currentPage: i + 1,
-                    },
+                    limit: pageSize,
+                    skip: i * pageSize,
+                    totalPages,
+                    currentPage: i + 1,
 
                     frontmatter,
                     url: '/',
