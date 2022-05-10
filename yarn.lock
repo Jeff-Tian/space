@@ -2787,6 +2787,14 @@
   resolved "https://registry.npmjs.org/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
+"@uniheart/experience.ui.uniheart-pagination@^0.0.0-fbfbfc685952788e9f0330cbd14f35a0d08e6661":
+  version "0.0.0-fbfbfc685952788e9f0330cbd14f35a0d08e6661"
+  resolved "https://node.bit.dev/@uniheart/experience.ui.uniheart-pagination/-/@uniheart-experience.ui.uniheart-pagination-0.0.0-fbfbfc685952788e9f0330cbd14f35a0d08e6661.tgz#5649ceb0fbe98844ea8cc82e93d7c84f4dffdb41"
+  integrity sha1-VknOsPvpiETqjMguk9fIT03/20E=
+  dependencies:
+    antd "4.20.3"
+    core-js "^3.0.0"
+
 "@uniheart/experience.ui.uniheart-rich-footer@latest":
   version "0.0.0-d959237d8416a7959cb0143be56ba5e90fbb7f2f"
   resolved "https://node.bit.dev/@uniheart/experience.ui.uniheart-rich-footer/-/@uniheart-experience.ui.uniheart-rich-footer-0.0.0-d959237d8416a7959cb0143be56ba5e90fbb7f2f.tgz#39f4c00aee8f73db4b8ee82130d8d8170b01130b"
@@ -6220,7 +6228,7 @@ gatsby-plugin-react-helmet@^5.13.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-plugin-sass@^5.13.0:
+gatsby-plugin-sass@5.13.0:
   version "5.13.0"
   resolved "https://registry.npmjs.org/gatsby-plugin-sass/-/gatsby-plugin-sass-5.13.0.tgz#6efe04edcb8942673a4a60df45d8328f999e4fb9"
   integrity sha512-KKK7DCepJcAzu5XgnmzZVlIfZqsA4Ij5DAte47tpVpEE4ary8WtMnzJoSWBJ2gAfdpQbOYbJPWXpQ+QAFrXnZw==

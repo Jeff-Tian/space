@@ -32,6 +32,7 @@
     "@capacitor/ios": "latest",
     "@jeff-tian/gatsby-source-yuque": "1.7.2",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
+    "@uniheart/experience.ui.uniheart-pagination": "^0.0.0-fbfbfc685952788e9f0330cbd14f35a0d08e6661",
     "@uniheart/experience.ui.uniheart-rich-footer": "latest",
     "axios": "^0.27.2",
     "babel-runtime": "7.0.0-beta.3",
