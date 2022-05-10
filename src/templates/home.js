@@ -50,10 +50,10 @@ export default class Home extends React.Component {
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
                         <div className="post-feed">
-                            {_.map(posts, (post, post_idx) => (
+                            {_.map(posts, ({node: post}, post_idx) => (
                                 <article key={post_idx} className="post">
                                     <header className="post-header">
-                                        <h2 className="post-title"><Link to={withPrefix(_.get(post, 'url', null))}
+                                        <h2 className="post-title"><Link to={withPrefix(_.get(post, 'frontmatter.stackbit_url_path', null))}
                                                                          rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link>
                                         </h2>
                                         <div className="post-meta">
@@ -74,7 +74,7 @@ export default class Home extends React.Component {
                                     {((_.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true) && _.get(this.props, 'pageContext.frontmatter.more_link_text', null)) && (
                                         <p className="read-more">
                                             <Link className="read-more-link"
-                                                  to={withPrefix(_.get(post, 'url', null))}>{_.get(this.props, 'pageContext.frontmatter.more_link_text', null)}
+                                                  to={withPrefix(_.get(post, 'frontmatter.stackbit_url_path', null))}>{_.get(this.props, 'pageContext.frontmatter.more_link_text', null)}
                                                 <span className="icon-arrow-right" aria-hidden="true"/></Link>
                                         </p>
                                     )}
