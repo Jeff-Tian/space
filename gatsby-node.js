@@ -16,7 +16,11 @@ const _ = require("lodash");
 exports.createPages = function ({actions, graphql, getNode}) {
     const queryPosts = graphql(`
 query {
-  allMarkdownRemark(limit: 110, filter: {frontmatter: {template: {eq: "post"}}}) {
+  allMarkdownRemark(
+    limit: 100
+    filter: {frontmatter: {template: {eq: "post"}}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
     edges {
       node {
         excerpt
@@ -65,28 +69,40 @@ query homePageQuery {
         const posts = data.allMarkdownRemark.edges.map(({node}) => ({
             ...node,
             url: node.frontmatter.stackbit_url_path
-        }))
+        }));
+
+        const pageSize = 5;
+        const totalPages = Math.ceil(posts.length / pageSize);
 
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        actions.createPage({
-            path: '/',
-            component: path.resolve('./src/templates/home.js'),
-            context: {
-                frontmatter,
-                url: '/',
-                relativePath: '/',
-                base: '',
-                pages: posts,
-                site: {
-                    siteMetadata: _.get(siteData, 'site-metadata', {}),
-                    pathPrefix: siteNode.pathPrefix,
-                    data: _.omit(siteData, 'site-metadata')
-                }
-            }
-        });
+        Array.from({length: totalPages}).forEach((_, i) => {
+            console.log('creating homepage page', i);
 
+            actions.createPage({
+                path: i === 0 ? '/' : `/${i + 1}`,
+                component: path.resolve('./src/templates/home.js'),
+                context: {
+                    pageInfo: {
+                        limit: pageSize,
+                        skip: i * pageSize,
+                        totalPages,
+                        currentPage: i + 1,
+                    },
+
+                    frontmatter,
+                    url: '/',
+                    relativePath: '/',
+                    base: '',
+                    site: {
+                        siteMetadata: _.get(siteData, 'site-metadata', {}),
+                        pathPrefix: siteNode.pathPrefix,
+                        data: _.omit(siteData, 'site-metadata')
+                    }
+                }
+            });
+        });
     });
 }

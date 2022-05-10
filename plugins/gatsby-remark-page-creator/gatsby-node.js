@@ -86,9 +86,8 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             return Promise.reject(result.errors);
         }
 
-        console.log('result = ', result);
-
         const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
+
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
