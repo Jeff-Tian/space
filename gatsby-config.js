@@ -39,13 +39,13 @@ module.exports = {
         pageContextProperty: `menus`,
       },
     },
-    {
-      resolve: "gatsby-source-dev",
-      options: {
-        // This is your username on Dev.to
-        username: 'jefftian'
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-dev",
+    //   options: {
+    //     // This is your username on Dev.to
+    //     username: 'jefftian'
+    //   }
+    // },
     {
       resolve: '@jeff-tian/gatsby-source-yuque',
       options: {
