@@ -50,14 +50,17 @@ export default class Home extends React.Component {
                         image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit} totalPages={this.props.pageContext.totalPages} currentPage={this.props.pageContext.currentPage}/>
+                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit}
+                                    totalPages={this.props.pageContext.totalPages}
+                                    currentPage={this.props.pageContext.currentPage}/>
 
                         <div className="post-feed">
                             {_.map(posts, ({node: post}, post_idx) => (
                                 <article key={post_idx} className="post">
                                     <header className="post-header">
-                                        <h2 className="post-title"><Link to={withPrefix(_.get(post, 'frontmatter.stackbit_url_path', null))}
-                                                                         rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link>
+                                        <h2 className="post-title"><Link
+                                            to={withPrefix(_.get(post, 'frontmatter.stackbit_url_path', null))}
+                                            rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link>
                                         </h2>
                                         <div className="post-meta">
                                             Published on <time className="published"
@@ -72,7 +75,9 @@ export default class Home extends React.Component {
                                         </Link>
                                     )}
                                     <div className="post-content">
-                                        <p>{_.get(post, 'frontmatter.excerpt', null)}</p>
+                                        <p>{
+                                            _.get(post, 'frontmatter.excerpt', null) || _.get(post, 'excerpt', null)}
+                                        </p>
                                     </div>
                                     {((_.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true) && _.get(this.props, 'pageContext.frontmatter.more_link_text', null)) && (
                                         <p className="read-more">
@@ -85,7 +90,9 @@ export default class Home extends React.Component {
                             ))}
                         </div>
 
-                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit} totalPages={this.props.pageContext.totalPages} currentPage={this.props.pageContext.currentPage}/>
+                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit}
+                                    totalPages={this.props.pageContext.totalPages}
+                                    currentPage={this.props.pageContext.currentPage}/>
                     </main>
                     <Footer {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
                             image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
