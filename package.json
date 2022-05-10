@@ -54,7 +54,14 @@
     "react-script-tag": "^1.1.2",
     "rehype-react": "^7.1.1",
     "sass": "^1.51.0",
-    "sprintf-js": "^1.1.2"
+    "sprintf-js": "^1.1.2",
+    "typography": "^0.16.21",
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7"
   },
   "devDependencies": {
     "@stackbit/stackbit-pull": "^0.5.1",
