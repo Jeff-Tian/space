@@ -98,7 +98,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             const node = getNode(graphQLNode.id);
 
             try {
-                const url = node.fields.url;
+                const url = node.fields ? node.fields.url : node.frontmatter.stackbit_url_path;
                 const template = node.frontmatter.template;
 
                 if (template === 'home') {
@@ -111,14 +111,15 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
 
                 const page = {
                     path: url,
+                    url,
                     frontmatter: node.frontmatter,
                     component: component,
                     context: {
                         url: url,
-                        relativePath: node.fields.relativePath,
-                        relativeDir: node.fields.relativeDir,
-                        base: node.fields.base,
-                        name: node.fields.name,
+                        relativePath: node.fields ? node.fields.relativePath : node.frontmatter.stackbit_url_path,
+                        relativeDir: node.fields?.relativeDir,
+                        base: node.fields?.base,
+                        name: node.fields?.name,
                         frontmatter: node.frontmatter,
                         html: graphQLNode.html,
                         pages: [],
@@ -135,6 +136,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 }
 
                 createPage(page);
+                console.log('created page = ', page.url);
             } catch (ex) {
                 console.error(`error at `, graphQLNode, node, ex);
             }
