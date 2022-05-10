@@ -73,6 +73,7 @@ query homePageQuery {
 
         const pageSize = 5;
         const totalPages = Math.ceil(posts.length / pageSize);
+        const totalItems = posts.length;
 
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
@@ -88,6 +89,7 @@ query homePageQuery {
                     limit: pageSize,
                     skip: i * pageSize,
                     totalPages,
+                    totalItems,
                     currentPage: i + 1,
 
                     frontmatter,

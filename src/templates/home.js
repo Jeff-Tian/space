@@ -7,6 +7,7 @@ import {Link, withPrefix} from '../utils';
 import Footer from '../components/Footer';
 import {Layout} from "../components";
 import Pagination from "../components/Pagination";
+import {UniheartPagination} from "@uniheart/experience.ui.uniheart-pagination/uniheart-pagination";
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -50,9 +51,13 @@ export default class Home extends React.Component {
                         image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}/>
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit}
-                                    totalPages={this.props.pageContext.totalPages}
-                                    currentPage={this.props.pageContext.currentPage}/>
+                        <UniheartPagination limit={this.props.pageContext.limit}
+                                            currentPage={this.props.pageContext.currentPage}
+                                            skip={this.props.pageContext.limit * this.props.pageContext.currentPage}
+                                            showTotal={total => `共${total}篇`} total={this.props.pageContext.totalItems}
+                                            onChange={(page, pageSize) => {
+                                                location.href = `/${page}`
+                                            }}/>
 
                         <div className="post-feed">
                             {_.map(posts, ({node: post}, post_idx) => (
@@ -90,9 +95,13 @@ export default class Home extends React.Component {
                             ))}
                         </div>
 
-                        <Pagination skip={this.props.pageContext.skip} limit={this.props.pageContext.limit}
-                                    totalPages={this.props.pageContext.totalPages}
-                                    currentPage={this.props.pageContext.currentPage}/>
+                        <UniheartPagination limit={this.props.pageContext.limit}
+                                            currentPage={this.props.pageContext.currentPage}
+                                            skip={this.props.pageContext.limit * this.props.pageContext.currentPage}
+                                            showTotal={total => `共${total}篇`} total={this.props.pageContext.totalItems}
+                                            onChange={(page, pageSize) => {
+                                                location.href = `/${page}`
+                                            }}/>
                     </main>
                     <Footer {...this.props} site={this.props.pageContext.site} page={this.props.pageContext}
                             image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)}>
