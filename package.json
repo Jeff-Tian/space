@@ -33,7 +33,7 @@
     "@jeff-tian/gatsby-source-yuque": "1.7.2",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "@uniheart/experience.ui.uniheart-pagination": "latest",
-    "@uniheart/experience.ui.uniheart-rich-footer": "latest",
+    "@uniheart/experience.ui.uniheart-rich-footer": "57631770b179d25387eb8c8a037676d59743bd12",
     "axios": "^0.27.2",
     "babel-runtime": "7.0.0-beta.3",
     "chokidar": "^3.4.0",
