@@ -1,7 +1,4 @@
 import React from 'react'
-// eslint:disable
-import algoliasearchNetlify from "../../static/algolia/algoliasearchNetlify";
-import '../../static/algolia/algoliasearchNetlify.css';
 
 export default class Search extends React.Component {
     componentDidMount() {
