@@ -47,19 +47,19 @@ module.exports = {
         //         mdNameFormat: 'slug',
         //     },
         // },
-        {
-            resolve: `gatsby-plugin-manifest`,
-            options: {
-                name: `Jeff Tian`,
-                short_name: `jeff-tian`,
-                start_url: `/`,
-                background_color: `#666666`,
-                theme_color: `#f45a4e`,
-                display: `standalone`,
-                icon: `src/favicon.png`,
-                crossOrigin: `use-credentials`,
-            },
-        },
+        // {
+        //     resolve: `gatsby-plugin-manifest`,
+        //     options: {
+        //         name: `Jeff Tian`,
+        //         short_name: `jeff-tian`,
+        //         start_url: `/`,
+        //         background_color: `#666666`,
+        //         theme_color: `#f45a4e`,
+        //         display: `standalone`,
+        //         icon: `src/favicon.png`,
+        //         crossOrigin: `use-credentials`,
+        //     },
+        // },
         // {
         //   resolve: 'gatsby-source-graphql',
         //   options: {
