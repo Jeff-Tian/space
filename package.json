@@ -21,6 +21,7 @@
     "gatsby-version": "gatsby --version"
   },
   "dependencies": {
+    "@algolia/algoliasearch-netlify-frontend": "^1.0.15",
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",

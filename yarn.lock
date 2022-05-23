@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@algolia/algoliasearch-netlify-frontend@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@algolia/algoliasearch-netlify-frontend/-/algoliasearch-netlify-frontend-1.0.15.tgz#cf5e40bd940ccd074ea60f4cd2e1a5b8e5aae73c"
+  integrity sha512-1LEludnawj4sAa7hk0CvEmSb4r2LUv9ZnOwKPhXqGRv8u09e9pytOQy4Ty5CwhArJqrICH7mVLSWlNT009ZnMA==
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
