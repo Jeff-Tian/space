@@ -3037,10 +3037,10 @@
     antd "4.20.3"
     core-js "^3.0.0"
 
-"@uniheart/experience.ui.uniheart-rich-footer@57631770b179d25387eb8c8a037676d59743bd12":
-  version "0.0.0-57631770b179d25387eb8c8a037676d59743bd12"
-  resolved "https://node.bit.dev/@uniheart/experience.ui.uniheart-rich-footer/-/@uniheart-experience.ui.uniheart-rich-footer-0.0.0-57631770b179d25387eb8c8a037676d59743bd12.tgz#67b90908810921a5e4023087308bd95ba78f337d"
-  integrity sha1-Z7kJCIEJIaXkAjCHMIvZW6ePM30=
+"@uniheart/experience.ui.uniheart-rich-footer@v5a015bc9892a2bd97565a9ae31a17b9db056a553":
+  version "0.0.0-5a015bc9892a2bd97565a9ae31a17b9db056a553"
+  resolved "https://node.bit.dev/@uniheart/experience.ui.uniheart-rich-footer/-/@uniheart-experience.ui.uniheart-rich-footer-0.0.0-5a015bc9892a2bd97565a9ae31a17b9db056a553.tgz#1acb7880ca1785f07282e7f8c156c3f2fb1e78fd"
+  integrity sha1-Gst4gMoXhfByguf4wVbD8vseeP0=
   dependencies:
     core-js "^3.0.0"
     rc-footer "^0.6.6"
