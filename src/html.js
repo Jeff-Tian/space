@@ -6,6 +6,7 @@ export default function HTML(props) {
         <html {...props.htmlAttributes}>
         <head>
             {props.headComponents}
+            <link rel="stylesheet" href="/algolia/algoliasearchNetlify.css" type="text/css" />
         </head>
         <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -18,6 +19,7 @@ export default function HTML(props) {
             dangerouslySetInnerHTML={{__html: props.body}}
         />
         {props.postBodyComponents}
+        <script src="/algolia/algoliasearchNetlify.js" type="text/javascript"></script>
         </body>
         </html>
     )
