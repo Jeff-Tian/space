@@ -5,7 +5,7 @@ require("dotenv").config({
 
 module.exports = {
     pathPrefix: '/',
-    siteMetadata: {...siteMetadata, siteUrl: 'https://jeff-tian.jiwai.win'},
+    siteMetadata: { ...siteMetadata, siteUrl: 'https://jeff-tian.jiwai.win' },
     plugins: [`gatsby-plugin-react-helmet`, `gatsby-source-data`, `gatsby-transformer-remark`, {
         resolve: `gatsby-source-filesystem`, options: {
             name: `pages`, path: `${__dirname}/src/pages`,
@@ -82,14 +82,14 @@ module.exports = {
             }
           }
         `, feeds: [{
-                    serialize: ({query: {site, allMarkdownRemark}}) => {
+                    serialize: ({ query: { site, allMarkdownRemark } }) => {
                         return allMarkdownRemark.edges.map(edge => {
                             return Object.assign({}, edge.node.frontmatter, {
                                 description: edge.node.excerpt,
                                 date: edge.node.frontmatter.date,
-                                url: site.siteMetadata.siteUrl + edge.node.fields.name,
-                                guid: site.siteMetadata.siteUrl + edge.node.fields.absolutePath,
-                                custom_elements: [{"content:encoded": edge.node.html}],
+                                url: site.siteMetadata.siteUrl + edge.node.fields?.name,
+                                guid: site.siteMetadata.siteUrl + edge.node.fields?.absolutePath,
+                                custom_elements: [{ "content:encoded": edge.node.html }],
                             })
                         })
                     }, query: `
