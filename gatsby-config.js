@@ -84,11 +84,12 @@ module.exports = {
         `, feeds: [{
                     serialize: ({ query: { site, allMarkdownRemark } }) => {
                         return allMarkdownRemark.edges.map(edge => {
+                            const fullUrl = site.siteMetadata.siteUrl + '/' + edge.node.frontmatter?.stackbit_url_path;
                             return Object.assign({}, edge.node.frontmatter, {
                                 description: edge.node.excerpt,
                                 date: edge.node.frontmatter.date,
-                                url: site.siteMetadata.siteUrl + edge.node.fields?.name,
-                                guid: site.siteMetadata.siteUrl + edge.node.fields?.absolutePath,
+                                url: fullUrl,
+                                guid: fullUrl,
                                 custom_elements: [{ "content:encoded": edge.node.html }],
                             })
                         })
@@ -105,6 +106,7 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                        stackbit_url_path
                       }
                     }
                   }
