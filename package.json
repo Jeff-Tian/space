@@ -43,6 +43,7 @@
     "fs-extra": "^10.1.0",
     "gatsby": "^4.13.1",
     "gatsby-plugin-algolia": "^0.26.0",
+    "gatsby-plugin-feed": "^4.15.0",
     "gatsby-plugin-react-helmet": "^5.13.0",
     "gatsby-plugin-sass": "^5.13.0",
     "gatsby-plugin-workerize-loader": "^2.0.0-alpha.0",
