@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "develop": "UV_THREADPOOL_SIZE=50 GATSBY_CPU_COUNT=6 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=4 gatsby develop --verbose",
+    "develop": "cross-env UV_THREADPOOL_SIZE=50 GATSBY_CPU_COUNT=6 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=4 gatsby develop --verbose",
     "clean": "gatsby clean",
     "start": "npm run develop",
     "test": "mocha --require @babel/register --recursive \"src/**/*.test.js\"",
@@ -44,6 +44,7 @@
     "gatsby": "^4.13.1",
     "gatsby-plugin-algolia": "^0.26.0",
     "gatsby-plugin-feed": "^4.15.0",
+    "gatsby-plugin-manifest": "^4.14.0",
     "gatsby-plugin-react-helmet": "^5.13.0",
     "gatsby-plugin-sass": "5.13.0",
     "gatsby-plugin-workerize-loader": "^2.0.0-alpha.0",
@@ -66,11 +67,11 @@
     "sass": "^1.51.0",
     "sprintf-js": "^1.1.2",
     "typography": "^0.16.21",
-    "typography-theme-wordpress-2016": "^0.16.19",
-    "gatsby-plugin-manifest": "^4.14.0"
+    "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
     "@stackbit/stackbit-pull": "^0.5.1",
+    "cross-env": "^7.0.3",
     "gatsby-plugin-perf-budgets": "^0.0.18",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
     "gatsby-source-github": "0.0.2",
