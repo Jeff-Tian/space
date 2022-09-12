@@ -23,6 +23,8 @@ html {
 }
 
 .site-content {
+  max-height: 800px;
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
