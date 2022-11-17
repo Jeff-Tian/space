@@ -1,7 +1,7 @@
 {
   "name": "@jeff-tian/space",
   "description": "Jeff Tian's space",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "develop": "cross-env UV_THREADPOOL_SIZE=50 GATSBY_CPU_COUNT=6 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=4 gatsby develop --verbose",
@@ -11,7 +11,6 @@
     "build": "gatsby build --prefix-paths --verbose",
     "serve": "gatsby serve",
     "build-all": "./stackbit-build.sh",
-    "pull": "stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5fa91752d3c655001c0fdbe9",
     "pull-json": "npx -p @jeff-tian/stackbit-pull@0.4.4 stackbit-pull-json --json-file=/Users/tianjef/Downloads/query_result_2021-03-25T18_46_59.417122+08_00.json",
     "ios": "npx cap add ios",
     "ios-run": "npx cap run ios",
