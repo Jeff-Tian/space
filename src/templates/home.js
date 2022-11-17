@@ -7,6 +7,7 @@ import {Link, withPrefix} from '../utils';
 import Footer from '../components/Footer';
 import {Layout} from "../components";
 import Pagination from "../components/Pagination";
+import { StaticImage } from "gatsby-plugin-image"
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -33,6 +34,7 @@ export const query = graphql`
                   img_path
                   positive_reactions_count
                   stackbit_url_path
+                  thumb_img_path
                 }
               }
             }
@@ -67,7 +69,7 @@ export default class Home extends React.Component {
                                     </header>
                                     {_.get(post, 'frontmatter.thumb_img_path', null) && (
                                         <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                            <img className="thumbnail"
+                                            <StaticImage className="thumbnail"
                                                  src={withPrefix(_.get(post, 'frontmatter.thumb_img_path', null))}
                                                  alt={_.get(post, 'frontmatter.title', null)}/>
                                         </Link>

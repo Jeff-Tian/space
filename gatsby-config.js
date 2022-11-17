@@ -5,26 +5,31 @@ require("dotenv").config({
 
 module.exports = {
     pathPrefix: '/',
-    siteMetadata: { ...siteMetadata, siteUrl: 'https://jeff-tian.jiwai.win' },
-    plugins: [`gatsby-plugin-react-helmet`, `gatsby-source-data`, `gatsby-transformer-remark`, {
+    siteMetadata: {...siteMetadata, siteUrl: 'https://jeff-tian.jiwai.win'},
+    plugins: [
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
+
+        `gatsby-plugin-react-helmet`, `gatsby-source-data`, `gatsby-transformer-remark`, {
         resolve: `gatsby-source-filesystem`, options: {
             name: `pages`, path: `${__dirname}/src/pages`,
         },
     }, {
-            resolve: `gatsby-plugin-sass`, options: {
-                cssLoaderOptions: {
-                    esModule: false, modules: {
-                        namedExport: false,
-                    }
+        resolve: `gatsby-plugin-sass`, options: {
+            cssLoaderOptions: {
+                esModule: false, modules: {
+                    namedExport: false,
                 }
             }
-        }, {
-            resolve: `gatsby-remark-page-creator`, options: {},
-        }, {
-            resolve: `@stackbit/gatsby-plugin-menus`, options: {
-                sourceUrlPath: `fields.url`, pageContextProperty: `menus`,
-            },
+        }
+    }, {
+        resolve: `gatsby-remark-page-creator`, options: {},
+    }, {
+        resolve: `@stackbit/gatsby-plugin-menus`, options: {
+            sourceUrlPath: `fields.url`, pageContextProperty: `menus`,
         },
+    },
         {
             resolve: '@jeff-tian/gatsby-source-yuque',
             options: {
@@ -83,7 +88,7 @@ module.exports = {
             }
           }
         `, feeds: [{
-                    serialize: ({ query: { site, allMarkdownRemark } }) => {
+                    serialize: ({query: {site, allMarkdownRemark}}) => {
                         return allMarkdownRemark.edges.map(edge => {
                             const fullUrl = site.siteMetadata.siteUrl + '/' + edge.node.frontmatter?.stackbit_url_path;
                             return Object.assign({}, edge.node.frontmatter, {
@@ -91,7 +96,7 @@ module.exports = {
                                 date: edge.node.frontmatter.date,
                                 url: fullUrl,
                                 guid: fullUrl,
-                                custom_elements: [{ "content:encoded": edge.node.html }],
+                                custom_elements: [{"content:encoded": edge.node.html}],
                             })
                         })
                     }, query: `

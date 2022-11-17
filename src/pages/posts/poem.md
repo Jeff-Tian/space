@@ -6,6 +6,7 @@ date: '2014-07-18 23:29:00'
 excerpt: >-
   
 comments_count: 0
+thumb_img_path: https://raw.githubusercontent.com/Jeff-Tian/blogengine.net/master/Source/BlogEngine/BlogEngine.NET/App_Data/files/WP_001433_thumb.jpg
 positive_reactions_count: 0
 tags: 
   - 打油
