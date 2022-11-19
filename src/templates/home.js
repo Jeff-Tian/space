@@ -7,7 +7,8 @@ import {Link, withPrefix} from '../utils';
 import Footer from '../components/Footer';
 import {Layout} from "../components";
 import Pagination from "../components/Pagination";
-import { StaticImage } from "gatsby-plugin-image"
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
+import ImageFinder from "../utils/getImage";
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -23,6 +24,7 @@ export const query = graphql`
               node {
                 excerpt
                 id
+                htmlAst
                 frontmatter {
                   title
                   template
@@ -67,13 +69,12 @@ export default class Home extends React.Component {
                                                                dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time>
                                         </div>
                                     </header>
-                                    {_.get(post, 'frontmatter.thumb_img_path', null) && (
-                                        <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                            <StaticImage className="thumbnail"
-                                                 src={withPrefix(_.get(post, 'frontmatter.thumb_img_path', null))}
-                                                 alt={_.get(post, 'frontmatter.title', null)}/>
-                                        </Link>
-                                    )}
+                                    <div>Ast: {ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]}</div>
+                                    {<Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
+                                        <GatsbyImage className="thumbnail"
+                                                     image={getImage(_.get(post, 'frontmatter.thumb_img_path', ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]))}
+                                                     alt={_.get(post, 'frontmatter.title', null)}/>
+                                    </Link>}
                                     <div className="post-content">
                                         <p>{
                                             _.get(post, 'frontmatter.excerpt', null) || _.get(post, 'excerpt', null)}
