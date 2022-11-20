@@ -69,11 +69,11 @@ export default class Home extends React.Component {
                                                                dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time>
                                         </div>
                                     </header>
-                                    <div>Ast: {ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]}</div>
+                                    {/*<div>Ast: {ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]}</div>*/}
                                     {<Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                        <GatsbyImage className="thumbnail"
-                                                     image={getImage(_.get(post, 'frontmatter.thumb_img_path', ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]))}
-                                                     alt={_.get(post, 'frontmatter.title', null)}/>
+                                        {/*<GatsbyImage className="thumbnail"*/}
+                                        {/*             image={getImage(_.get(post, 'frontmatter.thumb_img_path', ImageFinder.findImageSrcsFromHtmlAst(_.get(post, 'htmlAst', null))[0]))}*/}
+                                        {/*             alt={_.get(post, 'frontmatter.title', null)}/>*/}
                                     </Link>}
                                     <div className="post-content">
                                         <p>{

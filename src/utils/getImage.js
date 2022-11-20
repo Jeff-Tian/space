@@ -1,16 +1,13 @@
+const _ = require('lodash');
+
+const getImageSrcsFromNodes = nodes => _.map(_.filter(nodes, node => node.type === 'element' && node.tagName === 'img'), r => _.get(r, 'properties.src'))
+
+const getImageSrcsFromSingleNode = node => getImageSrcsFromNodes([node]);
+
 module.exports = {
     findImageSrcsFromHtmlAst(htmlAst) {
         const findImageSrcs = (root) => {
-            let res = [];
-            if (root.type === 'element' && root.tagName === 'img') {
-                res.push(root.properties.src);
-            }
-
-            if (root.children) {
-                res = res.concat(root.children.map(findImageSrcs).filter(x => x.length > 0).reduce((a, b) => a.concat(b), []));
-            }
-
-            return res;
+            return getImageSrcsFromSingleNode(root).concat(_.flatMap(root.children, findImageSrcs))
         }
 
         return findImageSrcs(htmlAst);
