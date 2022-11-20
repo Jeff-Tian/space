@@ -24,7 +24,6 @@ export const query = graphql`
               node {
                 excerpt
                 id
-                htmlAst
                 frontmatter {
                   title
                   template

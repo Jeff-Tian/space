@@ -11,25 +11,42 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
 
-        `gatsby-plugin-react-helmet`, `gatsby-source-data`, `gatsby-transformer-remark`, {
-        resolve: `gatsby-source-filesystem`, options: {
-            name: `pages`, path: `${__dirname}/src/pages`,
+        `gatsby-plugin-react-helmet`, `gatsby-source-data`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `@jeff-tian/gatsby-remark-images-remote`,
+                        options: {
+                            // It's important to specify the maxWidth (in pixels) of
+                            // the content container as this plugin uses this as the
+                            // base for generating different widths of each image.
+                            maxWidth: 590,
+                        },
+                    },
+                ],
+            },
         },
-    }, {
-        resolve: `gatsby-plugin-sass`, options: {
-            cssLoaderOptions: {
-                esModule: false, modules: {
-                    namedExport: false,
+        {
+            resolve: `gatsby-source-filesystem`, options: {
+                name: `pages`, path: `${__dirname}/src/pages`,
+            },
+        }, {
+            resolve: `gatsby-plugin-sass`, options: {
+                cssLoaderOptions: {
+                    esModule: false, modules: {
+                        namedExport: false,
+                    }
                 }
             }
-        }
-    }, {
-        resolve: `gatsby-remark-page-creator`, options: {},
-    }, {
-        resolve: `@stackbit/gatsby-plugin-menus`, options: {
-            sourceUrlPath: `fields.url`, pageContextProperty: `menus`,
+        }, {
+            resolve: `gatsby-remark-page-creator`, options: {},
+        }, {
+            resolve: `@stackbit/gatsby-plugin-menus`, options: {
+                sourceUrlPath: `fields.url`, pageContextProperty: `menus`,
+            },
         },
-    },
         {
             resolve: '@jeff-tian/gatsby-source-yuque',
             options: {
