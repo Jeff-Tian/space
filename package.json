@@ -49,7 +49,7 @@
     "gatsby-plugin-sass": "5.13.0",
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-plugin-workerize-loader": "^2.0.0-alpha.0",
-    "@jeff-tian/gatsby-remark-images-remote": "^2.1.5",
+    "@jeff-tian/gatsby-remark-images-remote": "^2.1.6",
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-remark": "5.13.0",
     "gatsby-transformer-sharp": "^5.0.0",
