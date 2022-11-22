@@ -1593,10 +1593,10 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@jeff-tian/gatsby-remark-images-remote@^2.1.3":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.1.3.tgz#aba7bfdd48ee187e84d1e627f6daa22c34a3e3b2"
-  integrity sha512-EnQLCWYXvC85Ur0INr1QPwOxewc/oY4BSM2DTpeXIfaTjlXFgdw9m5wz6QUrqcoCjVMND//Td2ts9L8iPRQQRg==
+"@jeff-tian/gatsby-remark-images-remote@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.1.6.tgz#7619c3e85b396828ed29d19379bf0171b8712138"
+  integrity sha512-UlOscM9AqxsdAc3um4DT1Wga5nyjmOEB/ILbydnzonqGtGhQfDYT/uds1ZP2WCY0Amehu3AvbO9BlUSwuyZhRw==
   dependencies:
     "@babel/runtime" "^7.18.9"
     chalk "^4.1.0"
