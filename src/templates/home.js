@@ -13,34 +13,33 @@ import ImageFinder from "../utils/getImage";
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
-    query blogListQuery($skip: Int!, $limit: Int!) {
-        allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-            limit: $limit
-            skip: $skip
-            filter: {frontmatter: {template: {eq: "post"}}}
-        ) {
-            edges {
-              node {
-                excerpt
-                id
-                frontmatter {
-                  title
-                  template
-                  has_more_link
-                  more_link_text
-                  excerpt
-                  canonical_url
-                  date
-                  img_path
-                  positive_reactions_count
-                  stackbit_url_path
-                  thumb_img_path
-                }
-              }
-            }
+query blogListQuery($skip: Int!, $limit: Int!) {
+  allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    limit: $limit
+    skip: $skip
+    filter: {frontmatter: {template: {eq: "post"}}}
+  ) {
+    edges {
+      node {
+        excerpt
+        id
+        frontmatter {
+          title
+          template
+          has_more_link
+          more_link_text
+          excerpt
+          canonical_url
+          date
+          img_path
+          positive_reactions_count
+          stackbit_url_path
         }
+      }
     }
+  }
+}
 `;
 
 export default class Home extends React.Component {

@@ -15,7 +15,7 @@ const _ = require("lodash");
  */
 exports.createPages = function ({actions, graphql, getNode}) {
     const queryPosts = graphql(`
-query {
+{
   allMarkdownRemark(
     limit: 1500
     filter: {frontmatter: {template: {eq: "post"}}}
