@@ -19,7 +19,7 @@ exports.createPages = function ({actions, graphql, getNode}) {
   allMarkdownRemark(
     limit: 1500
     filter: {frontmatter: {template: {eq: "post"}}}
-    sort: {fields: frontmatter___date, order: DESC}
+    sort: {frontmatter: {date: DESC}}
   ) {
     edges {
       node {
