@@ -44,3 +44,5 @@ export default class Page extends React.Component {
         );
     }
 }
+
+export {Head} from "../components/Layout";

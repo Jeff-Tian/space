@@ -6407,7 +6407,7 @@ gatsby-plugin-feed@5.1.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-image@^3.2.0:
+gatsby-plugin-image@^3.2.0-next.0:
   version "3.2.0-next.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.2.0-next.0.tgz#144391768aa33cd19c56146da3919a06db712e9a"
   integrity sha512-bduOZz4jWXih3NdtKinw41hJDGBZCnRwrymjqBL5gG3uCd0URisAeNVVrGJRG7H7LfyYXtnzTmIGGjWYA3eT8g==
@@ -6475,13 +6475,6 @@ gatsby-plugin-perf-budgets@^0.0.18:
     mkdirp "^0.5.1"
     opener "^1.5.1"
     ws "^6.0.0"
-
-gatsby-plugin-react-helmet@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-6.1.0.tgz#a8f7baaa9e83ef8d76306bacf9c8ce539b9424bf"
-  integrity sha512-zzpSbMc7S23vUWHZf3sB3EpMz3y8UWvyVgxfv0wGdRA4RjnGBFDaGn4VKwid+s+7+HTR5D9AJqp6hrq5ccVBcQ==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
 
 gatsby-plugin-sass@6.1.0:
   version "6.1.0"
@@ -6562,7 +6555,7 @@ gatsby-plugin-utils@^4.2.0-next.0:
     mini-svg-data-uri "^1.4.4"
     svgo "^2.8.0"
 
-gatsby-plugin-webpack-bundle-analyser-v2@^1.1.27:
+gatsby-plugin-webpack-bundle-analyser-v2@^1.1.30:
   version "1.1.30"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-webpack-bundle-analyser-v2/-/gatsby-plugin-webpack-bundle-analyser-v2-1.1.30.tgz#1bc17a296449d9cf90b70902f869d720e29b130d"
   integrity sha512-dvUA1O9mPWO4stZFaTv+gn9JvGEach3Mzg6NL7UzYTrEnXtc/utdO1z/DAPNZTUBQ7Tvm+I0eHwvOaHJDQHTLA==
@@ -6649,7 +6642,7 @@ gatsby-telemetry@^4.1.0:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-transformer-remark@6.2.0-next:
+gatsby-transformer-remark@6.2.0-next.0:
   version "6.2.0-next.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.2.0-next.0.tgz#8f7023199257ab76b04e3896711e6ea0a905f819"
   integrity sha512-U4kux6sbklrTkhHj+hrtPjUmA+0MNy6LP1+ImlPeRPyaur/DmW640xBU7Nao+Jjzr2UwFqfcIAhIvskinjLzIw==

@@ -57,3 +57,5 @@ export default class Contact extends React.Component {
         );
     }
 }
+
+export {Head} from "../components/Layout";

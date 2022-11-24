@@ -99,3 +99,5 @@ export default class Home extends React.Component {
         );
     }
 }
+
+export {Head} from "../components/Layout";

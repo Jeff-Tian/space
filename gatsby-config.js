@@ -25,7 +25,7 @@ module.exports = {
         },
         // `gatsby-transformer-sharp`,
 
-        `gatsby-plugin-react-helmet`, `gatsby-source-data`,
+        `gatsby-source-data`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {

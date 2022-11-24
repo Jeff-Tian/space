@@ -27,34 +27,41 @@ const SEO = ({ description, lang, meta, title }) => {
           titleTemplate={`%s | ${site.siteMetadata.title}`}
           meta={[
             {
+              key: 'description',
               name: 'description',
               content: metaDescription,
             },
             {
+              key: 'og:title',
               property: 'og:title',
               content: title,
             },
             {
+              key: 'og:description',
               property: 'og:description',
               content: metaDescription,
             },
             {
+              key: 'og:type',
               property: 'og:type',
               content: 'website',
             },
             {
+              key: 'twitter:card',
               name: 'twitter:card',
               content: 'summary',
             },
-            // {
-            //   name: 'twitter:creator',
-            //   content: site.siteMetadata.author,
-            // },
             {
+              name: 'twitter:creator',
+              content: site.siteMetadata.author,
+            },
+            {
+              key: 'twitter:title',
               name: 'twitter:title',
               content: title,
             },
             {
+              key: 'twitter:description',
               name: 'twitter:description',
               content: metaDescription,
             },

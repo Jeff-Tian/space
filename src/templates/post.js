@@ -69,3 +69,5 @@ export default class Post extends React.Component {
     )
   }
 }
+
+export {Head} from "../components/Layout";
