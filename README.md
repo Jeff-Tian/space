@@ -14,6 +14,12 @@ content.
 
 through https://app.contentful.com/
 
+## Pre-requirements
+
+```shell
+brew install sops
+```
+
 ## Running Your Site Locally
 
 1. Install [Node.js and npm](https://nodejs.org/en/)

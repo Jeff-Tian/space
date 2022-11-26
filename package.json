@@ -30,7 +30,7 @@
     "@capacitor/cli": "latest",
     "@capacitor/core": "latest",
     "@capacitor/ios": "latest",
-    "@jeff-tian/gatsby-remark-images-remote": "^2.1.10",
+    "@jeff-tian/gatsby-remark-images-remote": "^2.2.0",
     "@jeff-tian/gatsby-source-yuque": "1.7.2",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "@uniheart/experience.ui.uniheart-pagination": "latest",
