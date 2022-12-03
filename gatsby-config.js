@@ -9,11 +9,10 @@ module.exports = {
     plugins: [
         `gatsby-plugin-image`,
         {
-            resolve: `gatsby-plugin-sharp`,
+            resolve: `@jeff-tian/gatsby-plugin-sharp`,
             options: {
                 defaults: {},
                 failOn: `none`,
-                failOnError: false,
                 base64Width: 20,
                 forceBase64Format: `png`, // valid formats: png,jpg,webp
                 useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,

@@ -1624,10 +1624,10 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@jeff-tian/gatsby-plugin-sharp@5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.3.1.tgz#bd7b99123e79f4846477cadf16468fea224ab37d"
-  integrity sha512-Dol95jEFkmf8kQvLMiBp3tCroF66JIbruLVcq//iHZ8u7srE9VX6h1JyefIkNbP+29HJm1F7/3yIC2VDnzfnSA==
+"@jeff-tian/gatsby-plugin-sharp@5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.3.2.tgz#a182b5762827ffcb149efa871d3f6178bac52e98"
+  integrity sha512-9EFaxKFWPYgpWeilNtNl2T7/FsJGfo3odssMBI1i3+5H9htYDlMuSqJqSltXTqKga6Abq6IJEUa8+0yf3PXnwQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     async "^3.2.4"
@@ -1642,10 +1642,10 @@
     semver "^7.3.7"
     sharp "^0.31.2"
 
-"@jeff-tian/gatsby-remark-images-remote@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.3.1.tgz#1af8b9a7f6332c9f7b6295bcfd4ad1b442867ef5"
-  integrity sha512-ybl8b65ZPiTDqkoYJINzeb0BKZd5vS9z+7rJ8uXMbJrk0C7IhIJs1huQF8qafqgkWeYUfYPQB0ZYlyM3LMbfbA==
+"@jeff-tian/gatsby-remark-images-remote@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.3.2.tgz#2315a3d3c1a55eb75be620a4357c8479fe6382d2"
+  integrity sha512-nrJyiKp/lpJVqQdYyUyHZGtQhn3WPtLzoPIN/xQVIfGJDyvwutC2GpxCA8DQq3v73y09hGYuZr00H9hvNzvb2Q==
   dependencies:
     "@babel/runtime" "^7.18.9"
     chalk "^4.1.0"
