@@ -1624,10 +1624,28 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@jeff-tian/gatsby-remark-images-remote@^2.1.10":
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.1.10.tgz#54c9f194b50e50299aa50dfc34cbfbd2d6076954"
-  integrity sha512-2yofucQid4F2KUXssmMaySfX16mOFxJ2YnyPHaj1MwgMQMNFTO/9JWuhINyL3oLeF/vTWirEfE0sq67bFS7Mkw==
+"@jeff-tian/gatsby-plugin-sharp@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.3.1.tgz#bd7b99123e79f4846477cadf16468fea224ab37d"
+  integrity sha512-Dol95jEFkmf8kQvLMiBp3tCroF66JIbruLVcq//iHZ8u7srE9VX6h1JyefIkNbP+29HJm1F7/3yIC2VDnzfnSA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    async "^3.2.4"
+    bluebird "^3.7.2"
+    debug "^4.3.4"
+    filenamify "^4.3.0"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^4.3.0-next.0"
+    gatsby-plugin-utils "^4.3.0-next.1"
+    lodash "^4.17.21"
+    probe-image-size "^7.2.3"
+    semver "^7.3.7"
+    sharp "^0.31.2"
+
+"@jeff-tian/gatsby-remark-images-remote@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.3.1.tgz#1af8b9a7f6332c9f7b6295bcfd4ad1b442867ef5"
+  integrity sha512-ybl8b65ZPiTDqkoYJINzeb0BKZd5vS9z+7rJ8uXMbJrk0C7IhIJs1huQF8qafqgkWeYUfYPQB0ZYlyM3LMbfbA==
   dependencies:
     "@babel/runtime" "^7.18.9"
     chalk "^4.1.0"
@@ -2832,6 +2850,13 @@
   version "0.30.5"
   resolved "https://registry.yarnpkg.com/@types/sharp/-/sharp-0.30.5.tgz#d75d91f7acf5260525aeae229845046dcff6d17a"
   integrity sha512-EhO29617AIBqxoVtpd1qdBanWpspk/kD2B6qTFRJ31Q23Rdf+DNU1xlHSwtqvwq1vgOqBwq1i38SX+HGCymIQg==
+  dependencies:
+    "@types/node" "*"
+
+"@types/sharp@^0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@types/sharp/-/sharp-0.31.0.tgz#c4af03a7e1d126f0d428a265e126fabd86ab6d0f"
+  integrity sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==
   dependencies:
     "@types/node" "*"
 
@@ -6331,6 +6356,27 @@ gatsby-core-utils@^4.2.0-next.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^4.3.0-next.0:
+  version "4.3.0-next.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.3.0-next.0.tgz#e90b0153f5eab5cc93d29739564f521921d95cb0"
+  integrity sha512-UnmFUZ25oWlxia8uuTnXUL+WvswskDaUcaFeR0/7tvP9YHIB8FnICPnIk//d43csea0UwJ0E//opgJMWvPtSRQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.13.0"
+    file-type "^16.5.3"
+    fs-extra "^10.1.0"
+    got "^11.8.5"
+    import-from "^4.0.0"
+    lmdb "2.5.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-3.1.0.tgz#5c486c0d8c63926296fe44a17fe09efae86f386f"
@@ -6485,27 +6531,6 @@ gatsby-plugin-sass@6.1.0:
     resolve-url-loader "^3.1.4"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.1.0.tgz#0bb87ce51a65f3a9b8991f7a65c51de5764479b3"
-  integrity sha512-EuuqDkTTjXDi8Vuer9Z0M0bG4+GzLY/6swow64bTTFOIVNSkzdPrbOJoQC8tlE7yG0ZzY2Hzpz0bdaev5ZWXHA==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@gatsbyjs/potrace" "^2.3.0"
-    async "^3.2.4"
-    bluebird "^3.7.2"
-    debug "^4.3.4"
-    filenamify "^4.3.0"
-    fs-extra "^10.1.0"
-    gatsby-core-utils "^4.1.0"
-    gatsby-plugin-utils "^4.1.0"
-    lodash "^4.17.21"
-    mini-svg-data-uri "^1.4.4"
-    probe-image-size "^7.2.3"
-    semver "^7.3.7"
-    sharp "^0.30.7"
-    svgo "^2.8.0"
-
 gatsby-plugin-typescript@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-5.1.0.tgz#660868a3972ce68aef531ff69bad024928c464cf"
@@ -6555,6 +6580,21 @@ gatsby-plugin-utils@^4.2.0-next.0:
     mini-svg-data-uri "^1.4.4"
     svgo "^2.8.0"
 
+gatsby-plugin-utils@^4.3.0-next.1:
+  version "4.3.0-next.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.3.0-next.1.tgz#13fa4708a2fa3b6fd9b5c7b0c5d4344a7dff8167"
+  integrity sha512-JuV14o+hiGrKzZ8ShQVoV3RFZ5K7vqUKKi4nLrrYwFgtaXa5nJOxW8JqT3UVIPa/cckA17Czv0VVlQ0B/NDKhA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    fastq "^1.13.0"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^4.3.0-next.0"
+    gatsby-sharp "^1.3.0-next.1"
+    graphql-compose "^9.0.9"
+    import-from "^4.0.0"
+    joi "^17.4.2"
+    mime "^3.0.0"
+
 gatsby-plugin-webpack-bundle-analyser-v2@^1.1.30:
   version "1.1.30"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-webpack-bundle-analyser-v2/-/gatsby-plugin-webpack-bundle-analyser-v2-1.1.30.tgz#1bc17a296449d9cf90b70902f869d720e29b130d"
@@ -6598,6 +6638,14 @@ gatsby-sharp@^1.2.0-next.0:
   dependencies:
     "@types/sharp" "^0.30.5"
     sharp "^0.30.7"
+
+gatsby-sharp@^1.3.0-next.1:
+  version "1.3.0-next.1"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.3.0-next.1.tgz#fb0f282006902f7627e6b77779f1caaef1d131d4"
+  integrity sha512-HeI24tvmWVRA3txH55KoGNroaa7qKCGr6V+EVPay1sn6bdQWRY8YeXF7wBAYq8Ag8glVioFvr086msN39IiWCQ==
+  dependencies:
+    "@types/sharp" "^0.31.0"
+    sharp "^0.31.2"
 
 gatsby-source-filesystem@^5.1.0, gatsby-source-filesystem@latest:
   version "5.1.0"
