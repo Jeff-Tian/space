@@ -21,7 +21,6 @@ module.exports = {
             },
         },
         // `gatsby-transformer-sharp`,
-
         `gatsby-source-data`,
         {
             resolve: `gatsby-transformer-remark`,
@@ -62,7 +61,7 @@ module.exports = {
             resolve: '@jeff-tian/gatsby-source-yuque',
             options: {
                 login: 'tian-jie',
-                repo: 'blog',
+                repo: process.env.YUQUE_REPO ?? 'blog',
                 mdNameFormat: 'slug',
             },
         },

@@ -1642,10 +1642,10 @@
     semver "^7.3.7"
     sharp "^0.31.2"
 
-"@jeff-tian/gatsby-remark-images-remote@^2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.3.2.tgz#2315a3d3c1a55eb75be620a4357c8479fe6382d2"
-  integrity sha512-nrJyiKp/lpJVqQdYyUyHZGtQhn3WPtLzoPIN/xQVIfGJDyvwutC2GpxCA8DQq3v73y09hGYuZr00H9hvNzvb2Q==
+"@jeff-tian/gatsby-remark-images-remote@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@jeff-tian/gatsby-remark-images-remote/-/gatsby-remark-images-remote-2.3.4.tgz#bba5bb0a9fc1a8930f254903d77bb438bb709f49"
+  integrity sha512-04Mznk7b0E3T2PKapLj5Tk7J3zwmTIwG0jySB4Zonn2UVWCBm4AZjADA2v76KFKMQmxFWryRVxeakLDyqFMMsQ==
   dependencies:
     "@babel/runtime" "^7.18.9"
     chalk "^4.1.0"

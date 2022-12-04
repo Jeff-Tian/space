@@ -6,6 +6,7 @@
 
 const path = require("path");
 const _ = require("lodash");
+
 /**
  * Create homepage that collects all the posts
  * @param actions
