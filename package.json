@@ -23,7 +23,7 @@
     "@algolia/algoliasearch-netlify-frontend": "^1.0.15",
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-env": "^7.22.0",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "^7.17.7",
     "@capacitor/android": "latest",
