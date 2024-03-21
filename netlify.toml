@@ -1,3 +1,22 @@
 [build]
 publish = "public"
 command = "./stackbit-build.sh"
+
+[[redirects]]
+from = "https://jeff-tian.jiwai.win/*"
+to = "https://jefftian.dev/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://jeff-tian.jijiyy.me/*"
+to = "https://jefftian.dev/:splat"
+status = 301
+force = true
+
+
+[[redirects]]
+from = "https://jeff-tian.netlify.app/*"
+to = "https://jefftian.dev/:splat"
+status = 301
+force = true
